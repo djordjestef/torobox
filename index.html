@@ -686,8 +686,7 @@
             scroller.on('scroll', (obj) => {
                 var rect = el.getBoundingClientRect();
                 var rect2 = el2.getBoundingClientRect();
-                console.log(rect2.top, rect2.right, rect2.bottom, rect2.left);
-                console.log(rect.top, rect.right, rect.bottom, rect.left);
+             
                 if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) {
                     console.log('nula je')
                     $('.logo_header').css('z-index', 0);
