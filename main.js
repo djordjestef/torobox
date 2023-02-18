@@ -1,6 +1,4 @@
-
 window.onload = function () {
-  
   $('.owl_one').owlCarousel({
     margin: 20,
     responsiveClass: true,
@@ -224,7 +222,7 @@ $('#item_large').hover(
   function () {
     $('.cube_large').animate(
       {
-        opacity: .5,
+        opacity: 0.5,
       },
       200,
     );
@@ -245,7 +243,7 @@ $('#item_medium').hover(
   function () {
     $('.cube_medium').animate(
       {
-        opacity: .5,
+        opacity: 0.5,
       },
       200,
     );
@@ -266,7 +264,7 @@ $('#item_small').hover(
   function () {
     $('.cube_small').animate(
       {
-        opacity: .5,
+        opacity: 0.5,
       },
       200,
     );
@@ -287,7 +285,7 @@ $('#item_mini').hover(
   function () {
     $('.cube_mini').animate(
       {
-        opacity: .5,
+        opacity: 0.5,
       },
       200,
     );
@@ -314,13 +312,10 @@ document.addEventListener('change', function (event) {
 });
 
 function getFormData() {
-  const data = $('form').serialize();
-  console.log('data', data);
+  const data = $('form').serializeArray();
+  var obj = {};
+  for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
+  console.log('obj', obj);
+
+  return obj;
 }
-
-
-
-
-
-
-
