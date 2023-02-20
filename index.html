@@ -10,30 +10,25 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css " />
-
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css " />
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <title>Torobox</title>
 </head>
 
@@ -41,53 +36,45 @@
     <img src="assets/logo_1.svg" alt="error on view photo" class="img-fluid logo_header smooth-scroll">
     <div class="get_space">
         <a href="#">
-            <lottie-player src="assets/get_space.json" background="transparent" speed="1" loop
-                autoplay></lottie-player>
+            <lottie-player src="assets/get_space.json" background="transparent" speed="1" loop autoplay></lottie-player>
         </a>
     </div>
     <div data-scroll-container style="perspective:1px">
-        <div data-scroll-section>
-            <section class="header" data-scroll>
-                <div class="logo_holder">
-                    <a href="#">
+        <div class="header navbar-light home" id="header">
+            <div class="logo_holder">
+                <a href="#">
 
-                        <img src="assets/logo_2.svg" alt="error on view photo" class="img-fluid logo_text">
-                    </a>
+                    <img src="assets/logo_2.svg" alt="error on view photo" class="img-fluid logo_text">
+                </a>
+            </div>
+            <div class="login_holder">
+                <a class="login" href="#">
+                    Login/
+                </a>
+                <a class="register" href="#">
+                    Register
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <nav class="my_navbar">
+                        <ul class="">
+                            <li class="">
+                                <a class=" storage_link">Storage</a>
+                            </li>
+                            <li class="">
+                                <a class=" company_link">Company</a>
+                            </li>
+                            <li class="">
+                                <a class=" blog_link">Blog</a>
+                            </li>
+                            <li class="">
+                                <a class="contact_link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="login_holder">
-                    <a class="login" href="#">
-                        Login/
-                    </a>
-                    <a class="register" href="#">
-                        Register
-                    </a>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-
-                        <nav class="navbar navbar-expand-md  navbar-helper text-sm-center m-auto">
-
-                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link storage_link">Storage</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link company_link">Company</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link blog_link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link contact_link">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
         <div data-scroll-section>
             <section class="storage" id="storage" data-scroll>
@@ -151,10 +138,13 @@
                                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 
-                                            <div class="acc_description">Large storage box is suitable for you who need a lot of space, either for decoration from an apartment over 70 m2 or for your company.
+                                            <div class="acc_description">Large storage box is suitable for you who need
+                                                a lot of space, either for decoration from an apartment over 70 m2 or
+                                                for your company.
 
                                             </div>
-                                            <div class="acc_description">Width: 2.5m | Height: 2.5m | Lenght: 6m <br> Surface Area: 15m2 | Volume: 38m3</div>
+                                            <div class="acc_description">Width: 2.5m | Height: 2.5m | Lenght: 6m <br>
+                                                Surface Area: 15m2 | Volume: 38m3</div>
                                             <a href="#" class="rent_btn">Rent for 170€ / month</a>
                                         </div>
 
@@ -170,9 +160,11 @@
                                         </h2>
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="acc_description">This storage box is suitable for furniture and things from a normally furnished apartment from approx. 60 - 70 m2.
+                                            <div class="acc_description">This storage box is suitable for furniture and
+                                                things from a normally furnished apartment from approx. 60 - 70 m2.
                                             </div>
-                                            <div class="acc_description">Width: 3m | Height: 2.5m | Lenght: 2.5m <br> Surface Area: 7.5m2 | Volume: 19m3</div>
+                                            <div class="acc_description">Width: 3m | Height: 2.5m | Lenght: 2.5m <br>
+                                                Surface Area: 7.5m2 | Volume: 19m3</div>
                                             <a href="#" class="rent_btn">Rent for 100€ / month</a>
                                         </div>
                                     </div>
@@ -188,9 +180,12 @@
                                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                                             aria-labelledby="flush-headingThree"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="acc_description">Small warehouse is suitable for storing the contents of a 1-room apartment or a normally furnished apartment of up to 30 - 35 m2.
+                                            <div class="acc_description">Small warehouse is suitable for storing the
+                                                contents of a 1-room apartment or a normally furnished apartment of up
+                                                to 30 - 35 m2.
                                             </div>
-                                            <div class="acc_description">Width: 1.5m | Height: 2.5m | Lenght: 2.5m <br> Surface Area: 4m2 | Volume: 9m3</div>
+                                            <div class="acc_description">Width: 1.5m | Height: 2.5m | Lenght: 2.5m <br>
+                                                Surface Area: 4m2 | Volume: 9m3</div>
                                             <a href="#" class="rent_btn">Rent for 70€ / month</a>
                                         </div>
                                     </div>
@@ -205,9 +200,12 @@
                                         </h2>
                                         <div id="flush-collapseFour" class="accordion-collapse collapse"
                                             aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                            <div class="acc_description">This box size offers a little extra space. Here you can store items like documents, laptops and similar type of smaller items.
+                                            <div class="acc_description">This box size offers a little extra space. Here
+                                                you can store items like documents, laptops and similar type of smaller
+                                                items.
                                             </div>
-                                            <div class="acc_description">Width: 0.5m | Height: 0.5m | Lenght: 0.5m <br> Surface Area: 1.5m2 | Volume: 0.125m3</div>
+                                            <div class="acc_description">Width: 0.5m | Height: 0.5m | Lenght: 0.5m <br>
+                                                Surface Area: 1.5m2 | Volume: 0.125m3</div>
                                             <a href="#" class="rent_btn">Rent for 50€ / month</a>
                                         </div>
                                     </div>
@@ -259,7 +257,7 @@
                     <div class="advantages">
                         <div class="row">
                             <div class="col-4">
-                                <img src="assets/adv_1.svg" alt="">
+                                <img src="assets/adv_2.svg" alt="">
                             </div>
                             <div class="col-4">
                                 <div class="title">
@@ -373,7 +371,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="testimonials" data-scroll>
                 <div class="container">
                     <div class="row">
@@ -506,7 +503,7 @@
                         </div>
                     </div>
                 </div>
-            
+
             </section>
             <div class="helper"></div>
             <section class="contact" id="contact" data-scroll>
@@ -605,21 +602,25 @@
         </div>
     </div>
 
-
     <script src="main.js"></script>
     <script>
 
         let el = document.querySelector('#contact')
         let el2 = document.querySelector('#storage_type')
+        let headerEl = document.querySelector('#header')
         let scroller;
         window.addEventListener("load", function (event) {
             scroller = new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
                 smooth: true,
+                getSpeed: true,
                 smartphone: {
                     smooth: true
-                }
+                },
+                getDirection: true,
+                reloadOnContextChange: true
             })
+
             $('.storage_link').on('click', function () {
                 const slider = document.getElementById("storage_type")
                 scroller.scrollTo(slider)
@@ -639,11 +640,39 @@
                 const slider = document.getElementById("blog")
                 scroller.scrollTo(slider)
             });
+            let hidden = false, static = true;
 
             scroller.on('scroll', (obj) => {
                 var rect = el.getBoundingClientRect();
                 var rect2 = el2.getBoundingClientRect();
-             
+                var headerHeight = headerEl.getBoundingClientRect().height;
+
+                if (obj.direction === 'down' && static) {
+                    if (obj.scroll.y > headerHeight) {
+                        $('.header').addClass('pinned');
+                        static = false;
+                    }
+                }
+                if (obj.direction === 'up' && !static) {
+                    if (obj.scroll.y <= headerHeight) {
+                        $('.header').removeClass('pinned');
+                        static = true;
+                    }
+                }
+                if (obj.direction === 'down' && !hidden) {
+                    if (obj.scroll.y > (headerHeight + 200)) {
+                        $('.header').removeClass('pinned');
+                        $('.header').addClass('unpinned');
+                        hidden = true;
+                    }
+                }
+                if (obj.direction === 'up' && hidden) {
+                    //console.log('show');
+                    $('.header').removeClass('unpinned');
+                    $('.header').addClass('pinned');
+                    hidden = false;
+                }
+
                 if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) {
                     $('.logo_header').css('z-index', 0);
                     $('.get_space').css('z-index', 0);
@@ -655,15 +684,10 @@
                     $('.logo_header').css('z-index', 0)
                     $('.get_space').css('z-index', 0);
                 }
-
             });
         })
 
     </script>
 </body>
-
-
-
-
 
 </html>
