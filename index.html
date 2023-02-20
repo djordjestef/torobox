@@ -58,34 +58,38 @@
             <div class="container">
                 <div class="row">
                     <nav class="my_navbar">
-                        <ul class="">
-                            <li class="">
+                        <ul>
+                            <li>
                                 <a class=" storage_link">Storage</a>
                             </li>
-                            <li class="">
+                            <li>
                                 <a class=" company_link">Company</a>
                             </li>
-                            <li class="">
+                            <li>
                                 <a class=" blog_link">Blog</a>
                             </li>
-                            <li class="">
+                            <li>
                                 <a class="contact_link">Contact</a>
+                            </li>
+                            <li>
+                                <button class="language en ">en</button>
+                                <button  class="language sr active">sr</button>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-        <div data-scroll-section>
+        <div data-scroll-section>           
             <section class="storage" id="storage" data-scroll>
-                <div class="container leave">
+                <div class="container">
                     <div class="row holder_show">
                         <div class="col-12 ">
-                            <div class="holder">
-                                <div class="subtitle">
+                            <div class="holder" data-scroll data-scroll-speed="2">
+                                <div class="subtitle storage_sub">
                                     We offer what everyone seems to be missing — space.
                                 </div>
-                                <div class="title">
+                                <div class="title storage_tit">
                                     Rent storage units for your personal possessions.
                                 </div>
                                 <div class="img_holder">
@@ -112,7 +116,8 @@
                     </div>
                 </div>
 
-                <div class="storage_type" id="storage_type">
+                <div class="storage_type" id="storage_type" data-scroll data-scroll-speed="-1">
+
                     <div class="row" style="width:100%">
                         <div class="col-xl-6 col-lg-7">
                             <div class="storage_type_img_holder">
@@ -603,6 +608,7 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="languages.js"></script>
     <script>
 
         let el = document.querySelector('#contact')

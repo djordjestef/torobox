@@ -61,7 +61,7 @@ body {
 @media only screen and (max-width: 1660px) {
   .get_space {
     right: 34px;
-    top: 28px;
+    top: 31px;
   }
 }
 .get_space lottie-player {
@@ -1139,4 +1139,28 @@ body {
   bottom: 0;
   right: 0;
   cursor: pointer;
+}
+
+.en {
+  all: unset;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 23px;
+  padding: 8px;
+  display: none;
+}
+.en.active {
+  display: block;
+}
+
+.sr {
+  all: unset;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 23px;
+  padding: 8px;
+  display: none;
+}
+.sr.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
