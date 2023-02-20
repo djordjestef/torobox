@@ -2,6 +2,10 @@ window.onload = function () {
   $('.owl_one').owlCarousel({
     margin: 20,
     responsiveClass: true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    loop:true,
     responsive: {
       0: {
         items: 1,
@@ -15,6 +19,12 @@ window.onload = function () {
       },
     },
   });
+//   $('.play').on('click',function(){
+//     $('.owl_one').trigger('play.owl.autoplay',[1000])
+// })
+// $('.stop').on('click',function(){
+//   $('.owl_one').trigger('stop.owl.autoplay')
+// })
 
   $('.owl_two').owlCarousel({
     margin: 20,
