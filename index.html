@@ -60,7 +60,7 @@
                     <nav class="my_navbar">
                         <ul>
                             <li>
-                                <a class="storage_link">Storage</a>
+                                <a class="storage_link"></a>
                             </li>
                             <li>
                                 <a class="company_link">Company</a>
@@ -72,8 +72,8 @@
                                 <a class="contact_link">Contact</a>
                             </li>
                             <li>
-                                <button class="language en ">en</button>
-                                <button  class="language sr active">sr</button>
+                                <button id="sr" class="language en ">en</button>
+                                <button id="en"  class="language sr">sr</button>
                             </li>
                         </ul>
                     </nav>
@@ -244,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advantages">
+                    <div class="advantages" data-scroll data-scroll-speed="2">
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/adv_1.svg" alt="" >
@@ -261,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advantages">
+                    <div class="advantages" data-scroll data-scroll-speed="2">
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/adv_2.svg" alt="">
@@ -276,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advantages">
+                    <div class="advantages" data-scroll data-scroll-speed="2">
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/adv_3.svg" alt="">
@@ -291,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advantages">
+                    <div class="advantages" data-scroll data-scroll-speed="2">
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/adv_4.svg" alt="">
@@ -308,7 +308,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advantages">
+                    <div class="advantages" data-scroll data-scroll-speed="2">
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/adv_5.svg" alt="">
@@ -325,7 +325,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advantages">
+                    <div class="advantages" data-scroll data-scroll-speed="2">
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/adv_6.svg" alt="">
@@ -612,94 +612,13 @@
             </section>
         </div>
     </div>
-    <script src="main.js"></script>
-    <script src="languages.js"></script>
+    <script  src="main.js"></script>
+    <script  src="languages.js"></script>
    
 
 
     <script>
 
-        let el = document.querySelector('#contact')
-        let el2 = document.querySelector('#storage_type')
-        let headerEl = document.querySelector('#header')
-        let scroller;
-        window.addEventListener("load", function (event) {
-            scroller = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true,
-                getSpeed: true,
-                smartphone: {
-                    smooth: true
-                },
-                getDirection: true,
-                reloadOnContextChange: true
-            })
-
-            $('.storage_link').on('click', function () {
-                const slider = document.getElementById("storage_type")
-                scroller.scrollTo(slider)
-            });
-
-            $('.company_link').on('click', function () {
-                const slider = document.getElementById("company")
-                scroller.scrollTo(slider)
-            });
-
-            $('.contact_link').on('click', function () {
-                const slider = document.getElementById("contact")
-                scroller.scrollTo(slider)
-            });
-
-            $('.blog_link').on('click', function () {
-                const slider = document.getElementById("blog")
-                scroller.scrollTo(slider)
-            });
-            let hidden = false, static = true;
-
-            scroller.on('scroll', (obj) => {
-                var rect = el.getBoundingClientRect();
-                var rect2 = el2.getBoundingClientRect();
-                var headerHeight = headerEl.getBoundingClientRect().height;
-
-                if (obj.direction === 'down' && static) {
-                    if (obj.scroll.y > headerHeight) {
-                        $('.header').addClass('pinned');
-                        static = false;
-                    }
-                }
-                if (obj.direction === 'up' && !static) {
-                    if (obj.scroll.y <= headerHeight) {
-                        $('.header').removeClass('pinned');
-                        static = true;
-                    }
-                }
-                if (obj.direction === 'down' && !hidden) {
-                    if (obj.scroll.y > (headerHeight + 200)) {
-                        $('.header').removeClass('pinned');
-                        $('.header').addClass('unpinned');
-                        hidden = true;
-                    }
-                }
-                if (obj.direction === 'up' && hidden) {
-                    //console.log('show');
-                    $('.header').removeClass('unpinned');
-                    $('.header').addClass('pinned');
-                    hidden = false;
-                }
-
-                if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) {
-                    $('.logo_header').css('z-index', 0);
-                    $('.get_space').css('z-index', 0);
-                } else {
-                    $('.logo_header').css('z-index', 1)
-                    $('.get_space').css('z-index', 1);
-                }
-                if (rect.top < 69) {
-                    $('.logo_header').css('z-index', 0)
-                    $('.get_space').css('z-index', 0);
-                }
-            });
-        })
 
     </script>
 </body>

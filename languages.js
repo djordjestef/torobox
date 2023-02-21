@@ -1,47 +1,51 @@
 const jsonEN = {
   storage_sub: ' We offer what everyone seems to be missing — space.',
-  storage_tit:' Rent storage units for your personal possessions.',
-  storage_link:'Storage'
+  storage_tit: ' Rent storage units for your personal possessions.',
+  storage_link: 'Storage',
 };
 
 const jsonSR = {
   storage_sub: 'Nudimo ono što izgleda svima nedostaje - prostor',
-  storage_tit:'Iznajmite skladišne jedinice za svoje lične potrebe.',
-  storage_link:'Skaldište'
+  storage_tit: 'Iznajmite skladišne jedinice za svoje lične potrebe.',
+  storage_link: 'Skaldište',
 };
 
 $('.en').click(function () {
-    document.documentElement.setAttribute("lang", 'en');
-    $('.en').removeClass('active')
-    $('.sr').addClass('active')
-  for (let key in jsonEN) {
-    document.querySelector('.' + key).textContent = jsonEN[key];
+  document.cookie = 'en';
+  console.log('radi');
+
+  if (window.location.search === '?sr' || window.location.search === '') {
+    window.location.search = document.cookie;
   }
+
+  console.log('document.cookie', document.cookie);
 });
 
 $('.sr').click(function () {
-    document.documentElement.setAttribute("lang", 'sr');
-    $('.sr').removeClass('active')
-    $('.en').addClass('active')
-  for (let key in jsonSR) {
-    document.querySelector('.' + key).textContent = jsonSR[key];
+  document.cookie = 'sr';
+
+  console.log('document.cookie', document.cookie);
+  if (window.location.search === '?en' || window.location.search === '') {
+    window.location.search = document.cookie;
   }
 });
 
-// window.onload = function () {
-//     for (let key in jsonSR) {
-//         document.querySelector('.' + key).textContent = jsonSR[key];
-//       }
-// }
+$(document).ready(function () {
+  if (document.cookie === '') {
+    document.cookie = 'en';
+    if (window.location.search === '') window.location.search = document.cookie;
+  } else {
+    document.getElementById(document.cookie)?.classList.add('active');
 
-
-
-
-// fetch('https://reqbin.com/echo/get/json', {
-//     method: 'GET',
-//     headers: {
-//         'Accept': 'application/json',
-//     },
-// })
-//    .then(response => response.json())
-//    .then(response => console.log(JSON.stringify(response)))
+    console.log('document.cookie', document.cookie);
+    if (document.cookie === 'sr') {
+      for (let key in jsonSR) {
+        document.querySelector('.' + key).textContent = jsonSR[key];
+      }
+    } else {
+      for (let key in jsonEN) {
+        document.querySelector('.' + key).textContent = jsonEN[key];
+      }
+    }
+  }
+});
