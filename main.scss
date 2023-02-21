@@ -94,6 +94,7 @@ body {
             padding: 0;
             li {
                 display: inline-block;
+                
             }
             a {
                 all: unset;
@@ -102,6 +103,7 @@ body {
                 font-weight: 300;
                 margin: 0 23px;
                 padding: 8px;
+                width: 100px;
                 cursor: pointer;
 
                 @media only screen and (max-width: 1660px) {
@@ -1172,6 +1174,7 @@ body {
     margin: 0 23px;
     padding: 8px;
     display: none;
+    // width: 100px;
 
     &.active {
         display: block;
@@ -1185,6 +1188,7 @@ body {
     margin: 0 23px;
     padding: 8px;
     display: none;
+    // width: 100px;
 
     &.active {
         display: block;

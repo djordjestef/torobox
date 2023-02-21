@@ -1,5 +1,5 @@
 <!DOCTYPE html lang="en">
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -28,7 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    
     <title>Torobox</title>
 </head>
 
@@ -60,13 +60,13 @@
                     <nav class="my_navbar">
                         <ul>
                             <li>
-                                <a class=" storage_link">Storage</a>
+                                <a class="storage_link">Storage</a>
                             </li>
                             <li>
-                                <a class=" company_link">Company</a>
+                                <a class="company_link">Company</a>
                             </li>
                             <li>
-                                <a class=" blog_link">Blog</a>
+                                <a class="blog_link">Blog</a>
                             </li>
                             <li>
                                 <a class="contact_link">Contact</a>
@@ -221,12 +221,14 @@
 
                 </div>
             </section>
+        </div>
+        <div data-scroll-section> 
             <section class="company" data-scroll>
                 <div class="container">
                     <div class="store">
                         <div class="row">
                             <div class="col-4">
-                                <div class="store_title">We pack, move & store for you.</div>
+                                <div class="store_title" >We pack, move & store for you.</div>
                             </div>
                             <div class="col-8">
                                 <div class="store_description">Torobox provides a wide range of storage solutions to
@@ -245,7 +247,7 @@
                     <div class="advantages">
                         <div class="row">
                             <div class="col-4">
-                                <img src="assets/adv_1.svg" alt="">
+                                <img src="assets/adv_1.svg" alt="" >
                             </div>
                             <div class="col-4">
                                 <div class="title">
@@ -376,6 +378,8 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div data-scroll-section> 
             <section class="testimonials" data-scroll>
                 <div class="container">
                     <div class="row">
@@ -451,6 +455,8 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div data-scroll-section> 
             <section class="blog" id="blog" data-scroll>
                 <div class="container">
                     <div class="row">
@@ -606,9 +612,11 @@
             </section>
         </div>
     </div>
-
     <script src="main.js"></script>
     <script src="languages.js"></script>
+   
+
+
     <script>
 
         let el = document.querySelector('#contact')
