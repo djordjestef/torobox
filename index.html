@@ -28,7 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    
+
     <title>Torobox</title>
 </head>
 
@@ -73,19 +73,19 @@
                             </li>
                             <li>
                                 <button id="sr" class="language en ">en</button>
-                                <button id="en"  class="language sr">sr</button>
+                                <button id="en" class="language sr">sr</button>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-        <div data-scroll-section>           
-            <section class="storage" id="storage" data-scroll>
+        <div data-scroll-section>
+            <section class="storage" id="storage" data-scroll data-scroll-speed="1">
                 <div class="container">
                     <div class="row holder_show">
                         <div class="col-12 ">
-                            <div class="holder" data-scroll data-scroll-speed="2">
+                            <div class="holder" >
                                 <div class="subtitle storage_sub">
                                     We offer what everyone seems to be missing — space.
                                 </div>
@@ -116,11 +116,12 @@
                     </div>
                 </div>
 
-                <div class="storage_type" id="storage_type" data-scroll data-scroll-speed="-1">
+                <div class="storage_type" id="storage_type" data-scroll data-scroll-speed="1">
 
                     <div class="row" style="width:100%">
-                        <div class="col-xl-6 col-lg-7">
+                        <div class="col-xl-6 col-lg-7" style="padding-top: 5%;">
                             <div class="storage_type_img_holder">
+                                <div class="storage_small">Storage</div>
                                 <img src="assets/cube_large.svg" alt="" class="cube_large" id="1">
                                 <img src="assets/cube_small.svg" alt="" class="cube_small">
                                 <img src="assets/cube_mini.svg" alt="" class="cube_mini">
@@ -222,13 +223,13 @@
                 </div>
             </section>
         </div>
-        <div data-scroll-section> 
-            <section class="company" data-scroll>
+        <div data-scroll-section>
+            <section class="company">
                 <div class="container">
                     <div class="store">
                         <div class="row">
                             <div class="col-4">
-                                <div class="store_title" >We pack, move & store for you.</div>
+                                <div class="store_title">We pack, move & store for you.</div>
                             </div>
                             <div class="col-8">
                                 <div class="store_description">Torobox provides a wide range of storage solutions to
@@ -244,104 +245,108 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advantages" data-scroll data-scroll-speed="2">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="assets/adv_1.svg" alt="" >
-                            </div>
-                            <div class="col-4">
-                                <div class="title">
-                                    Easy access
+                    <span data-scroll="" style="width:400px">
+                        <div class="advantages" >
+                            <div class="row">
+                                <div class="col-4" >
+                                    <img src="assets/adv_1.svg" alt="">
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="description">Our site presents wide driveways, easy access and parking
-                                    space.
+                                <div class="col-4" >
+                                    <div class="title">
+                                        Easy access
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="advantages" data-scroll data-scroll-speed="2">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="assets/adv_2.svg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <div class="title">
-                                    Secure facility
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="description">Secured entry monitored by CCTV cameras and patrols 24/7.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="advantages" data-scroll data-scroll-speed="2">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="assets/adv_3.svg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <div class="title">
-                                    Air conditioning
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="description">Optional air-conditioning for selected units.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="advantages" data-scroll data-scroll-speed="2">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="assets/adv_4.svg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <div class="title">
-                                    Moving & packing
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="description">We can do everything for you, packing, moving and storing your
-                                    items.
+                                <div class="col-4" >
+                                    <div class="description" >Our site presents wide driveways, easy access and parking
+                                        space.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="advantages" data-scroll data-scroll-speed="2">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="assets/adv_5.svg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <div class="title">
-                                    Portable container
+                        <div class="advantages" >
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/adv_2.svg" alt="">
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="description">Container at your location so you can pack stuff ready for
-                                    transport.
+                                <div class="col-4">
+                                    <div class="title">
+                                        Secure facility
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="advantages" data-scroll data-scroll-speed="2">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="assets/adv_6.svg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <div class="title">
-                                    Online payment
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="description">24/7 Online payment options with or without recurring
-                                    subscription.
+                                <div class="col-4">
+                                    <div class="description">Secured entry monitored by CCTV cameras and patrols 24/7.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="advantages" >
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/adv_3.svg" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <div class="title">
+                                        Air conditioning
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="description">Optional air-conditioning for selected units.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages" >
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/adv_4.svg" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <div class="title">
+                                        Moving & packing
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="description">We can do everything for you, packing, moving and storing
+                                        your
+                                        items.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages" >
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/adv_5.svg" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <div class="title">
+                                        Portable container
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="description">Container at your location so you can pack stuff ready for
+                                        transport.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages" >
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/adv_6.svg" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <div class="title">
+                                        Online payment
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="description">24/7 Online payment options with or without recurring
+                                        subscription.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
                     <div class="company_offers" id="company">
                         <div class="container-fluid">
                             <div class="row">
@@ -356,7 +361,9 @@
                                 </div>
                                 <div class="col-xl-7 col-lg-6 position_helper">
                                     <div class="holder">
+                                        
                                         <div class="title">
+                                            <div class="company_small">Company</div>
                                             Torobox offers what everyone seems to be missing — space.
                                         </div>
                                         <div class="description">
@@ -379,7 +386,8 @@
                 </div>
             </section>
         </div>
-        <div data-scroll-section> 
+        
+        <div data-scroll-section>
             <section class="testimonials" data-scroll>
                 <div class="container">
                     <div class="row">
@@ -456,12 +464,13 @@
                 </div>
             </section>
         </div>
-        <div data-scroll-section> 
+        <div data-scroll-section>
             <section class="blog" id="blog" data-scroll>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="blog_title">Latest news</div>
+                            <a href="#" class="blog_small">Read our blog</a>
                         </div>
                     </div>
                     <div class="row">
@@ -612,9 +621,9 @@
             </section>
         </div>
     </div>
-    <script  src="main.js"></script>
-    <script  src="languages.js"></script>
-   
+    <script src="main.js"></script>
+    <script src="languages.js"></script>
+
 
 
     <script>

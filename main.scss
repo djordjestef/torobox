@@ -94,7 +94,6 @@ body {
             padding: 0;
             li {
                 display: inline-block;
-                
             }
             a {
                 all: unset;
@@ -169,7 +168,7 @@ body {
 }
 
 .storage {
-    margin-bottom: 148px;
+    // margin-bottom: 148px; 
 
     .holder {
         width: 84%;
@@ -304,6 +303,27 @@ body {
 
             @media only screen and (max-width: 1200px) {
                 width: 90%;
+            }
+
+            .storage_small {
+                font-size: 18px;
+                position: absolute;
+                top: -100px;
+                left: 0;
+                color: #fff;
+
+                @media only screen and (max-width: 1920px) {
+                    top: -60px;
+                }
+
+                @media only screen and (max-width: 1660px) {
+                    font-size: 16px;
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    font-size: 14px;
+                    top: -40px;
+                }
             }
 
             .cube_large {
@@ -629,6 +649,20 @@ body {
                     font-size: 30px;
                     line-height: 40px;
                 }
+
+                .company_small {
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: "Roboto", sans-serif;
+
+                    @media only screen and (max-width: 1660px) {
+                        font-size: 16px;
+                    }
+
+                    @media only screen and (max-width: 1200px) {
+                        font-size: 14px;
+                    }
+                }
             }
 
             .description {
@@ -754,6 +788,7 @@ body {
         margin-bottom: 100px;
         font-family: "Poppins", sans-serif;
         font-size: 40px;
+        display: inline-block;
 
         @media only screen and (max-width: 1660px) {
             font-size: 36px;
@@ -762,6 +797,20 @@ body {
         @media only screen and (max-width: 1200px) {
             font-size: 32px;
             margin-bottom: 60px;
+        }
+    }
+
+    &_small {
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+        display: inline-block;
+        float: right;
+        margin-top: 12px;
+        font-weight: 400;
+
+        &:hover {
+            color: #000;
         }
     }
 
@@ -875,6 +924,12 @@ body {
             color: #000;
             float: right;
             font-weight: 300;
+            transition: all 0.2s;
+
+            &:hover {
+                background: #d22730 0% 0% no-repeat padding-box;
+                color: #fff;
+            }
 
             @media only screen and (max-width: 1660px) {
                 font-size: 16px;
@@ -1146,6 +1201,12 @@ body {
             padding: 10px 18px;
             color: #000;
             float: right;
+            transition: all 0.2s;
+
+            &:hover {
+                background: #d22730 0% 0% no-repeat padding-box;
+                color: #fff;
+            }
 
             // @media only screen and (max-width: 1660px) {
             //     font-size: 16px;
