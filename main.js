@@ -330,9 +330,8 @@ function getFormData() {
   return obj;
 }
 
-
 //locomotive scroll
-
+let checkbox = document.getElementById('checkbox');
 let el = document.querySelector('#contact');
 let el2 = document.querySelector('#storage_type');
 let headerEl = document.querySelector('#header');
@@ -352,21 +351,25 @@ window.addEventListener('load', function (event) {
   $('.storage_link').on('click', function () {
     const slider = document.getElementById('storage_type');
     scroller.scrollTo(slider);
+    checkbox.checked = false;
   });
 
   $('.company_link').on('click', function () {
     const slider = document.getElementById('company');
     scroller.scrollTo(slider);
+    checkbox.checked = false;
   });
 
   $('.contact_link').on('click', function () {
     const slider = document.getElementById('contact');
     scroller.scrollTo(slider);
+    checkbox.checked = false;
   });
 
   $('.blog_link').on('click', function () {
     const slider = document.getElementById('blog');
     scroller.scrollTo(slider);
+    checkbox.checked = false;
   });
   let hidden = false,
     static = true;
@@ -414,4 +417,19 @@ window.addEventListener('load', function (event) {
       $('.get_space').css('z-index', 0);
     }
   });
+});
+
+// checkbox.addEventListener( "change", () => {
+//   if ( checkbox.checked ) {
+//     $('body').css('overflow','hidden')
+//   } else {
+//     $('body').css('overflow','scroll')
+//   }
+// });
+$('.login').on('click', function () {
+  checkbox.checked = false;
+});
+
+$('.register').on('click', function () {
+  checkbox.checked = false;
 });

@@ -1,13 +1,15 @@
 const jsonEN = {
   storage_sub: ' We offer what everyone seems to be missing — space.',
   storage_tit: ' Rent storage units for your personal possessions.',
-  storage_link: 'Storage',
+  storage_en: 'Storage',
+  storage_en_burger: 'Storage',
 };
 
 const jsonSR = {
   storage_sub: 'Nudimo ono što izgleda svima nedostaje - prostor',
   storage_tit: 'Iznajmite skladišne jedinice za svoje lične potrebe.',
-  storage_link: 'Skaldište',
+  storage_en: 'Skaldište',
+  storage_en_burger: 'Skaldište',
 };
 
 $('.en').click(function () {
@@ -18,13 +20,11 @@ $('.en').click(function () {
     window.location.search = document.cookie;
   }
 
-  console.log('document.cookie', document.cookie);
 });
 
 $('.sr').click(function () {
   document.cookie = 'sr';
 
-  console.log('document.cookie', document.cookie);
   if (window.location.search === '?en' || window.location.search === '') {
     window.location.search = document.cookie;
   }
