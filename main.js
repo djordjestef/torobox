@@ -341,9 +341,7 @@ window.addEventListener('load', function (event) {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     getSpeed: true,
-    smartphone: {
-      smooth: true,
-    },
+    smoothMobile: true,
     getDirection: true,
     reloadOnContextChange: true,
   });

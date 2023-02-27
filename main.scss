@@ -26,6 +26,14 @@ body {
     }
 }
 
+.only_desktop {
+    display: block;
+
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
 .helper {
     height: 50px;
     background: #4436360d;
@@ -60,7 +68,7 @@ body {
     }
     @media only screen and (max-width: 992px) {
         display: none;
-     }
+    }
     lottie-player {
         width: 113px;
         height: 50px;
@@ -83,7 +91,7 @@ body {
     transform: translate3d(0, 0, 0);
 
     @media only screen and (max-width: 992px) {
-       display: none;
+        display: none;
     }
 
     &.unpinned {
@@ -190,6 +198,10 @@ body {
             width: 78%;
         }
 
+        @media only screen and (max-width: 992px) {
+            width: 84%;
+        }
+
         .subtitle {
             font-size: 18px;
 
@@ -199,6 +211,10 @@ body {
 
             @media only screen and (max-width: 1200px) {
                 font-size: 14px;
+            }
+
+            @media only screen and (max-width: 992px) {
+                font-size: 12px;
             }
         }
 
@@ -219,9 +235,9 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
-                font-size: 40px;
-                line-height: 55px;
-                margin-bottom: 150px;
+                font-size: 30px;
+                line-height: 36px;
+                margin-bottom: 80px;
             }
         }
 
@@ -267,8 +283,8 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
-                font-size: 30px;
-                line-height: 45px;
+                font-size: 26px;
+                line-height: 32px;
             }
         }
 
@@ -1247,12 +1263,11 @@ body {
     }
 }
 
-
 //burger menu
 
 .menu-items {
     text-align: center;
-    position: absolute;
+    position: fixed;
     padding: 5rem;
     // margin-top: -6rem;
     margin-left: -1rem;
@@ -1265,26 +1280,27 @@ body {
     font-size: 2rem;
     border: 4px solid black;
     background-color: black;
-    border-radius: 0.25em;
-    transform: translateX(-10%);
-    transition: transform 100ms ease-in-out, opacity 200ms;
-    display: none;
+    // border-radius: 0.25em;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out, opacity 200ms;
+
+    // display: none;
     z-index: 9;
     height: 100vh;
 }
 
-.menu-items li{
+.menu-items li {
     color: white;
     padding: 0.5rem;
 }
 
-.menu-items li a{
+.menu-items li a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
-.menu-items li a:hover{
+.menu-items li a:hover {
     color: rgb(174, 174, 174);
 }
 
@@ -1302,18 +1318,16 @@ body {
     cursor: pointer;
 }
 
-.check:checked~.menu-items {
-    display: block;
+.check:checked ~ .menu-items {
     transform: translateX(0%);
     opacity: 1;
-    position: fixed;
 }
 
-.check:checked~.ham-menu .line {
+.check:checked ~ .ham-menu .line {
     background-color: white;
 }
 
-.check:checked~.ham-menu  {
+.check:checked ~ .ham-menu {
     background-color: black;
 }
 
@@ -1333,7 +1347,7 @@ body {
     display: none;
     @media only screen and (max-width: 992px) {
         display: flex;
-     }
+    }
 }
 
 .ham-menu .line {
@@ -1353,16 +1367,16 @@ body {
     transition: transform 100ms ease-in-out;
 }
 
-.check:checked~.ham-menu .line1 {
+.check:checked ~ .ham-menu .line1 {
     display: block;
     transform: rotate(45deg);
 }
 
-.check:checked~.ham-menu .line2 {
+.check:checked ~ .ham-menu .line2 {
     opacity: 0;
 }
 
-.check:checked~.ham-menu .line3 {
+.check:checked ~ .ham-menu .line3 {
     display: block;
     transform: rotate(-45deg);
 }
