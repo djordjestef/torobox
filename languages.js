@@ -36,7 +36,7 @@ $('.en').click(function () {
   document.cookie = 'en';
   console.log('radi');
 
-  if (window.location.search === '?sr' || window.location.search === '') {
+  if (window.location.search.includes('?sr') || window.location.search === '') {
     window.location.search = document.cookie;
   }
 
@@ -45,7 +45,7 @@ $('.en').click(function () {
 $('.sr').click(function () {
   document.cookie = 'sr';
 
-  if (window.location.search === '?en' || window.location.search === '') {
+  if (window.location.search.includes('?en') || window.location.search === '') {
     window.location.search = document.cookie;
   }
 });
