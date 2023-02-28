@@ -1283,10 +1283,8 @@ body {
 //burger menu
 
 .menu-items {
-    text-align: center;
     position: fixed;
-    padding: 5rem;
-    // margin-top: -6rem;
+    padding: 3.5rem 5rem;
     margin-left: -1rem;
     top: 0;
     left: 0;
@@ -1294,27 +1292,26 @@ body {
     bottom: 0;
     list-style: none;
     opacity: 0;
-    font-size: 2rem;
+    font-size: 14px;
     border: 4px solid black;
     background-color: black;
-    // border-radius: 0.25em;
     transform: translateX(100%);
     transition: transform 500ms ease-in-out, opacity 200ms;
-
-    // display: none;
     z-index: 9;
     height: 100vh;
 }
 
 .menu-items li {
     color: white;
-    padding: 0.5rem;
+    padding: 20px 0;
 }
 
 .menu-items li a {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    width: 100%;
+    display: inline-block;
 }
 
 .menu-items li a:hover {
@@ -1346,10 +1343,11 @@ body {
 
 .check:checked ~ .ham-menu {
     background-color: black;
+   
 }
 
 .ham-menu {
-    height: 3rem;
+    height: 2.5rem;
     width: 3rem;
     position: fixed;
     right: 34px;
@@ -1370,8 +1368,8 @@ body {
 .ham-menu .line {
     background-color: black;
     border-radius: 1em;
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.5rem;
+    height: 2px;
 }
 
 .ham-menu .line1 {
