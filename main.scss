@@ -60,7 +60,7 @@ body {
 .get_space {
     position: fixed;
     right: 84px;
-    top: 20px;
+    top: 28px;
     z-index: 1;
     @media only screen and (max-width: 1660px) {
         right: 34px;
@@ -99,7 +99,7 @@ body {
     }
 
     .my_navbar {
-        padding-top: 40px;
+        padding-top: 34px;
         width: 70%;
         margin: auto;
         text-align: center;
@@ -109,6 +109,19 @@ body {
             padding: 0;
             li {
                 display: inline-block;
+
+                &:last-child {
+                    margin: 0 23px;
+                    padding: 0 8px;
+
+                    @media only screen and (max-width: 1200px) {
+                        margin: 0 12px;
+                    }
+
+                    @media only screen and (max-width: 992px) {
+                        margin: 0 10px;
+                    }
+                }
             }
             a {
                 all: unset;
@@ -122,6 +135,10 @@ body {
 
                 @media only screen and (max-width: 1660px) {
                     font-size: 14px;
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    margin: 0 12px;
                 }
 
                 @media only screen and (max-width: 992px) {
@@ -167,11 +184,11 @@ body {
         right: 220px;
         top: 0;
         font-size: 16px;
-        top: 35px;
+        top: 41px;
         font-weight: 300;
         @media only screen and (max-width: 1660px) {
             font-size: 14px;
-            top: 41px;
+            // top: 41px;
             right: 140px;
         }
 
