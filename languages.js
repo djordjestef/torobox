@@ -53,7 +53,7 @@ $('.sr').click(function () {
 $(document).ready(function () {
   if (localStorage.getItem('lang') === null) {
     localStorage.setItem('lang', 'en');
-    if (window.location.search === '' || !window.location.search.includes('en'))
+    if (window.location.search === '' || !window.location.search.includes('en') || window.location.search !== '')
       window.location.search = localStorage.getItem('lang');
   } else {
     document.getElementById(localStorage.getItem('lang'))?.classList.add('active');

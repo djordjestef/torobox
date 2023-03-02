@@ -48,7 +48,19 @@ window.onload = function () {
   $('.owl-next').html('<img src="assets/right_arrow.png" alt="" class="right_arrow">');
 };
 
+
+
+$("#item_large").dblclick(function() { 
+  setTimeout(() => {
+    $('.accordion-collapse').removeClass('show');
+  }, 1000);
+  
+ 
+});
+
 $('#item_large').click(function () {
+
+
   $('#item_large').toggleClass('active');
   $('#item_medium').removeClass('active');
   $('#item_small').removeClass('active');
@@ -227,6 +239,8 @@ $('#item_mini').click(function () {
     );
   }
 });
+
+
 
 $('#item_large').hover(
   function () {
