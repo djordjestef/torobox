@@ -35,28 +35,33 @@ const jsonSR = {
 $('.en').click(function () {
   //   document.cookie = 'en';
   localStorage.setItem('lang', 'en');
+  location.reload();
 
-  if (window.location.search.includes('?sr') || window.location.search === '') {
-    window.location.search = localStorage.getItem('lang');
-  }
+  //   if (window.location.search.includes('?sr') || window.location.search === '') {
+
+  //   }
+  //   window.location.search = localStorage.getItem('lang');
 });
 
 $('.sr').click(function () {
   //   document.cookie = 'sr';
   localStorage.setItem('lang', 'sr');
+  location.reload();
 
-  if (window.location.search.includes('?en') || window.location.search === '') {
-    window.location.search = localStorage.getItem('lang');
-  }
+  //   if (window.location.search.includes('?en') || window.location.search === '') {
+
+  //   }
+  //   window.location.search = localStorage.getItem('lang');
 });
 
 $(document).ready(function () {
   if (localStorage.getItem('lang') === null) {
     localStorage.setItem('lang', 'en');
-    if (window.location.search === '' || !window.location.search.includes('en') || window.location.search !== '')
-      window.location.search = localStorage.getItem('lang');
+    location.reload();
+    // if (window.location.search === '' || !window.location.search.includes('en') || window.location.search !== '')
+    //   window.location.search = localStorage.getItem('lang');
   } else {
-    document.getElementById(localStorage.getItem('lang'))?.classList.add('active');
+    // document.getElementById(localStorage.getItem('lang'))?.classList.add('active');
 
     if (localStorage.getItem('lang') === 'sr') {
       for (let key in jsonSR) {
