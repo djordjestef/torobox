@@ -19,12 +19,6 @@ window.onload = function () {
       },
     },
   });
-  //   $('.play').on('click',function(){
-  //     $('.owl_one').trigger('play.owl.autoplay',[1000])
-  // })
-  // $('.stop').on('click',function(){
-  //   $('.owl_one').trigger('stop.owl.autoplay')
-  // })
 
   $('.owl_two').owlCarousel({
     margin: 20,
@@ -484,13 +478,6 @@ window.addEventListener('load', function (event) {
   });
 });
 
-// checkbox.addEventListener( "change", () => {
-//   if ( checkbox.checked ) {
-//     $('body').css('overflow','hidden')
-//   } else {
-//     $('body').css('overflow','scroll')
-//   }
-// });
 $('.login').on('click', function () {
   checkbox.checked = false;
 });
