@@ -388,7 +388,8 @@ function getFormData() {
   var obj = {};
   for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
 
-  return obj;
+  return false
+  // return obj;
 }
 
 //locomotive scroll
@@ -485,3 +486,16 @@ $('.login').on('click', function () {
 $('.register').on('click', function () {
   checkbox.checked = false;
 });
+
+
+// function fetchHtml() {
+//   fetch('https://api.agify.io/?name=bella')
+//   .then((response) => {
+//     return response.text();
+//   })
+//   .then((html) => {
+//     document.body.innerHTML = html     
+//   });
+// }
+
+// // fetchHtml()
