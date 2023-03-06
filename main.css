@@ -1262,7 +1262,7 @@ body {
   all: unset;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: calc(var(--bs-gutter-x) * 0.5);
   cursor: pointer;
 }
 

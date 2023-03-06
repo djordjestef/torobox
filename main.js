@@ -47,9 +47,11 @@ $('#item_large').dblclick(function () {
     if ($('.accordion-collapse').hasClass('show')) {
       $('.accordion-collapse').removeClass('show');
       $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
+      $('#item_large').find('.accordion-button').addClass('collapsed');
     } else {
       $('#flush-collapseOne').addClass('show');
       $('.arr_large').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
+      $('#item_large').find('.accordion-button').removeClass('collapsed');
     }
   }, 300);
 });
@@ -59,9 +61,11 @@ $('#item_medium').dblclick(function () {
     if ($('.accordion-collapse').hasClass('show')) {
       $('.accordion-collapse').removeClass('show');
       $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
+      $('#item_medium').find('.accordion-button').addClass('collapsed');
     } else {
       $('#flush-collapseTwo').addClass('show');
       $('.arr_medium').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
+      $('#item_medium').find('.accordion-button').removeClass('collapsed');
     }
   }, 300);
 });
@@ -71,9 +75,11 @@ $('#item_small').dblclick(function () {
     if ($('.accordion-collapse').hasClass('show')) {
       $('.accordion-collapse').removeClass('show');
       $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
+      $('#item_small').find('.accordion-button').addClass('collapsed');
     } else {
       $('#flush-collapseThree').addClass('show');
       $('.arr_small').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
+      $('#item_small').find('.accordion-button').removeClass('collapsed');
     }
   }, 300);
 });
@@ -83,9 +89,11 @@ $('#item_mini').dblclick(function () {
     if ($('.accordion-collapse').hasClass('show')) {
       $('.accordion-collapse').removeClass('show');
       $('.arr_mini').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
+      $('#item_mini').find('.accordion-button').addClass('collapsed');
     } else {
       $('#flush-collapseFour').addClass('show');
       $('.arr_mini').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
+      $('#item_mini').find('.accordion-button').removeClass('collapsed');
     }
   }, 300);
 });
@@ -388,7 +396,7 @@ function getFormData() {
   var obj = {};
   for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
 
-  return false
+  return false;
   // return obj;
 }
 
@@ -410,7 +418,7 @@ window.addEventListener('load', function (event) {
 
   $('.storage_link').on('click', function () {
     const slider = document.getElementById('storage_type');
-    scroller.scrollTo(slider);
+    scroller.scrollTo(slider, -200);
     checkbox.checked = false;
   });
 
@@ -486,16 +494,3 @@ $('.login').on('click', function () {
 $('.register').on('click', function () {
   checkbox.checked = false;
 });
-
-
-// function fetchHtml() {
-//   fetch('https://api.agify.io/?name=bella')
-//   .then((response) => {
-//     return response.text();
-//   })
-//   .then((html) => {
-//     document.body.innerHTML = html     
-//   });
-// }
-
-// // fetchHtml()
