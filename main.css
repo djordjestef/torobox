@@ -443,6 +443,13 @@ body {
     margin: 25px 0;
   }
 }
+.storage .storage_type_accordion .accordion-item .acc_description_helper {
+  width: 280px;
+}
+.storage .storage_type_accordion .accordion-item .acc_description_helper_small,
+.storage .storage_type_accordion .accordion-item .acc_description_helper_mini {
+  width: 300px;
+}
 .storage .storage_type_accordion .accordion-item .rent_btn {
   all: unset;
   cursor: pointer;

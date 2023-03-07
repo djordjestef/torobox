@@ -405,7 +405,6 @@ body {
 
             @media only screen and (max-width: 992px) {
             }
-            
 
             .accordion-item {
                 background-color: unset;
@@ -428,6 +427,15 @@ body {
                         font-size: 14px;
                         margin: 25px 0;
                     }
+                }
+
+                .acc_description_helper {
+                    width: 280px;
+                }
+
+                .acc_description_helper_small,
+                .acc_description_helper_mini {
+                    width: 300px;
                 }
 
                 .rent_btn {

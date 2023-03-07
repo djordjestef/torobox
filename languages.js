@@ -87,7 +87,6 @@ const jsonEN = {
   form_comment: 'Comment',
   form_optional: '(Optional)',
   privacy_text: 'By clicking the Submit button you agree to our Privacy Policy terms.',
-  form_btn_lang: 'Submit',
 };
 
 const jsonSR = {
@@ -179,7 +178,6 @@ const jsonSR = {
   form_comment: 'Comment',
   form_optional: '(Optional)',
   privacy_text: 'By clicking the Submit button you agree to our Privacy Policy terms.',
-  form_btn_lang: 'Submit',
 };
 
 $('.en').click(function () {
@@ -200,10 +198,12 @@ $(document).ready(function () {
     if (localStorage.getItem('lang') === 'sr') {
       for (let key in jsonSR) {
         document.querySelector('.' + key).textContent = jsonSR[key];
+        $('.form_btn_lang').attr('value', 'Potvrdi');
       }
     } else {
       for (let key in jsonEN) {
         document.querySelector('.' + key).textContent = jsonEN[key];
+        $('.form_btn_lang').attr('value', 'Submit');
       }
     }
   }
