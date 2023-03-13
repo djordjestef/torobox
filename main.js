@@ -475,22 +475,22 @@ window.addEventListener('load', function (event) {
       }
     }
     if (obj.direction === 'up' && hidden) {
-      //console.log('show');
       $('.header').removeClass('unpinned');
       $('.header').addClass('pinned');
       hidden = false;
     }
 
-    if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) {
+    if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875 && obj.direction === 'down') {
+      $('.logo_header').css('z-index', 0);
+      $('.get_space').css('z-index', 0);
+    } else if (rect.top < 69 && obj.direction === 'down') {
       $('.logo_header').css('z-index', 0);
       $('.get_space').css('z-index', 0);
     } else {
-      $('.logo_header').css('z-index', 1);
-      $('.get_space').css('z-index', 1);
-    }
-    if (rect.top < 69) {
-      $('.logo_header').css('z-index', 0);
-      $('.get_space').css('z-index', 0);
+      setTimeout(() => {
+        $('.logo_header').css('z-index', 1);
+        $('.get_space').css('z-index', 1);
+      }, 500);
     }
   });
 });
