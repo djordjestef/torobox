@@ -57,7 +57,9 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .logo_header {
-    width: 40px;
+    width: 28px;
+    left: 16px;
+    top: 24px;
   }
 }
 
@@ -226,6 +228,8 @@ body {
 @media only screen and (max-width: 992px) {
   .storage .holder {
     width: 84%;
+    margin-bottom: 75px;
+    margin-top: 170px;
   }
 }
 .storage .holder .subtitle {
@@ -266,8 +270,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .holder .title {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 32px;
     margin-bottom: 80px;
   }
 }
@@ -281,7 +285,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .holder .img_holder {
-    margin-bottom: 155px;
+    margin-bottom: 75px;
   }
 }
 .storage .holder .img_holder video {
@@ -318,7 +322,8 @@ body {
 @media only screen and (max-width: 992px) {
   .storage .holder .desc_title {
     font-size: 26px;
-    line-height: 32px;
+    line-height: 28px;
+    width: 100%;
   }
 }
 .storage .holder .description {
@@ -336,11 +341,27 @@ body {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .storage .holder .description {
+    font-size: 12px;
+    width: 95%;
+  }
+}
 .storage .storage_type {
   background: #fff;
   padding: 10% 0;
   background: #191b1d;
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .storage .storage_type {
+    padding-bottom: 17%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .storage .storage_type_row_helper {
+    margin: auto;
+  }
 }
 .storage .storage_type_img_holder {
   width: 57%;
@@ -420,8 +441,21 @@ body {
     width: 90%;
   }
 }
+@media only screen and (max-width: 992px) {
+  .storage .storage_type_accordion {
+    margin: auto;
+  }
+}
 .storage .storage_type_accordion .accordion-item {
   background-color: unset;
+}
+@media only screen and (max-width: 992px) {
+  .storage .storage_type_accordion .accordion-item .arr_large,
+  .storage .storage_type_accordion .accordion-item .arr_medium,
+  .storage .storage_type_accordion .accordion-item .arr_small,
+  .storage .storage_type_accordion .accordion-item .arr_mini {
+    width: 20px;
+  }
 }
 .storage .storage_type_accordion .accordion-item .accordion-collapse {
   text-align: center;
@@ -443,6 +477,12 @@ body {
     margin: 25px 0;
   }
 }
+@media only screen and (max-width: 992px) {
+  .storage .storage_type_accordion .accordion-item .acc_description {
+    font-size: 12px;
+    margin: 14px 0;
+  }
+}
 .storage .storage_type_accordion .accordion-item .acc_description_helper {
   width: 280px;
 }
@@ -462,6 +502,13 @@ body {
   display: inline-block;
   font-weight: bolder;
 }
+@media only screen and (max-width: 992px) {
+  .storage .storage_type_accordion .accordion-item .rent_btn {
+    font-size: 14px;
+    padding: 8px 18px;
+    margin: 22px auto;
+  }
+}
 .storage .storage_type_accordion .accordion-item .accordion-button {
   border-bottom: 1px solid #fff;
   padding: 28px 0;
@@ -478,6 +525,12 @@ body {
   .storage .storage_type_accordion .accordion-item .accordion-button {
     padding: 17px 0;
     font-size: 26px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .storage .storage_type_accordion .accordion-item .accordion-button {
+    padding: 12px 0;
+    font-size: 20px;
   }
 }
 .storage .storage_type_accordion .accordion-item .accordion-button img {
@@ -503,6 +556,12 @@ body {
 @media only screen and (max-width: 1200px) {
   .storage .storage_type_accordion .accordion-item .accordion-button.collapsed {
     padding: 17px 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .storage .storage_type_accordion .accordion-item .accordion-button.collapsed {
+    padding: 12px 0;
+    font-size: 20px;
   }
 }
 .storage .storage_type_accordion .accordion-item .accordion-button.collapsed img {
@@ -846,7 +905,7 @@ body {
 }
 
 .blog {
-  background-color: hsl(0deg, 0%, 96%);
+  background-color: hsl(0, 0%, 96%);
   padding: 200px 0 150px;
 }
 @media only screen and (max-width: 1200px) {
@@ -1332,6 +1391,13 @@ body {
   opacity: 0;
   z-index: 999;
 }
+@media only screen and (max-width: 992px) {
+  .check {
+    top: 24px;
+    right: 8px;
+    height: 2rem;
+  }
+}
 
 .check:hover {
   cursor: pointer;
@@ -1367,6 +1433,8 @@ body {
 @media only screen and (max-width: 992px) {
   .ham-menu {
     display: flex;
+    top: 16px;
+    right: 8px;
   }
 }
 

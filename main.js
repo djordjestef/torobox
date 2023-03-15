@@ -454,6 +454,7 @@ window.addEventListener('load', function (event) {
     var rect = el.getBoundingClientRect();
     var rect2 = el2.getBoundingClientRect();
     var headerHeight = headerEl.getBoundingClientRect().height;
+    var viewport_width = window.innerWidth;
 
     if (obj.direction === 'down' && static) {
       if (obj.scroll.y > headerHeight) {
@@ -487,10 +488,12 @@ window.addEventListener('load', function (event) {
       $('.logo_header').css('z-index', 0);
       $('.get_space').css('z-index', 0);
     } else {
-      setTimeout(() => {
-        $('.logo_header').css('z-index', 1);
-        $('.get_space').css('z-index', 1);
-      }, 500);
+      if (viewport_width > 992) {
+        setTimeout(() => {
+          $('.logo_header').css('z-index', 1);
+          $('.get_space').css('z-index', 1);
+        }, 500);
+      }
     }
   });
 });

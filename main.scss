@@ -53,7 +53,9 @@ body {
         width: 39px;
     }
     @media only screen and (max-width: 992px) {
-        width: 40px;
+        width: 28px;
+        left: 16px;
+        top: 24px;
     }
 }
 
@@ -217,6 +219,8 @@ body {
 
         @media only screen and (max-width: 992px) {
             width: 84%;
+            margin-bottom: 75px;
+            margin-top: 170px;
         }
 
         .subtitle {
@@ -252,8 +256,8 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
-                font-size: 30px;
-                line-height: 36px;
+                font-size: 28px;
+                line-height: 32px;
                 margin-bottom: 80px;
             }
         }
@@ -266,7 +270,7 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
-                margin-bottom: 155px;
+                margin-bottom: 75px;
             }
 
             video {
@@ -301,7 +305,8 @@ body {
 
             @media only screen and (max-width: 992px) {
                 font-size: 26px;
-                line-height: 32px;
+                line-height: 28px;
+                width: 100%;
             }
         }
 
@@ -317,6 +322,11 @@ body {
             @media only screen and (max-width: 1200px) {
                 font-size: 14px;
             }
+
+            @media only screen and (max-width: 992px) {
+                font-size: 12px;
+                width: 95%;
+            }
         }
     }
 
@@ -325,6 +335,16 @@ body {
         padding: 10% 0;
         background: #191b1d;
         position: relative;
+
+        @media only screen and (max-width: 992px) {
+            padding-bottom: 17%;
+        }
+
+        &_row_helper {
+            @media only screen and (max-width: 992px) {
+                margin: auto;
+            }
+        }
 
         &_img_holder {
             width: 57%;
@@ -404,10 +424,20 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
+                margin: auto;
             }
 
             .accordion-item {
                 background-color: unset;
+
+                .arr_large,
+                .arr_medium,
+                .arr_small,
+                .arr_mini {
+                    @media only screen and (max-width: 992px) {
+                        width: 20px;
+                    }
+                }
 
                 .accordion-collapse {
                     text-align: center;
@@ -426,6 +456,11 @@ body {
                     @media only screen and (max-width: 1660px) {
                         font-size: 14px;
                         margin: 25px 0;
+                    }
+
+                    @media only screen and (max-width: 992px) {
+                        font-size: 12px;
+                        margin: 14px 0;
                     }
                 }
 
@@ -449,6 +484,12 @@ body {
                     opacity: 1;
                     display: inline-block;
                     font-weight: bolder;
+
+                    @media only screen and (max-width: 992px) {
+                        font-size: 14px;
+                        padding: 8px 18px;
+                        margin: 22px auto;
+                    }
                 }
 
                 .accordion-button {
@@ -466,6 +507,12 @@ body {
                         padding: 17px 0;
                         font-size: 26px;
                     }
+
+                    @media only screen and (max-width: 992px) {
+                        padding: 12px 0;
+                        font-size: 20px;
+                    }
+
                     img {
                         opacity: 1;
                         transform: rotate(0deg);
@@ -487,6 +534,11 @@ body {
 
                         @media only screen and (max-width: 1200px) {
                             padding: 17px 0;
+                        }
+
+                        @media only screen and (max-width: 992px) {
+                            padding: 12px 0;
+                            font-size: 20px;
                         }
 
                         img {
@@ -1353,6 +1405,12 @@ body {
     width: 3rem;
     opacity: 0;
     z-index: 999;
+
+    @media only screen and (max-width: 992px) {
+        top: 24px;
+        right: 8px;
+        height: 2rem;
+    }
 }
 
 .check:hover {
@@ -1388,6 +1446,8 @@ body {
     display: none;
     @media only screen and (max-width: 992px) {
         display: flex;
+        top: 16px;
+        right: 8px;
     }
 }
 
