@@ -1406,6 +1406,10 @@ body {
         font-size: 14px;
     }
 
+    @media only screen and (max-width: 992px) {
+        padding-bottom: 85px;
+    }
+
     &_position_helper {
         position: relative;
     }
@@ -1414,16 +1418,34 @@ body {
         position: absolute;
         bottom: 0;
         left: calc(var(--bs-gutter-x) * 0.5);
+
+        @media only screen and (max-width: 992px) {
+            bottom: -60px;
+        }
     }
 
-    &_list {
+    &_list,
+    &_list_2 {
         float: right;
         margin-bottom: 116px;
+
+        @media only screen and (max-width: 992px) {
+            position: absolute;
+            left: calc(var(--bs-gutter-x) * 0.5);
+            margin: 40px 0;
+        }
         a {
             all: unset;
             display: block;
             margin-bottom: 12px;
             cursor: pointer;
+        }
+    }
+
+    &_list_2 {
+        @media only screen and (max-width: 992px) {
+            position: absolute;
+            left: 40%;
         }
     }
 
@@ -1462,6 +1484,10 @@ body {
             bottom: 0;
             right: calc(var(--bs-gutter-x) * 0.5);
             cursor: pointer;
+
+            @media only screen and (max-width: 992px) {
+                bottom: -60px;
+            }
         }
     }
 }
