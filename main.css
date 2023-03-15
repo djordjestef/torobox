@@ -592,6 +592,14 @@ body {
 .company .store {
   margin-bottom: 123px;
 }
+@media only screen and (max-width: 992px) {
+  .company .store {
+    margin-bottom: 75px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .company .store_title {
   text-align: left;
   font-size: 40px;
@@ -612,11 +620,12 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company .store_title {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 55px;
   }
 }
 .company .store_description {
-  letter-spacing: 0.9px;
   font-size: 18px;
   color: #000;
   text-align: left;
@@ -631,6 +640,11 @@ body {
 @media only screen and (max-width: 1200px) {
   .company .store_description {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .company .store_description {
+    font-size: 12px;
   }
 }
 .company .advantages {
@@ -654,8 +668,15 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company .advantages {
-    padding-bottom: 15px;
+    width: 95%;
     margin-bottom: 30px;
+    padding-bottom: 6px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .company .advantages img {
+    width: 34px;
+    margin-top: 2px;
   }
 }
 .company .advantages .title {
@@ -674,7 +695,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company .advantages .title {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 .company .advantages .description {
@@ -692,7 +713,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company .advantages .description {
-    font-size: 12px;
+    margin-top: 10px;
   }
 }
 .company_offers {
@@ -706,12 +727,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company_offers {
-    margin-top: 170px;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .company_offers {
-    padding-bottom: 50px;
+    margin-top: 100px;
+    padding-bottom: 0;
   }
 }
 .company_offers .slide_img {
@@ -736,6 +753,11 @@ body {
 }
 .company_offers .position_helper {
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .company_offers .position_helper {
+    height: 250px;
+  }
 }
 .company_offers .holder {
   position: absolute;
@@ -781,9 +803,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company_offers .holder .title {
-    padding-left: 20px;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 .company_offers .holder .title .company_small {
@@ -799,6 +820,11 @@ body {
 @media only screen and (max-width: 1200px) {
   .company_offers .holder .title .company_small {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .company_offers .holder .title .company_small {
+    font-size: 12px;
   }
 }
 .company_offers .holder .description {
@@ -818,11 +844,12 @@ body {
 @media only screen and (max-width: 1200px) {
   .company_offers .holder .description {
     padding-left: 0;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 992px) {
   .company_offers .holder .description {
-    padding-left: 20px;
+    font-size: 12px;
   }
 }
 
@@ -834,6 +861,11 @@ body {
     margin-bottom: 200px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .testimonials {
+    margin-bottom: 80px;
+  }
+}
 .testimonials .testimonial_item {
   width: 60%;
   padding-left: 10%;
@@ -843,9 +875,14 @@ body {
     width: 70%;
   }
 }
+@media only screen and (max-width: 992px) {
+  .testimonials .testimonial_item {
+    width: 100%;
+    padding-left: 0;
+  }
+}
 .testimonials .testimonial_item .text {
   font-size: 18px;
-  letter-spacing: 0.9px;
   margin-bottom: 26px;
 }
 @media only screen and (max-width: 1660px) {
@@ -859,11 +896,30 @@ body {
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .testimonials .testimonial_item .text {
+    font-size: 12px;
+    width: 94%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .testimonials .testimonial_item .user {
+    width: 94%;
+    margin: auto;
+    margin-top: 5px;
+  }
+}
 .testimonials .testimonial_item .user_img {
   width: 46px;
   height: 46px;
   display: inline-block;
   margin-right: 24px;
+}
+@media only screen and (max-width: 992px) {
+  .testimonials .testimonial_item .user_img {
+    margin-right: 6px;
+  }
 }
 .testimonials .testimonial_item .user_description {
   display: inline-block;
@@ -896,12 +952,28 @@ body {
   top: 0;
   right: 16%;
 }
+@media only screen and (max-width: 992px) {
+  .testimonials .left_arrow {
+    top: -40px;
+    right: 90px;
+    width: 25px;
+    height: 25px;
+  }
+}
 .testimonials .right_arrow {
   width: 32px;
   height: 32px;
   position: absolute;
   top: 0;
   right: 10%;
+}
+@media only screen and (max-width: 992px) {
+  .testimonials .right_arrow {
+    top: -40px;
+    right: 24px;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .blog {
@@ -911,6 +983,11 @@ body {
 @media only screen and (max-width: 1200px) {
   .blog {
     padding: 120px 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .blog {
+    padding: 60px 0;
   }
 }
 .blog .card_wrapper {
@@ -934,6 +1011,11 @@ body {
     margin-bottom: 60px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .blog_title {
+    font-size: 24px;
+  }
+}
 .blog_small {
   all: unset;
   font-size: 18px;
@@ -955,6 +1037,11 @@ body {
   background-color: #000;
   margin-top: 6px;
 }
+@media only screen and (max-width: 992px) {
+  .blog_small::after {
+    margin-top: 3px;
+  }
+}
 @media only screen and (max-width: 1660px) {
   .blog_small {
     font-size: 16px;
@@ -965,17 +1052,33 @@ body {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .blog_small {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
 .blog .margin_helper {
   margin: auto;
 }
 .blog .float_helper {
   float: right;
 }
+@media only screen and (max-width: 992px) {
+  .blog .float_helper {
+    float: unset;
+  }
+}
 .blog .card {
   width: 80%;
   border: unset;
   border-radius: 0;
   transition: all 0.5s;
+}
+@media only screen and (max-width: 992px) {
+  .blog .card {
+    margin: 0 auto 20px;
+  }
 }
 .blog .card:hover {
   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.0705882353);
@@ -1043,6 +1146,11 @@ body {
     padding: 100px 0;
   }
 }
+@media only screen and (max-width: 992px) {
+  .contact {
+    padding: 50px 0;
+  }
+}
 .contact .address .title {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -1054,12 +1162,29 @@ body {
     font-size: 34px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .contact .address .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .contact .address_holder {
   font-size: 14px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 992px) {
+  .contact .address_holder {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
 .contact .form {
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .contact .form {
+    margin-top: 16px;
+  }
 }
 .contact .form_btn {
   all: unset;
@@ -1131,6 +1256,11 @@ body {
   display: block;
   margin-top: 20px;
 }
+@media only screen and (max-width: 992px) {
+  .contact .form .form-element-bar {
+    margin-top: 14px;
+  }
+}
 .contact .form .form-element-bar::after {
   content: "";
   position: absolute;
@@ -1162,6 +1292,11 @@ body {
   transform-origin: left center;
   transition: transform 0.28s ease, color 0.28s linear, opacity 0.28s linear;
   will-change: transform, color, opacity;
+}
+@media only screen and (max-width: 992px) {
+  .contact .form .form-element-label {
+    font-size: 14px;
+  }
 }
 .contact .form .form-element-field {
   outline: none;

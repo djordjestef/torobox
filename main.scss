@@ -573,6 +573,13 @@ body {
     }
     .store {
         margin-bottom: 123px;
+
+        @media only screen and (max-width: 992px) {
+            margin-bottom: 75px;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
         &_title {
             text-align: left;
             font-size: 40px;
@@ -590,12 +597,14 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
-                font-size: 30px;
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 55px;
             }
         }
 
         &_description {
-            letter-spacing: 0.9px;
+            // letter-spacing: 0.9px;
             font-size: 18px;
             color: #000;
             text-align: left;
@@ -608,6 +617,10 @@ body {
 
             @media only screen and (max-width: 1200px) {
                 font-size: 14px;
+            }
+
+            @media only screen and (max-width: 992px) {
+                font-size: 12px;
             }
         }
     }
@@ -630,8 +643,16 @@ body {
         }
 
         @media only screen and (max-width: 992px) {
-            padding-bottom: 15px;
+            width: 95%;
             margin-bottom: 30px;
+            padding-bottom: 6px;
+        }
+
+        img {
+            @media only screen and (max-width: 992px) {
+                width: 34px;
+                margin-top: 2px;
+            }
         }
         .title {
             font-family: "Poppins", sans-serif;
@@ -646,7 +667,7 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
-                font-size: 20px;
+                font-size: 14px;
             }
         }
 
@@ -662,7 +683,7 @@ body {
             }
 
             @media only screen and (max-width: 992px) {
-                font-size: 12px;
+                margin-top: 10px;
             }
         }
     }
@@ -676,12 +697,13 @@ body {
         }
 
         @media only screen and (max-width: 992px) {
-            margin-top: 170px;
+            margin-top: 100px;
+            padding-bottom: 0;
         }
 
-        @media only screen and (max-width: 576px) {
-            padding-bottom: 50px;
-        }
+        // @media only screen and (max-width: 576px) {
+        //     padding-bottom: 50px;
+        // }
 
         .slide_img {
             width: 100%;
@@ -708,6 +730,10 @@ body {
 
         .position_helper {
             position: relative;
+
+            @media only screen and (max-width: 992px) {
+                height: 250px;
+            }
         }
 
         .holder {
@@ -746,9 +772,8 @@ body {
                 }
 
                 @media only screen and (max-width: 992px) {
-                    padding-left: 20px;
-                    font-size: 30px;
-                    line-height: 40px;
+                    font-size: 24px;
+                    line-height: 28px;
                 }
 
                 .company_small {
@@ -762,6 +787,10 @@ body {
 
                     @media only screen and (max-width: 1200px) {
                         font-size: 14px;
+                    }
+
+                    @media only screen and (max-width: 992px) {
+                        font-size: 12px;
                     }
                 }
             }
@@ -780,10 +809,11 @@ body {
 
                 @media only screen and (max-width: 1200px) {
                     padding-left: 0;
+                    font-size: 14px;
                 }
 
                 @media only screen and (max-width: 992px) {
-                    padding-left: 20px;
+                    font-size: 12px;
                 }
             }
         }
@@ -796,6 +826,10 @@ body {
     @media only screen and (max-width: 1200px) {
         margin-bottom: 200px;
     }
+
+    @media only screen and (max-width: 992px) {
+        margin-bottom: 80px;
+    }
     .testimonial_item {
         width: 60%;
         padding-left: 10%;
@@ -804,9 +838,14 @@ body {
             width: 70%;
         }
 
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+            padding-left: 0;
+        }
+
         .text {
             font-size: 18px;
-            letter-spacing: 0.9px;
+            // letter-spacing: 0.9px;
             margin-bottom: 26px;
 
             @media only screen and (max-width: 1660px) {
@@ -817,13 +856,28 @@ body {
                 font-size: 14px;
                 margin-bottom: 20px;
             }
+
+            @media only screen and (max-width: 992px) {
+                font-size: 12px;
+                width: 94%;
+                margin: auto;
+            }
         }
         .user {
+            @media only screen and (max-width: 992px) {
+                width: 94%;
+                margin: auto;
+                margin-top: 5px;
+            }
             &_img {
                 width: 46px;
                 height: 46px;
                 display: inline-block;
                 margin-right: 24px;
+
+                @media only screen and (max-width: 992px) {
+                    margin-right: 6px;
+                }
             }
 
             &_description {
@@ -860,6 +914,13 @@ body {
         position: absolute;
         top: 0;
         right: 16%;
+
+        @media only screen and (max-width: 992px) {
+            top: -40px;
+            right: 90px;
+            width: 25px;
+            height: 25px;
+        }
     }
 
     .right_arrow {
@@ -868,6 +929,13 @@ body {
         position: absolute;
         top: 0;
         right: 10%;
+
+        @media only screen and (max-width: 992px) {
+            top: -40px;
+            right: 24px;
+            width: 25px;
+            height: 25px;
+        }
     }
 }
 
@@ -878,6 +946,10 @@ body {
 
     @media only screen and (max-width: 1200px) {
         padding: 120px 0;
+    }
+
+    @media only screen and (max-width: 992px) {
+        padding: 60px 0;
     }
 
     .card_wrapper {
@@ -898,6 +970,10 @@ body {
         @media only screen and (max-width: 1200px) {
             font-size: 32px;
             margin-bottom: 60px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            font-size: 24px;
         }
     }
 
@@ -922,6 +998,10 @@ body {
             height: 1px;
             background-color: #000;
             margin-top: 6px;
+
+            @media only screen and (max-width: 992px) {
+                margin-top: 3px;
+            }
         }
 
         @media only screen and (max-width: 1660px) {
@@ -931,6 +1011,11 @@ body {
         @media only screen and (max-width: 1200px) {
             font-size: 14px;
         }
+
+        @media only screen and (max-width: 992px) {
+            font-size: 12px;
+            margin-top: 10px;
+        }
     }
 
     .margin_helper {
@@ -939,6 +1024,10 @@ body {
 
     .float_helper {
         float: right;
+
+        @media only screen and (max-width: 992px) {
+            float: unset;
+        }
     }
     .card {
         width: 80%;
@@ -946,6 +1035,10 @@ body {
         border: unset;
         border-radius: 0;
         transition: all 0.5s;
+
+        @media only screen and (max-width: 992px) {
+            margin: 0 auto 20px;
+        }
 
         &:hover {
             box-shadow: 0px 40px 40px #00000012;
@@ -1013,6 +1106,10 @@ body {
         padding: 100px 0;
     }
 
+    @media only screen and (max-width: 992px) {
+        padding: 50px 0;
+    }
+
     .address {
         .title {
             font-family: "Poppins", sans-serif;
@@ -1023,16 +1120,30 @@ body {
             @media only screen and (max-width: 1660px) {
                 font-size: 34px;
             }
+
+            @media only screen and (max-width: 992px) {
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
 
         &_holder {
             font-size: 14px;
             margin-bottom: 20px;
+
+            @media only screen and (max-width: 992px) {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
         }
     }
 
     .form {
         position: relative;
+
+        @media only screen and (max-width: 992px) {
+            margin-top: 16px;
+        }
 
         &_btn {
             all: unset;
@@ -1104,6 +1215,10 @@ body {
             background: #a4a4a4;
             display: block;
             margin-top: 20px;
+
+            @media only screen and (max-width: 992px) {
+                margin-top: 14px;
+            }
         }
 
         .form-element-bar::after {
@@ -1138,6 +1253,10 @@ body {
             transform-origin: left center;
             transition: transform 0.28s ease, color 0.28s linear, opacity 0.28s linear;
             will-change: transform, color, opacity;
+
+            @media only screen and (max-width: 992px) {
+                font-size: 14px;
+            }
         }
 
         .form-element-field {
