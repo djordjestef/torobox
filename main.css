@@ -1262,17 +1262,17 @@ body {
   }
 }
 .contact .form .form-element-bar::after {
-  content: "";
+  content: " ";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #000;
+  background-color: rgb(0, 0, 0);
   height: 2px;
   display: block;
-  transform: rotateY(90deg);
-  transition: transform 0.28s ease;
-  will-change: transform;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .contact .form .form-element-label {
   position: absolute;
