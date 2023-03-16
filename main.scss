@@ -34,6 +34,16 @@ body {
     }
 }
 
+.only_mobile {
+    display: none;
+
+    @media only screen and (max-width: 992px) {
+        display: block;
+    }
+}
+
+
+
 .helper {
     height: 50px;
     background: #4436360d;

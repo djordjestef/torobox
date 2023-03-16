@@ -35,6 +35,15 @@ body {
   }
 }
 
+.only_mobile {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .only_mobile {
+    display: block;
+  }
+}
+
 .helper {
   height: 50px;
   background: rgba(68, 54, 54, 0.0509803922);
