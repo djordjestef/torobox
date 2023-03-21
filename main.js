@@ -480,19 +480,31 @@ window.addEventListener('load', function (event) {
       $('.header').addClass('pinned');
       hidden = false;
     }
-
-    if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875 && obj.direction === 'down') {
-      $('.logo_header').css('z-index', 0);
-      $('.get_space').css('z-index', 0);
-    } else if (rect.top < 69 && obj.direction === 'down') {
-      $('.logo_header').css('z-index', 0);
-      $('.get_space').css('z-index', 0);
-    } else {
-      if (viewport_width > 992) {
+    if (viewport_width > 992) {
+      if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875 && obj.direction === 'down') {
+        $('.logo_header').css('z-index', 0);
+        $('.get_space').css('z-index', 0);
+      } else if (rect.top < 69 && obj.direction === 'down') {
+        $('.logo_header').css('z-index', 0);
+        $('.get_space').css('z-index', 0);
+      } else {
         setTimeout(() => {
           $('.logo_header').css('z-index', 1);
           $('.get_space').css('z-index', 1);
         }, 500);
+      }
+    } else {
+      if (rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) {
+        $('.logo_header').css('z-index', 0);
+        $('.get_space').css('z-index', 0);
+      } else if (rect.top < 69) {
+        $('.logo_header').css('z-index', 0);
+        $('.get_space').css('z-index', 0);
+      } else {
+        // setTimeout(() => {
+        $('.logo_header').css('z-index', 1);
+        $('.get_space').css('z-index', 1);
+        // }, 500);
       }
     }
   });
