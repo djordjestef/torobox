@@ -21,6 +21,7 @@ const jsonEN = {
   description_lang:
     ' Our units are made according to the highest quality standards so they can fulfill their role -to flawlessly keep your valuable belongings, following the Federation of European Self Storage Associations (FEDESSA)',
   storage_lang_small: 'Storage',
+  storage_lang_small_mobile: 'Storage',
   h2_lang_large: 'Large',
   h2_lang_medium: 'Medium',
   h2_lang_small: 'Small',
@@ -71,7 +72,9 @@ const jsonEN = {
   adv_decription_5: 'Container at your location so you can pack stuff ready for transport.',
   adv_decription_6: '24/7 Online payment options with or without recurring subscription.',
   company_small: 'Company',
+  company_small_mobile:'Company',
   company_head: 'Torobox offers what everyone seems to be missing — space.',
+  company_head_mobile:'Torobox offers what everyone seems to be missing — space.',
   company_description:
     ' We’re a customer-service driven business and the only company in Serbi professionally managing this market segment. Our long-term experience leasing large commercial spaces and our expertise allow you to put your trust in us just as these clients have over the years: Eurobank, Sky Music, Dom Perignon, Emotion, Sorbon, and many others.',
   blog_small: 'Read our blog',
@@ -112,6 +115,7 @@ const jsonSR = {
   description_lang:
     ' Our units are made according to the highest quality standards so they can fulfill their role -to flawlessly keep your valuable belongings, following the Federation of European Self Storage Associations (FEDESSA)',
   storage_lang_small: 'Storage',
+  storage_lang_small_mobile: 'Storage',
   h2_lang_large: 'Large',
   h2_lang_medium: 'Medium',
   h2_lang_small: 'Small',
@@ -162,7 +166,9 @@ const jsonSR = {
   adv_decription_5: 'Container at your location so you can pack stuff ready for transport.',
   adv_decription_6: '24/7 Online payment options with or without recurring subscription.',
   company_small: 'Company',
+  company_small_mobile:'Company',
   company_head: 'Torobox offers what everyone seems to be missing — space.',
+  company_head_mobile:'Torobox offers what everyone seems to be missing — space.',
   company_description:
     ' We’re a customer-service driven business and the only company in Serbi professionally managing this market segment. Our long-term experience leasing large commercial spaces and our expertise allow you to put your trust in us just as these clients have over the years: Eurobank, Sky Music, Dom Perignon, Emotion, Sorbon, and many others.',
   blog_small: 'Read our blog',

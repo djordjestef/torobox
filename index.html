@@ -1,623 +1,686 @@
 <!DOCTYPE html lang="en">
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@100;300;400&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css "
+    />
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <title>Torobox</title>
-</head>
-<body>
-    <img src="assets/logo_1.svg" alt="error on view photo" class="img-fluid logo_header smooth-scroll">
+  </head>
+  <body>
+    <img
+      src="assets/logo_1.svg"
+      alt="error on view photo"
+      class="img-fluid logo_header smooth-scroll"
+    />
     <div class="get_space">
-        <a href="#">
-            <lottie-player src="assets/get_space.json" background="transparent" speed="1" loop autoplay></lottie-player>
-        </a>
+      <a href="#">
+        <lottie-player
+          src="assets/get_space.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </a>
     </div>
     <div>
-        <input type="checkbox" name="" id="checkbox" class="check">
-        <ul class="menu-items">
-            <li>
-                <a class="storage_link storage_lang_burger"></a>
-            </li>
-            <li>
-                <a class="company_link company_lang_burger"></a>
-            </li>
-            <li>
-                <a class="blog_link blog_lang_burger"></a>
-            </li>
-            <li>
-                <a class="contact_link contact_lang_burger"></a>
-            </li>
-            <li>
-                <a class="login login_lang_burger" href="#"></a>
-            </li>
-            <li>
-                <a class="register register_lang_burger" href="#"></a>
-            </li>
-            <li>
-                <button id="en" class="language sr">Sr</button>
-                <span>/</span>
-                <button id="sr" class="language en ">En</button>
-            </li>
-        </ul>
-        <div class="ham-menu">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
+      <input type="checkbox" name="" id="checkbox" class="check only_mobile" />
+      <ul class="menu-items">
+        <li>
+          <a class="storage_link storage_lang_burger"></a>
+        </li>
+        <li>
+          <a class="company_link company_lang_burger"></a>
+        </li>
+        <li>
+          <a class="blog_link blog_lang_burger"></a>
+        </li>
+        <li>
+          <a class="contact_link contact_lang_burger"></a>
+        </li>
+        <li>
+          <a class="login login_lang_burger" href="#"></a>
+        </li>
+        <li>
+          <a class="register register_lang_burger" href="#"></a>
+        </li>
+        <li>
+          <button id="en" class="language sr">Sr</button>
+          <span>/</span>
+          <button id="sr" class="language en">En</button>
+        </li>
+      </ul>
+      <div class="ham-menu">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
     </div>
-    <div data-scroll-container style="perspective:1px">
-        <div class="header navbar-light home" id="header">
-            <div class="logo_holder">
-                <a href="#">
-                    <img src="assets/logo_2.svg" alt="error on view photo" class="img-fluid logo_text">
-                </a>
-            </div>
-            <div class="login_holder">
-                <a class="login login_lang" href="#"></a>
-                <span>/</span>
-                <a class="register register_lang" href="#"></a>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <nav class="my_navbar">
-                        <ul>
-                            <li>
-                                <a class="storage_link storage_lang"></a>
-                            </li>
-                            <li>
-                                <a class="company_link company_lang"></a>
-                            </li>
-                            <li>
-                                <a class="blog_link blog_lang"></a>
-                            </li>
-                            <li>
-                                <a class="contact_link contact_lang"></a>
-                            </li>
-                            <li>
-                                <button id="en" class="language sr">Sr</button>
-                                <span>/</span>
-                                <button id="sr" class="language en ">En</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+    <div data-scroll-container style="perspective: 1px">
+      <div class="header navbar-light home" id="header">
+        <div class="logo_holder">
+          <a href="#">
+            <img src="assets/logo_2.svg" alt="error on view photo" class="img-fluid logo_text" />
+          </a>
         </div>
-
-        <div data-scroll-section>
-            <section class="storage" id="storage" data-scroll data-scroll-speed="1">
-                <div class="container">
-                    <div class="row holder_show">
-                        <div class="col-12 ">
-                            <div class="holder">
-                                <div class="subtitle storage_sub"></div>
-                                <div class="title storage_tit"></div>
-                                <div class="img_holder">
-                                    <video autoplay loop muted>
-                                        <source src="assets/1.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="desc_title desc_lang_title"></div>
-                                <div class="description description_lang"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="storage_type" id="storage_type" data-scroll data-scroll-speed="1">
-                    <div class="row storage_type_row_helper" style="width:100%">
-                        <div class="col-xl-6 col-lg-7 only_desktop" style="padding-top: 5%;">
-                            <div class="storage_type_img_holder">
-                                <div class="storage_small storage_lang_small"></div>
-                                <img src="assets/cube_large.svg" alt="" class="cube_large" id="1">
-                                <img src="assets/cube_small.svg" alt="" class="cube_small">
-                                <img src="assets/cube_mini.svg" alt="" class="cube_mini">
-                                <img src="assets/cube_medium.svg" alt="" class="cube_medium">
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-5 col-12">
-                            <div class="storage_type_accordion">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item" id="item_large">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                aria-expanded="false" aria-controls="flush-collapseOne">
-                                                <span class="h2_lang_large"></span>
-                                                <img class="arr_large" src="assets/white_arrow.png" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="acc_description acc_description_large_one">
-                                            </div>
-                                            <div
-                                                class="acc_description acc_description_helper acc_description_large_two">
-                                            </div>
-                                            <a href="#" class="rent_btn rent_large_btn"></a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item" id="item_medium">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                                aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                <span class="h2_lang_medium"></span>
-                                                <img class="arr_medium" src="assets/white_arrow.png" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="acc_description acc_description_medium_one">
-                                            </div>
-                                            <div
-                                                class="acc_description acc_description_helper acc_description_medium_two">
-                                            </div>
-                                            <a href="#" class="rent_btn rent_medium_btn"></a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item" id="item_small">
-                                        <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                                aria-expanded="false" aria-controls="flush-collapseThree">
-                                                <span class="h2_lang_small"> </span>
-                                                <img class="arr_small" src="assets/white_arrow.png" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingThree"
-                                            data-bs-parent="#accordionFlushExample">
-                                            <div class="acc_description acc_description_small_one">
-                                            </div>
-                                            <div
-                                                class="acc_description acc_description_helper_small acc_description_small_two">
-                                            </div>
-                                            <a href="#" class="rent_btn rent_small_btn"></a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item" id="item_mini">
-                                        <h2 class="accordion-header" id="flush-headingFour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
-                                                aria-expanded="false" aria-controls="flush-collapseTFour">
-                                                <span class="h2_lang_mini"> </span>
-                                                <img class="arr_mini" src="assets/white_arrow.png" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                            <div class="acc_description acc_description_mini_one">
-                                            </div>
-                                            <div
-                                                class="acc_description acc_description_helper_mini acc_description_mini_two">
-                                            </div>
-                                            <a href="#" class="rent_btn rent_mini_btn"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="login_holder">
+          <a class="login login_lang" href="#"></a>
+          <span>/</span>
+          <a class="register register_lang" href="#"></a>
         </div>
-        <div data-scroll-section>
-            <section class="company">
-                <div class="container">
-                    <div class="store">
-                        <div class="row">
-                            <div class="col-lg-4 col-12">
-                                <div class="store_title company_storage_title"></div>
-                            </div>
-                            <div class="col-lg-8 col-12">
-                                <div class="store_description"><span class="span_1"> Torobox provides a wide
-                                        range of storage solutions to
-                                        suit
-                                        you
-                                        and/or your business. Our storage units are </span>
-                                    <strong class="strong_1">fire and weather resistant,</strong>
-                                    <span class="span_2"> optionally</span>
-                                    <strong class="strong_2">air conditioned</strong>
-                                    <span span class="span_3">, secured by an </span>
-                                    <strong class="strong_3">alarm </strong>
-                                    <span span class="span_4">
-                                        and
-                                        video
-                                    </span>
-                                    <strong class="strong_4">surveillance</strong>
-                                    <span span class="span_5"> systems, staffed and</span>
-                                    <strong class="strong_5">guarded</strong>
-                                    <span span class="span_6"> 24/7.</span>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container">
+          <div class="row">
+            <nav class="my_navbar">
+              <ul>
+                <li>
+                  <a class="storage_link storage_lang"></a>
+                </li>
+                <li>
+                  <a class="company_link company_lang"></a>
+                </li>
+                <li>
+                  <a class="blog_link blog_lang"></a>
+                </li>
+                <li>
+                  <a class="contact_link contact_lang"></a>
+                </li>
+                <li>
+                  <button id="en" class="language sr">Sr</button>
+                  <span>/</span>
+                  <button id="sr" class="language en">En</button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div data-scroll-section>
+        <section class="storage" id="storage" data-scroll data-scroll-speed="1">
+          <div class="container">
+            <div class="row holder_show">
+              <div class="col-12">
+                <div class="holder">
+                  <div class="subtitle storage_sub"></div>
+                  <div class="title storage_tit"></div>
+                  <div class="get_space_mobile">
+                    <a href="#">
+                      <lottie-player
+                        src="assets/get_space.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                      ></lottie-player>
+                    </a>
+                  </div>
+                  <div class="img_holder">
+                    <video autoplay loop muted>
+                      <source src="assets/1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="storage_small_mobile only_mobile storage_lang_small_mobile"></div>
+                  <div class="desc_title desc_lang_title"></div>
+                  <div class="description description_lang"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="storage_type" id="storage_type" data-scroll data-scroll-speed="1">
+            <div class="row storage_type_row_helper" style="width: 100%">
+              <div class="col-xl-6 col-lg-7 only_desktop" style="padding-top: 5%">
+                <div class="storage_type_img_holder">
+                  <div class="storage_small storage_lang_small"></div>
+                  <img src="assets/cube_large.svg" alt="" class="cube_large" id="1" />
+                  <img src="assets/cube_small.svg" alt="" class="cube_small" />
+                  <img src="assets/cube_mini.svg" alt="" class="cube_mini" />
+                  <img src="assets/cube_medium.svg" alt="" class="cube_medium" />
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-5 col-12">
+                <div class="storage_type_accordion">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item" id="item_large">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          <span class="h2_lang_large"></span>
+                          <img class="arr_large" src="assets/white_arrow.png" alt="" />
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="acc_description acc_description_large_one"></div>
+                        <div
+                          class="acc_description acc_description_helper acc_description_large_two"
+                        ></div>
+                        <a href="#" class="rent_btn rent_large_btn"></a>
+                      </div>
                     </div>
-                    <span data-scroll="" style="width:400px">
-                        <div class="advantages">
-                            <div class="row">
-                                <div class="col-lg-4 col-2">
-                                    <img src="assets/adv_1.svg" alt="">
-                                </div>
-                                <div class="col-lg-4 col-9">
-                                    <div class="title adv_title_1">
-
-                                    </div>
-                                </div>
-                                <div class="col-2 only_mobile"></div>
-                                <div class="col-lg-4 col-8">
-                                    <div class="description adv_decription_1">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="advantages">
-                            <div class="row">
-                                <div class="col-lg-4 col-2">
-                                    <img src="assets/adv_1.svg" alt="">
-                                </div>
-                                <div class="col-lg-4 col-9">
-                                    <div class="title adv_title_2">
-
-                                    </div>
-                                </div>
-                                <div class="col-2 only_mobile"></div>
-                                <div class="col-lg-4 col-8">
-                                    <div class="description adv_decription_2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="advantages">
-                            <div class="row">
-                                <div class="col-lg-4 col-2">
-                                    <img src="assets/adv_3.svg" alt="">
-                                </div>
-                                <div class="col-lg-4 col-9">
-                                    <div class="title adv_title_3">
-
-                                    </div>
-                                </div>
-                                <div class="col-2 only_mobile"></div>
-                                <div class="col-lg-4 col-8">
-                                    <div class="description adv_decription_3"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="advantages">
-                            <div class="row">
-                                <div class="col-lg-4 col-2">
-                                    <img src="assets/adv_4.svg" alt="">
-                                </div>
-                                <div class="col-lg-4 col-9">
-                                    <div class="title adv_title_4">
-
-                                    </div>
-                                </div>
-                                <div class="col-2 only_mobile"></div>
-                                <div class="col-lg-4 col-8">
-                                    <div class="description adv_decription_4">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="advantages">
-                            <div class="row">
-                                <div class="col-lg-4 col-2">
-                                    <img src="assets/adv_5.svg" alt="">
-                                </div>
-                                <div class="col-lg-4 col-9">
-                                    <div class="title adv_title_5">
-
-                                    </div>
-                                </div>
-                                <div class="col-2 only_mobile"></div>
-                                <div class="col-lg-4 col-8">
-                                    <div class="description adv_decription_5">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="advantages">
-                            <div class="row">
-                                <div class="col-lg-4 col-2">
-                                    <img src="assets/adv_6.svg" alt="">
-                                </div>
-                                <div class="col-lg-4 col-9">
-                                    <div class="title adv_title_6">
-
-                                    </div>
-                                </div>
-                                <div class="col-2 only_mobile"></div>
-                                <div class="col-lg-4 col-8">
-                                    <div class="description adv_decription_6">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="accordion-item" id="item_medium">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          <span class="h2_lang_medium"></span>
+                          <img class="arr_medium" src="assets/white_arrow.png" alt="" />
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="acc_description acc_description_medium_one"></div>
+                        <div
+                          class="acc_description acc_description_helper acc_description_medium_two"
+                        ></div>
+                        <a href="#" class="rent_btn rent_medium_btn"></a>
+                      </div>
+                    </div>
+                    <div class="accordion-item" id="item_small">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          <span class="h2_lang_small"> </span>
+                          <img class="arr_small" src="assets/white_arrow.png" alt="" />
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="acc_description acc_description_small_one"></div>
+                        <div
+                          class="acc_description acc_description_helper_small acc_description_small_two"
+                        ></div>
+                        <a href="#" class="rent_btn rent_small_btn"></a>
+                      </div>
+                    </div>
+                    <div class="accordion-item" id="item_mini">
+                      <h2 class="accordion-header" id="flush-headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseFour"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTFour"
+                        >
+                          <span class="h2_lang_mini"> </span>
+                          <img class="arr_mini" src="assets/white_arrow.png" alt="" />
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="acc_description acc_description_mini_one"></div>
+                        <div
+                          class="acc_description acc_description_helper_mini acc_description_mini_two"
+                        ></div>
+                        <a href="#" class="rent_btn rent_mini_btn"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div data-scroll-section>
+        <section class="company">
+          <div class="container">
+            <div class="store">
+              <div class="row">
+                <div class="col-lg-4 col-12">
+                  <div class="store_title company_storage_title"></div>
+                </div>
+                <div class="col-lg-8 col-12">
+                  <div class="store_description">
+                    <span class="span_1">
+                      Torobox provides a wide range of storage solutions to suit you and/or your
+                      business. Our storage units are
                     </span>
-                    <div class="company_offers" id="company">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-xl-5 col-lg-6 col-12">
-                                    <div class="owl-carousel owl_one">
-                                        <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
-                                        <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
-                                        <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
-                                        <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
+                    <strong class="strong_1">fire and weather resistant,</strong>
+                    <span class="span_2"> optionally</span>
+                    <strong class="strong_2">air conditioned</strong>
+                    <span span class="span_3">, secured by an </span>
+                    <strong class="strong_3">alarm </strong>
+                    <span span class="span_4"> and video </span>
+                    <strong class="strong_4">surveillance</strong>
+                    <span span class="span_5"> systems, staffed and</span>
+                    <strong class="strong_5">guarded</strong>
+                    <span span class="span_6"> 24/7.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span data-scroll="" style="width: 400px">
+              <div class="advantages">
+                <div class="row">
+                  <div class="col-lg-4 col-2">
+                    <img class="only_desktop" src="assets/adv_1.svg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <img class="only_mobile" src="assets/adv_1.svg" alt="" />
+                    <div class="title adv_title_1"></div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="description adv_decription_1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages">
+                <div class="row">
+                  <div class="col-lg-4 col-2">
+                    <img class="only_desktop" src="assets/adv_1.svg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <img class="only_mobile" src="assets/adv_1.svg" alt="" />
+                    <div class="title adv_title_2"></div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="description adv_decription_2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages">
+                <div class="row">
+                  <div class="col-lg-4 col-2">
+                    <img class="only_desktop" src="assets/adv_3.svg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <img class="only_mobile" src="assets/adv_3.svg" alt="" />
+                    <div class="title adv_title_3"></div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="description adv_decription_3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages">
+                <div class="row">
+                  <div class="col-lg-4 col-2">
+                    <img class="only_desktop" src="assets/adv_4.svg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <img class="only_mobile" src="assets/adv_4.svg" alt="" />
+                    <div class="title adv_title_4"></div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="description adv_decription_4"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages">
+                <div class="row">
+                  <div class="col-lg-4 col-2">
+                    <img class="only_desktop" src="assets/adv_5.svg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <img class="only_mobile" src="assets/adv_5.svg" alt="" />
+                    <div class="title adv_title_5"></div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="description adv_decription_5"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages">
+                <div class="row">
+                  <div class="col-lg-4 col-2">
+                    <img class="only_desktop" src="assets/adv_6.svg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <img class="only_mobile" src="assets/adv_6.svg" alt="" />
+                    <div class="title adv_title_6"></div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="description adv_decription_6"></div>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <div class="company_offers" id="company">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xl-5 col-lg-6 col-12">
+                    <div class="title_mobile only_mobile">
+                      <div class="company_small_mobile"></div>
+                      <span class="company_head_mobile"> </span>
+                    </div>
+                    <div class="owl-carousel owl_one">
+                      <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
+                      <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
+                      <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
+                      <div><img src="assets/offers_img.png" alt="" class="slide_img" /></div>
+                    </div>
+                  </div>
+                  <div class="col-xl-7 col-lg-6 col-12 position_helper">
+                    <div class="holder">
+                      <div class="title only_desktop">
+                        <div class="company_small"></div>
+                        <span class="company_head"> </span>
+                      </div>
+                      <div class="description company_description"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 col-lg-6 col-12 position_helper">
-                                    <div class="holder">
-                                        <div class="title">
-                                            <div class="company_small"></div>
-                                            <span class="company_head"> </span>
-                                        </div>
-                                        <div class="description company_description">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <div data-scroll-section>
+        <section class="testimonials" data-scroll>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="owl-carousel owl_two">
+                  <div class="testimonial_item">
+                    <div class="text">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor."
                     </div>
+                    <div class="user">
+                      <img src="assets/user.png" alt="" class="user_img" />
+                      <div class="user_description">
+                        <div class="name">Name Surname</div>
+                        <div class="position">Postion at the Company</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial_item">
+                    <div class="text">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor."
+                    </div>
+                    <div class="user">
+                      <img src="assets/user.png" alt="" class="user_img" />
+                      <div class="user_description">
+                        <div class="name">Name Surname</div>
+                        <div class="position">Postion at the Company</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial_item">
+                    <div class="text">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor."
+                    </div>
+                    <div class="user">
+                      <img src="assets/user.png" alt="" class="user_img" />
+                      <div class="user_description">
+                        <div class="name">Name Surname</div>
+                        <div class="position">Postion at the Company</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial_item">
+                    <div class="text">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor."
+                    </div>
+                    <div class="user">
+                      <img src="assets/user.png" alt="" class="user_img" />
+                      <div class="user_description">
+                        <div class="name">Name Surname</div>
+                        <div class="position">Postion at the Company</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </div>
-
-        <div data-scroll-section>
-            <section class="testimonials" data-scroll>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="owl-carousel owl_two">
-                                <div class="testimonial_item">
-                                    <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod
-                                        tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit,
-                                        sed do eiusmod tempor, sed do eiusmod tempor."</div>
-                                    <div class="user">
-                                        <img src="assets/user.png" alt="" class="user_img">
-                                        <div class="user_description">
-                                            <div class="name">Name Surname</div>
-                                            <div class="position">Postion at the Company</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="testimonial_item">
-                                    <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod
-                                        tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit,
-                                        sed do eiusmod tempor, sed do eiusmod tempor."</div>
-                                    <div class="user">
-                                        <img src="assets/user.png" alt="" class="user_img">
-                                        <div class="user_description">
-                                            <div class="name">Name Surname</div>
-                                            <div class="position">Postion at the Company</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial_item">
-                                    <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod
-                                        tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit,
-                                        sed do eiusmod tempor, sed do eiusmod tempor."</div>
-                                    <div class="user">
-                                        <img src="assets/user.png" alt="" class="user_img">
-                                        <div class="user_description">
-                                            <div class="name">Name Surname</div>
-                                            <div class="position">Postion at the Company</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial_item">
-                                    <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod
-                                        tempor, sed do eiusmod tempor, lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit,
-                                        sed do eiusmod tempor, sed do eiusmod tempor."</div>
-                                    <div class="user">
-                                        <img src="assets/user.png" alt="" class="user_img">
-                                        <div class="user_description">
-                                            <div class="name">Name Surname</div>
-                                            <div class="position">Postion at the Company</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div data-scroll-section>
+        <section class="blog" id="blog" data-scroll>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="blog_title blog_title_lang">Latest news</div>
+                <a href="#" class="blog_small">Read our blog</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-12">
+                <a href="#" class="card_wrapper">
+                  <div class="card">
+                    <img class="card-img-top" src="assets/blog_1.png" alt="Card image cap" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content.
+                      </p>
+                      <div class="date">March 20. 2022.</div>
                     </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12">
+                <a href="#" class="card_wrapper">
+                  <div class="card margin_helper">
+                    <img class="card-img-top" src="assets/blog_2.png" alt="Card image cap" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content.
+                      </p>
+                      <div class="date">March 20. 2022.</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12">
+                <a href="#" class="card_wrapper">
+                  <div class="card float_helper">
+                    <img class="card-img-top" src="assets/blog_3.png" alt="Card image cap" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content. Some quick example text to build on the card title and
+                        make up the bulk of the card's content
+                      </p>
+                      <div class="date">March 20. 2022.</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="helper"></div>
+        <section class="contact" id="contact" data-scroll>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="address">
+                  <div class="title">Get space office@torobox.rs</div>
+                  <div class="address_holder">
+                    <span class="address_lang"> </span><br />
+                    Bekerelova 24, Mali Mokri Lug,<br />
+                    11050 Beograd
+                  </div>
+                  <div class="address_holder">
+                    <span class="phone"> </span><br />
+                    +381 63 50 50 17
+                  </div>
+                  <div class="address_holder">
+                    <span class="hours"> </span><br /><span class="days"></span> 08.00 -16.00
+                  </div>
                 </div>
-            </section>
-        </div>
-        <div data-scroll-section>
-            <section class="blog" id="blog" data-scroll>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="blog_title blog_title_lang">Latest news</div>
-                            <a href="#" class="blog_small">Read our blog</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-12">
-                            <a href="#" class="card_wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="assets/blog_1.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the
-                                            bulk
-                                            of the card's content.</p>
-                                        <div class="date">March 20. 2022.</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <a href="#" class="card_wrapper">
-                                <div class="card margin_helper">
-                                    <img class="card-img-top" src="assets/blog_2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the
-                                            bulk
-                                            of the card's content.</p>
-                                        <div class="date">March 20. 2022.</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <a href="#" class="card_wrapper">
-                                <div class="card float_helper">
-                                    <img class="card-img-top" src="assets/blog_3.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the
-                                            bulk
-                                            of the card's content.
-                                            Some quick example text to build on the card title and make up the bulk
-                                            of the card's content</p>
-                                        <div class="date">March 20. 2022.</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form">
+                  <fieldset class="form-fieldset">
+                    <form id="form" onsubmit="getFormData();return false">
+                      <div class="form-element form-input">
+                        <input
+                          class="form-element-field"
+                          placeholder=" "
+                          type="input"
+                          required
+                          name="name"
+                        />
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label form_name"></label>
+                      </div>
+                      <div class="form-element form-input">
+                        <input
+                          class="form-element-field"
+                          placeholder=" "
+                          type="email"
+                          name="email"
+                          required
+                        />
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label form_email"></label>
+                      </div>
+                      <div class="form-element form-input">
+                        <input class="form-element-field" type="tel" required name="phone" />
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label form_phone"></label>
+                      </div>
+                      <div class="form-element form-textarea">
+                        <textarea
+                          class="form-element-field"
+                          placeholder=" "
+                          name="comment"
+                        ></textarea>
+                        <div class="form-element-bar"></div>
+                        <label class="form-element-label"
+                          ><span class="form_comment"></span>
+                          <span class="optional form_optional"></span
+                        ></label>
+                      </div>
+                      <div class="privacy_policy privacy_text"></div>
+                      <input type="submit" value="" class="form_btn form_btn_lang" />
+                    </form>
+                  </fieldset>
                 </div>
-            </section>
-            <div class="helper"></div>
-            <section class="contact" id="contact" data-scroll>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="address">
-                                <div class="title">Get space office@torobox.rs</div>
-                                <div class="address_holder">
-                                    <span class="address_lang"> </span><br> Bekerelova 24, Mali Mokri Lug,<br> 11050
-                                    Beograd
-                                </div>
-                                <div class="address_holder">
-                                    <span class="phone"> </span><br> +381 63 50 50 17
-                                </div>
-                                <div class="address_holder">
-                                    <span class="hours"> </span><br><span class="days"></span> 08.00 -16.00
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form">
-                                <fieldset class="form-fieldset">
-                                    <form id="form" onsubmit="getFormData();return false">
-                                        <div class="form-element form-input">
-                                            <input class="form-element-field" placeholder=" " type="input" required
-                                                name="name" />
-                                            <div class="form-element-bar"></div>
-                                            <label class="form-element-label form_name"></label>
-                                        </div>
-                                        <div class="form-element form-input">
-                                            <input class="form-element-field" placeholder=" " type="email" name="email"
-                                                required />
-                                            <div class="form-element-bar"></div>
-                                            <label class="form-element-label form_email"></label>
-                                        </div>
-                                        <div class="form-element form-input">
-                                            <input class="form-element-field" type="tel" required name="phone" />
-                                            <div class="form-element-bar"></div>
-                                            <label class="form-element-label form_phone"></label>
-                                        </div>
-                                        <div class="form-element form-textarea">
-                                            <textarea class="form-element-field" placeholder=" "
-                                                name="comment"></textarea>
-                                            <div class="form-element-bar"></div>
-                                            <label class="form-element-label"><span class="form_comment"></span> <span
-                                                    class="optional form_optional"></span></label>
-                                        </div>
-                                        <div class="privacy_policy privacy_text"></div>
-                                        <input type="submit" value="" class="form_btn form_btn_lang" />
-                                    </form>
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="footer" data-scroll>
+          <div class="container">
+            <div class="row">
+              <div class="col-2 footer_position_helper">
+                <div class="logo">
+                  <img src="assets/footer_logo.svg" alt="" />
                 </div>
-            </section>
-            <section class="footer" data-scroll>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2 footer_position_helper">
-                            <div class="logo">
-                                <img src="assets/footer_logo.svg" alt="">
-                            </div>
-                            <div class="year">© 2024</div>
-                        </div>
-                        <div class="col-lg-2 col-3">
-                            <div class="footer_list">
-                                <a class="storage_link storage_lang_footer"></a>
-                                <a class="company_link company_lang_footer"></a>
-                                <a class="blog_link blog_lang_footer"></a>
-                                <a class="contact_link contact_lang_footer"></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-3">
-                            <div class="footer_list_2">
-                                <a href="#">Facebook</a>
-                                <a href="#">Instagram</a>
-                                <a href="#">Linkedin</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-4 footer_position_helper">
-                            <div class="btn_holder">
-                                <a href="#" class="space">Get space</a>
-                                <a href="#" class="privacy"></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="year">© 2024</div>
+              </div>
+              <div class="col-lg-2 col-3">
+                <div class="footer_list">
+                  <a class="storage_link storage_lang_footer"></a>
+                  <a class="company_link company_lang_footer"></a>
+                  <a class="blog_link blog_lang_footer"></a>
+                  <a class="contact_link contact_lang_footer"></a>
                 </div>
-            </section>
-        </div>
+              </div>
+              <div class="col-lg-2 col-3">
+                <div class="footer_list_2">
+                  <a href="#">Facebook</a>
+                  <a href="#">Instagram</a>
+                  <a href="#">Linkedin</a>
+                </div>
+              </div>
+              <div class="col-lg-6 col-4 footer_position_helper">
+                <div class="btn_holder">
+                  <a href="#" class="space">Get space</a>
+                  <a href="#" class="privacy"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
     <script src="main.js"></script>
     <script src="languages.js"></script>
-</body>
-
+  </body>
 </html>

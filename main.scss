@@ -42,6 +42,12 @@ body {
     }
 }
 
+.container-fluid {
+    @media only screen and (max-width: 992px) {
+        padding: 0;
+    }
+}
+
 .helper {
     height: 50px;
     background: #4436360d;
@@ -61,6 +67,7 @@ body {
         width: 39px;
     }
     @media only screen and (max-width: 992px) {
+        position: absolute;
         width: 28px;
         left: 16px;
         top: 24px;
@@ -88,6 +95,11 @@ body {
             height: 40px;
         }
     }
+}
+
+.get_space_mobile {
+    height: 40px;
+    margin-bottom: 70px;
 }
 
 .header {
@@ -209,6 +221,12 @@ body {
     }
 }
 
+.storage_small_mobile {
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+}
+
 .storage {
     // margin-bottom: 148px;
 
@@ -226,7 +244,7 @@ body {
         }
 
         @media only screen and (max-width: 992px) {
-            width: 84%;
+            width: 100%;
             margin-bottom: 75px;
             margin-top: 170px;
         }
@@ -266,7 +284,7 @@ body {
             @media only screen and (max-width: 992px) {
                 font-size: 28px;
                 line-height: 32px;
-                margin-bottom: 80px;
+                margin-bottom: 20px;
             }
         }
 
@@ -315,6 +333,7 @@ body {
                 font-size: 26px;
                 line-height: 28px;
                 width: 100%;
+                text-align: left;
             }
         }
 
@@ -334,6 +353,8 @@ body {
             @media only screen and (max-width: 992px) {
                 font-size: 12px;
                 width: 95%;
+                text-align: left;
+                margin: unset;
             }
         }
     }
@@ -433,6 +454,7 @@ body {
 
             @media only screen and (max-width: 992px) {
                 margin: auto;
+                width: 100%;
             }
 
             .accordion-item {
@@ -584,7 +606,7 @@ body {
 
         @media only screen and (max-width: 992px) {
             margin-bottom: 75px;
-            width: 95%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -651,15 +673,18 @@ body {
         }
 
         @media only screen and (max-width: 992px) {
-            width: 95%;
+            width: 100%;
             margin-bottom: 30px;
             padding-bottom: 30px;
+            text-align: center;
+            border-bottom: unset;
         }
 
         img {
             @media only screen and (max-width: 992px) {
                 width: 34px;
                 margin-top: 2px;
+                margin: auto;
             }
         }
         .title {
@@ -676,7 +701,6 @@ body {
 
             @media only screen and (max-width: 992px) {
                 font-size: 14px;
-                margin-left: -5%;
             }
         }
 
@@ -693,8 +717,8 @@ body {
 
             @media only screen and (max-width: 992px) {
                 margin-top: 4px;
-                margin-left: -5%;
-                margin-right: 10%;
+                width: 63%;
+                margin: auto;
             }
         }
     }
@@ -715,6 +739,21 @@ body {
         // @media only screen and (max-width: 576px) {
         //     padding-bottom: 50px;
         // }
+
+        .title_mobile {
+            .company_head_mobile {
+                font-family: "Poppins", sans-serif;
+                width: 100%;
+                margin-bottom: 40px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .company_small_mobile {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
 
         .slide_img {
             width: 100%;
@@ -743,7 +782,7 @@ body {
             position: relative;
 
             @media only screen and (max-width: 992px) {
-                height: 250px;
+                height: 130px;
             }
         }
 
@@ -798,11 +837,12 @@ body {
 
                     @media only screen and (max-width: 1200px) {
                         font-size: 14px;
+                        font-weight: 300;
                     }
 
-                    @media only screen and (max-width: 992px) {
-                        font-size: 12px;
-                    }
+                    // @media only screen and (max-width: 992px) {
+                    //     font-size: 12px;
+                    // }
                 }
             }
 
