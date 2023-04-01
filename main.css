@@ -73,7 +73,7 @@ body {
 @media only screen and (max-width: 992px) {
   .logo_header {
     position: absolute;
-    width: 28px;
+    width: 34px;
     left: 16px;
     top: 24px;
   }
@@ -108,8 +108,8 @@ body {
 }
 
 .get_space_mobile {
-  height: 40px;
-  margin-bottom: 70px;
+  height: 50px;
+  margin-bottom: 80px;
 }
 
 .header {
@@ -233,8 +233,9 @@ body {
 
 .storage_small_mobile {
   text-align: left;
-  font-weight: 300;
   font-size: 14px;
+  margin-bottom: 6px;
+  letter-spacing: 0.7;
 }
 
 .storage .holder {
@@ -255,8 +256,8 @@ body {
 @media only screen and (max-width: 992px) {
   .storage .holder {
     width: 100%;
-    margin-bottom: 75px;
-    margin-top: 170px;
+    margin-bottom: 80px;
+    margin-top: 136px;
   }
 }
 .storage .holder .subtitle {
@@ -274,7 +275,9 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .holder .subtitle {
-    font-size: 12px;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 12px;
   }
 }
 .storage .holder .title {
@@ -297,9 +300,11 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .holder .title {
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    width: 90%;
+    margin: auto;
+    line-height: 34px;
+    margin-bottom: 16px;
   }
 }
 .storage .holder .img_holder {
@@ -312,7 +317,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .holder .img_holder {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
   }
 }
 .storage .holder .img_holder video {
@@ -348,10 +353,12 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .holder .desc_title {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 28px;
-    width: 100%;
+    width: 93%;
     text-align: left;
+    margin-left: 0;
+    margin-bottom: 14px;
   }
 }
 .storage .holder .description {
@@ -375,6 +382,8 @@ body {
     width: 95%;
     text-align: left;
     margin: unset;
+    letter-spacing: 0.6;
+    line-height: 22px;
   }
 }
 .storage .storage_type {
@@ -385,7 +394,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .storage_type {
-    padding-bottom: 17%;
+    padding-top: 62px;
+    padding-bottom: 62px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -521,6 +531,9 @@ body {
 .storage .storage_type_accordion .accordion-item .acc_description_helper_mini {
   width: 300px;
 }
+.storage .storage_type_accordion .accordion-item .mobile_cube {
+  margin: 36px auto 20px;
+}
 .storage .storage_type_accordion .accordion-item .rent_btn {
   all: unset;
   cursor: pointer;
@@ -535,9 +548,9 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .storage_type_accordion .accordion-item .rent_btn {
-    font-size: 14px;
-    padding: 8px 18px;
-    margin: 22px auto;
+    font-size: 16px;
+    padding: 12px 25px;
+    margin: 22px auto 55px;
   }
 }
 .storage .storage_type_accordion .accordion-item .accordion-button {
@@ -560,8 +573,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .storage_type_accordion .accordion-item .accordion-button {
-    padding: 12px 0;
-    font-size: 20px;
+    padding: 14px 0;
+    font-size: 18px;
   }
 }
 .storage .storage_type_accordion .accordion-item .accordion-button img {
@@ -591,8 +604,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .storage .storage_type_accordion .accordion-item .accordion-button.collapsed {
-    padding: 12px 0;
-    font-size: 20px;
+    padding: 14px 0;
+    font-size: 18px;
   }
 }
 .storage .storage_type_accordion .accordion-item .accordion-button.collapsed img {
@@ -625,7 +638,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company .store {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -651,9 +664,10 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company .store_title {
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 55px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 90px;
+    width: 72%;
   }
 }
 .company .store_description {
@@ -676,6 +690,11 @@ body {
 @media only screen and (max-width: 992px) {
   .company .store_description {
     font-size: 12px;
+    margin-top: 14px;
+    width: 90%;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.6;
   }
 }
 .company .advantages {
@@ -700,17 +719,30 @@ body {
 @media only screen and (max-width: 992px) {
   .company .advantages {
     width: 100%;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;
     border-bottom: unset;
   }
 }
 @media only screen and (max-width: 992px) {
+  .company .advantages:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .company .advantages:last-child::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 90px auto;
+    background-color: #a4a4a4;
+    height: 1px;
+  }
+}
+@media only screen and (max-width: 992px) {
   .company .advantages img {
-    width: 34px;
-    margin-top: 2px;
-    margin: auto;
+    width: 36px;
+    margin: 2px auto 10px;
   }
 }
 .company .advantages .title {
@@ -729,7 +761,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company .advantages .title {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 }
 .company .advantages .description {
@@ -763,20 +796,22 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .company_offers {
-    margin-top: 100px;
+    margin-top: 0;
     padding-bottom: 0;
   }
 }
 .company_offers .title_mobile .company_head_mobile {
   font-family: "Poppins", sans-serif;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  display: block;
   font-size: 24px;
   line-height: 28px;
 }
 .company_offers .title_mobile .company_small_mobile {
   font-size: 14px;
-  font-weight: 300;
+  margin-bottom: 6px;
+  letter-spacing: 0.7;
 }
 .company_offers .slide_img {
   width: 100%;
@@ -893,6 +928,11 @@ body {
 @media only screen and (max-width: 992px) {
   .company_offers .holder .description {
     font-size: 12px;
+    margin-top: 20px;
+    width: 90%;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.6;
   }
 }
 
@@ -1618,10 +1658,6 @@ body {
   background-color: white;
 }
 
-.check:checked ~ .ham-menu {
-  background-color: black;
-}
-
 .ham-menu {
   height: 2.5rem;
   width: 3rem;
@@ -1632,7 +1668,6 @@ body {
   z-index: 99;
   flex-direction: column;
   justify-content: space-around;
-  background-color: white;
   border-radius: 0.25em;
   display: none;
 }
@@ -1661,13 +1696,14 @@ body {
   transition: transform 100ms ease-in-out;
 }
 
+.check:checked ~ .ham-menu {
+  height: 3.1rem;
+  top: 13px;
+}
+
 .check:checked ~ .ham-menu .line1 {
   display: block;
   transform: rotate(45deg);
-}
-
-.check:checked ~ .ham-menu .line2 {
-  opacity: 0;
 }
 
 .check:checked ~ .ham-menu .line3 {
