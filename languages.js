@@ -197,14 +197,17 @@ $('.sr').click(function () {
 $(document).ready(function () {
   if (localStorage.getItem('lang') === null) {
     localStorage.setItem('lang', 'en');
+    $('.sr').addClass('active');
     location.reload();
   } else {
     if (localStorage.getItem('lang') === 'sr') {
+      $('.en').addClass('active');
       for (let key in jsonSR) {
         document.querySelector('.' + key).textContent = jsonSR[key];
         $('.form_btn_lang').attr('value', 'Potvrdi');
       }
     } else {
+      $('.sr').addClass('active');
       for (let key in jsonEN) {
         document.querySelector('.' + key).textContent = jsonEN[key];
         $('.form_btn_lang').attr('value', 'Submit');

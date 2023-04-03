@@ -69,8 +69,8 @@ body {
     @media only screen and (max-width: 992px) {
         position: absolute;
         width: 34px;
-        left: 16px;
-        top: 24px;
+        left: 12px;
+        top: 14px;
     }
 }
 
@@ -1594,6 +1594,20 @@ body {
     }
 }
 
+.language_mobile {
+    display: none;
+    position: absolute;
+    right: 79px;
+    top: 6px;
+    font-size: 19px;
+    text-decoration: underline;
+    z-index: 99;
+
+    &.active {
+        display: block;
+    }
+}
+
 //burger menu
 
 .menu-items {
@@ -1642,8 +1656,8 @@ body {
     z-index: 999;
 
     @media only screen and (max-width: 992px) {
-        top: 24px;
-        right: 8px;
+        top: 10px;
+        right: 10px;
         height: 2rem;
     }
 }
@@ -1661,8 +1675,12 @@ body {
     background-color: white;
 }
 
+.check:checked ~ .language_mobile {
+    z-index: 0;
+}
+
 .ham-menu {
-    height: 2.5rem;
+    height: 2.4rem;
     width: 3rem;
     position: fixed;
     right: 34px;
@@ -1677,14 +1695,13 @@ body {
     display: none;
     @media only screen and (max-width: 992px) {
         display: flex;
-        top: 16px;
+        top: 8px;
         right: 8px;
     }
 }
 
 .ham-menu .line {
     background-color: black;
-    border-radius: 1em;
     width: 1.5rem;
     height: 2px;
 }
@@ -1701,7 +1718,8 @@ body {
 
 .check:checked ~ .ham-menu {
     height: 3.1rem;
-    top: 13px;
+    top: 3px;
+    right: 6px;
 }
 
 .check:checked ~ .ham-menu .line1 {
