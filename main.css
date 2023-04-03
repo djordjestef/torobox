@@ -1601,8 +1601,10 @@ body {
   text-decoration: underline;
   z-index: 99;
 }
-.language_mobile.active {
-  display: block;
+@media only screen and (max-width: 992px) {
+  .language_mobile.active {
+    display: block;
+  }
 }
 
 .menu-items {
