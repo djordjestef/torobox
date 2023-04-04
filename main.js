@@ -1,11 +1,31 @@
 window.onload = function () {
+  var viewport_width = window.innerWidth;
   $('.owl_one').owlCarousel({
-    margin: 20,
+    // // center: true, 
+    // autoplay:false, 
+    // autoplayTimeout:5000,
+    // autoplayHoverPause:false,
+    // // items:1.4,
+    // items:1,           
+    // loop:true,     
+    // // margin:20,      
+    // responsive:{
+    //     600:{
+    //         // items:1.1 
+    //     }
+    // },
+    // onInitialized : function(){
+    //     if($('.owl-item').first().hasClass('active'))
+    //         $('.owl-prev').hide();
+    //     else
+    //         $('.owl-prev').show();
+    // } 
+    margin:viewport_width>992 ? 20 : 0,
     responsiveClass: true,
-    autoplay: true,
+    autoplay:viewport_width>992 ? true :false,
     autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    loop: true,
+    autoplayHoverPause:viewport_width>992 ? true :false,
+    loop:viewport_width>992 ? true : false,
     responsive: {
       0: {
         items: 1,
@@ -454,7 +474,6 @@ window.addEventListener('load', function (event) {
     var rect = el.getBoundingClientRect();
     var rect2 = el2.getBoundingClientRect();
     var headerHeight = headerEl.getBoundingClientRect().height;
-    var viewport_width = window.innerWidth;
 
     if (obj.direction === 'down' && static) {
       if (obj.scroll.y > headerHeight) {
