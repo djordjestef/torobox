@@ -9,11 +9,13 @@ window.onload = function () {
     autoplayTimeout: 2000,
     autoplayHoverPause: viewport_width > 992 ? true : false,
     loop: viewport_width > 992 ? true : false,
-    smartSpeed: 5000, // duration of change of 1 slide
+    smartSpeed: 800, // duration of change of 1 slide
+   
     responsive: {
       0: {
-        items: 1,
+        items: 1.4,
         dots: true,
+        center: true,
       },
 
       992: {
@@ -25,14 +27,24 @@ window.onload = function () {
 
   owl_one.on('changed.owl.carousel', function (property) {
     var current = property.item.index;
-    if (viewport_width < 992) {
-      if (current == 2) {
-        $('.slide_img_2').css({'position':'inherit', 'left':0});
-        
-      } else {
-        $('.slide_img_2').css({'position':'inherit', 'left':-160});
-      }
+    if (current == 1) {
+      // console.log('current.relatedTarget', property.relatedTarget.settings);
+      // property.relatedTarget.settings == false;
     }
+    // if (viewport_width < 992) {
+    //   if (current == 2) {
+    //     // $('.slide_img_2').css({ position: 'inherit', left: 0 });
+    //     $('.slide_img_2').animate(
+    //       {
+    //         position: 'inherit',
+    //         left: 0,
+    //       },
+    //       720,
+    //     );
+    //   } else {
+    //     $('.slide_img_2').css({ position: 'inherit', left: -160 });
+    //   }
+    // }
   });
 
   owl_two.owlCarousel({
