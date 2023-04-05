@@ -29,7 +29,7 @@ window.onload = function () {
       if (current == 2) {
         $('.slide_img_2').css('margin-left', 0);
       } else {
-        $('.slide_img_2').css('margin-left', -30);
+        $('.slide_img_2').css('margin-left', -60);
       }
     }
   });
