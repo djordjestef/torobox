@@ -13,7 +13,7 @@ window.onload = function () {
     responsive: {
       0: {
         items: 1,
-        dots: false,
+        dots: true,
       },
 
       992: {
