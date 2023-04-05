@@ -9,7 +9,7 @@ window.onload = function () {
     autoplayTimeout: 2000,
     autoplayHoverPause: viewport_width > 992 ? true : false,
     loop: viewport_width > 992 ? true : false,
-    smartSpeed: 500, // duration of change of 1 slide
+    smartSpeed: 5000, // duration of change of 1 slide
     responsive: {
       0: {
         items: 1,
@@ -27,9 +27,10 @@ window.onload = function () {
     var current = property.item.index;
     if (viewport_width < 992) {
       if (current == 2) {
-        $('.slide_img_2').css('margin-left', 0);
+        $('.slide_img_2').css({'position':'inherit', 'left':0});
+        
       } else {
-        $('.slide_img_2').css('margin-left', -60);
+        $('.slide_img_2').css({'position':'inherit', 'left':-160});
       }
     }
   });
