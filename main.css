@@ -6,10 +6,6 @@ html.has-scroll-smooth {
   overflow: hidden;
 }
 
-.slide_img_2 {
-  margin-left: -10%;
-}
-
 body {
   font-family: "Roboto", sans-serif !important;
 }

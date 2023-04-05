@@ -2,17 +2,15 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
-//1920,1620,1400,1200,992 ispod mobile// zavrsi za 1320 zavrssi sveÎ
-
 html.has-scroll-smooth {
     overflow: hidden;
 }
 
-// .owl-stage { margin-left: -10%}
-
-.slide_img_2 {
-    margin-left: -10%;
-}
+// .slide_img_2 {
+//     @media only screen and (max-width: 992px) {
+//         margin-left: -10%;
+//     }
+// }
 
 body {
     font-family: "Roboto", sans-serif !important;
