@@ -398,7 +398,6 @@ $('#item_mini').hover(
 );
 
 //form
-
 document.addEventListener('change', function (event) {
   let element = event.target;
   if (element && element.matches('.form-element-field')) {
@@ -412,7 +411,6 @@ function getFormData() {
   for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
 
   return false;
-  // return obj;
 }
 
 //locomotive scroll
@@ -486,7 +484,7 @@ window.addEventListener('load', function (event) {
       $('.header').addClass('pinned');
       hidden = false;
     }
-    // if (viewport_width > 992) {
+
     if (
       ((rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) || rect.top < 69) &&
       obj.direction === 'down'
@@ -499,15 +497,6 @@ window.addEventListener('load', function (event) {
         $('.get_space').css('z-index', 1);
       }, 500);
     }
-    // } else {
-    //   if ((rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) || rect.top < 69) {
-    //     $('.logo_header').css('z-index', 0);
-    //     $('.get_space').css('z-index', 0);
-    //   } else {
-    //     $('.logo_header').css('z-index', 1);
-    //     $('.get_space').css('z-index', 1);
-    //   }
-    // }
   });
 });
 
