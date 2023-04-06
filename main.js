@@ -13,7 +13,7 @@ window.onload = function () {
     responsive: {
       0: {
         items: 1,
-        dots: true,
+        dots: false,
         center: false,
         stagePadding: 40,
         margin: 0,
