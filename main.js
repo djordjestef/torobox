@@ -8,44 +8,38 @@ window.onload = function () {
     autoplay: viewport_width > 992 ? true : false,
     autoplayTimeout: 2000,
     autoplayHoverPause: viewport_width > 992 ? true : false,
-    loop: viewport_width > 992 ? true : false,
-    smartSpeed: 800, // duration of change of 1 slide
-   
+    loop: true,
+    smartSpeed: 800,
     responsive: {
       0: {
-        items: 1.4,
+        items: 1,
         dots: true,
-        center: true,
+        center: false,
+        stagePadding: 40,
+        margin: 0,
       },
 
       992: {
         items: 1,
         dots: true,
+        stagePadding: 0,
+        center:false
       },
     },
   });
 
-  owl_one.on('changed.owl.carousel', function (property) {
-    var current = property.item.index;
-    if (current == 1) {
-      // console.log('current.relatedTarget', property.relatedTarget.settings);
-      // property.relatedTarget.settings == false;
-    }
-    // if (viewport_width < 992) {
-    //   if (current == 2) {
-    //     // $('.slide_img_2').css({ position: 'inherit', left: 0 });
-    //     $('.slide_img_2').animate(
-    //       {
-    //         position: 'inherit',
-    //         left: 0,
-    //       },
-    //       720,
-    //     );
-    //   } else {
-    //     $('.slide_img_2').css({ position: 'inherit', left: -160 });
-    //   }
-    // }
-  });
+  // owl_one.on('changed.owl.carousel', function (property) {
+  //   var current = property.item.index;
+  //   console.log('property',property)
+  //   console.log('current',current)
+  //   if (current == 3) {
+  //     $('.owl_one .owl-stage').css('right',0)
+  //     // console.log('current.relatedTarget', property.relatedTarget.settings);
+  //     // property.relatedTarget.settings == false;
+  //   }
+  //   $('.owl_one .owl-stage').css('right',40)
+   
+  // });
 
   owl_two.owlCarousel({
     margin: 20,

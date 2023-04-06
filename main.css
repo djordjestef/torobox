@@ -816,22 +816,32 @@ body {
 .company_offers .slide_img {
   width: 100%;
 }
-.company_offers .owl-dots {
+.company_offers .owl_one .owl-dots {
   position: absolute;
   /* margin: auto; */
   bottom: 11px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.company_offers .owl-dots .owl-dot {
+.company_offers .owl_one .owl-dots .owl-dot {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.503);
   border-radius: 50%;
   margin: 0 7px;
 }
-.company_offers .owl-dots .owl-dot.active {
+.company_offers .owl_one .owl-dots .owl-dot.active {
   background-color: #fff !important;
+}
+@media only screen and (max-width: 992px) {
+  .company_offers .owl_one .owl-stage-outer {
+    margin-right: -12px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .company_offers .owl_one .owl-stage-outer .owl-stage {
+    right: 40px;
+  }
 }
 .company_offers .position_helper {
   position: relative;

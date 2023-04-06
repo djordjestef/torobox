@@ -6,17 +6,6 @@ html.has-scroll-smooth {
     overflow: hidden;
 }
 
-// .slide_img_2 {
-//     @media only screen and (max-width: 992px) {
-//         margin-left: -10%;
-//     }
-// }
-// .slide_img_1 {
-//     @media only screen and (max-width: 992px) {
-//                margin-right: -60px;
-//             }
-// }
-
 body {
     font-family: "Roboto", sans-serif !important;
 }
@@ -799,23 +788,35 @@ body {
         .slide_img {
             width: 100%;
         }
-        .owl-dots {
-            position: absolute;
-            /* margin: auto; */
-            bottom: 11px;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .owl_one {
+            .owl-dots {
+                position: absolute;
+                /* margin: auto; */
+                bottom: 11px;
+                left: 50%;
+                transform: translate(-50%, -50%);
 
-            .owl-dot {
-                width: 12px;
-                height: 12px;
-                background-color: rgba(255, 255, 255, 0.503);
-                border-radius: 50%;
-                margin: 0 7px;
+                .owl-dot {
+                    width: 12px;
+                    height: 12px;
+                    background-color: rgba(255, 255, 255, 0.503);
+                    border-radius: 50%;
+                    margin: 0 7px;
+                }
+
+                .owl-dot.active {
+                    background-color: #fff !important;
+                }
             }
-
-            .owl-dot.active {
-                background-color: #fff !important;
+            .owl-stage-outer {
+                @media only screen and (max-width: 992px) {
+                    margin-right: -12px;
+                }
+                .owl-stage {
+                    @media only screen and (max-width: 992px) {
+                        right: 40px;
+                    }
+                }
             }
         }
 
