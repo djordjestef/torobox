@@ -23,23 +23,10 @@ window.onload = function () {
         items: 1,
         dots: true,
         stagePadding: 0,
-        center:false
+        center: false,
       },
     },
   });
-
-  // owl_one.on('changed.owl.carousel', function (property) {
-  //   var current = property.item.index;
-  //   console.log('property',property)
-  //   console.log('current',current)
-  //   if (current == 3) {
-  //     $('.owl_one .owl-stage').css('right',0)
-  //     // console.log('current.relatedTarget', property.relatedTarget.settings);
-  //     // property.relatedTarget.settings == false;
-  //   }
-  //   $('.owl_one .owl-stage').css('right',40)
-   
-  // });
 
   owl_two.owlCarousel({
     margin: 20,
