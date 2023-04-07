@@ -1175,6 +1175,10 @@ body::-webkit-scrollbar {
 
         &:hover {
             box-shadow: 0px 40px 40px #00000012;
+
+            @media only screen and (max-width: 992px) {
+                box-shadow: unset;
+            }
         }
 
         .card-body {

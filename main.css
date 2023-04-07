@@ -1216,6 +1216,11 @@ body::-webkit-scrollbar {
 .blog .card:hover {
   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.0705882353);
 }
+@media only screen and (max-width: 992px) {
+  .blog .card:hover {
+    box-shadow: unset;
+  }
+}
 .blog .card .card-body {
   padding: 37px 42px;
   position: relative;
