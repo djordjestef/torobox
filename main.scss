@@ -10,6 +10,10 @@ body {
     font-family: "Roboto", sans-serif !important;
 }
 
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
 .container {
     @media only screen and (min-width: 992px) {
         padding: 0 100px;
@@ -1147,9 +1151,16 @@ body {
 
     .card_scroller::-webkit-scrollbar {
         width: 0 !important;
+        -webkit-appearance: none!important;
+        height: 0!important;
+        background-color: transparent!important;
     }
     .card_scroller::-ms-scrollbar {
         width: 0 !important;
+        -ms-appearance: none!important;
+        height: 0!important;
+        background-color: transparent!important;
+
     }
     .card {
         width: 80%;
@@ -1169,7 +1180,6 @@ body {
         .card-body {
             padding: 37px 42px;
             position: relative;
-     
 
             @media only screen and (max-width: 1660px) {
                 padding: 21px 25px;

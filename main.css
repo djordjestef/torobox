@@ -10,6 +10,10 @@ body {
   font-family: "Roboto", sans-serif !important;
 }
 
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
 @media only screen and (min-width: 992px) {
   .container {
     padding: 0 100px;
@@ -1185,9 +1189,15 @@ body {
 }
 .blog .card_scroller::-webkit-scrollbar {
   width: 0 !important;
+  -webkit-appearance: none !important;
+  height: 0 !important;
+  background-color: transparent !important;
 }
 .blog .card_scroller::-ms-scrollbar {
   width: 0 !important;
+  -ms-appearance: none !important;
+  height: 0 !important;
+  background-color: transparent !important;
 }
 .blog .card {
   width: 80%;
