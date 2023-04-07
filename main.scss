@@ -1152,15 +1152,15 @@ body::-webkit-scrollbar {
 
     .card_scroller::-webkit-scrollbar {
         width: 0 !important;
-        -webkit-appearance: none !important;
-        height: 0 !important;
-        background-color: transparent !important;
+        // -webkit-appearance: none !important;
+        // height: 0 !important;
+        // background-color: transparent !important;
     }
     .card_scroller::-ms-scrollbar {
         width: 0 !important;
-        -ms-appearance: none !important;
-        height: 0 !important;
-        background-color: transparent !important;
+        // -ms-appearance: none !important;
+        // height: 0 !important;
+        // background-color: transparent !important;
     }
     .card {
         width: 80%;
