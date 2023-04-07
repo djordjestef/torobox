@@ -1141,8 +1141,9 @@ body::-webkit-scrollbar {
             @media only screen and (max-width: 992px) {
                 padding-right: 0;
                 width: 78%;
-
-                &:last-child {
+            }
+            &:last-child {
+                @media only screen and (max-width: 992px) {
                     margin-right: 12px;
                 }
             }
@@ -1151,16 +1152,15 @@ body::-webkit-scrollbar {
 
     .card_scroller::-webkit-scrollbar {
         width: 0 !important;
-        -webkit-appearance: none!important;
-        height: 0!important;
-        background-color: transparent!important;
+        -webkit-appearance: none !important;
+        height: 0 !important;
+        background-color: transparent !important;
     }
     .card_scroller::-ms-scrollbar {
         width: 0 !important;
-        -ms-appearance: none!important;
-        height: 0!important;
-        background-color: transparent!important;
-
+        -ms-appearance: none !important;
+        height: 0 !important;
+        background-color: transparent !important;
     }
     .card {
         width: 80%;

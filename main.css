@@ -1183,6 +1183,8 @@ body::-webkit-scrollbar {
     padding-right: 0;
     width: 78%;
   }
+}
+@media only screen and (max-width: 992px) {
   .blog .card_scroller .flex_columns:last-child {
     margin-right: 12px;
   }
