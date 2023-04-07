@@ -1221,11 +1221,9 @@ body {
 .blog .card .card-body .card-text {
   font-size: 18px;
   overflow: hidden;
-  display: flex;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
-  -ms-line-clamp: 3;
   -webkit-box-orient: vertical;
-  -ms-box-orient: vertical;
   margin-bottom: 60px;
 }
 @media only screen and (max-width: 1660px) {
