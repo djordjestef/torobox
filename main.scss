@@ -1570,11 +1570,6 @@ body::-webkit-scrollbar {
         float: right;
         margin-bottom: 116px;
 
-        @media only screen and (max-width: 992px) {
-            position: absolute;
-            left: calc(var(--bs-gutter-x) * 0.5);
-            margin: 40px 0;
-        }
         a {
             all: unset;
             display: block;
@@ -1583,10 +1578,25 @@ body::-webkit-scrollbar {
         }
     }
 
+    &_list {
+        @media only screen and (max-width: 992px) {
+            position: unset;
+            float: unset;
+            margin: 40px 0 40px -11vw;
+        }
+
+        @media only screen and (max-width: 576px) {
+            position: absolute;
+            left: calc(var(--bs-gutter-x) * 0.5);
+            margin: 40px 0;
+        }
+    }
+
     &_list_2 {
         @media only screen and (max-width: 992px) {
             position: absolute;
             left: 40%;
+            margin: 40px 0;
         }
     }
 
