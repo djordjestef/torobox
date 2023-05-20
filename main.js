@@ -456,6 +456,61 @@ window.addEventListener('load', function (event) {
     static = true;
 
   scroller.on('scroll', (obj) => {
+    const advantages = document.querySelectorAll('.advantages');
+    advantages.forEach((advantage) => {
+      const rect = advantage.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      function lerp(start, end, t) {
+        return start + (end - start) * t;
+      }
+
+      const isAnimated = advantage.getAttribute('data-animated') === 'true';
+
+      if (isVisible && !isAnimated) {
+        const startScale = 0.5;
+        const endScale = 1;
+        const duration = 500; // Animation duration in milliseconds
+        const startTime = Date.now();
+        let animationFrame;
+
+        function animate() {
+          const currentTime = Date.now();
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          const scale = lerp(startScale, endScale, progress);
+          advantage.style.transform = `scale(${scale})`;
+
+          if (progress < 1) {
+            // Continue the animation until it's complete
+            animationFrame = requestAnimationFrame(animate);
+          } else {
+            // Animation is complete, mark as animated
+            advantage.setAttribute('data-animated', 'true');
+            // Re-enable scrolling
+            window.addEventListener('scroll', enableScroll);
+          }
+        }
+
+        // Disable scrolling until animation is finished
+        window.removeEventListener('scroll', enableScroll);
+        window.addEventListener('scroll', disableScroll);
+
+        // Start the animation
+        animate();
+      }
+    });
+
+    function disableScroll() {
+      window.scrollTo(0, 0);
+    }
+
+    function enableScroll() {
+      // Remove the event listener to enable scrolling
+      window.removeEventListener('scroll', enableScroll);
+    }
+
     var rect = el.getBoundingClientRect();
     var rect2 = el2.getBoundingClientRect();
     var headerHeight = headerEl.getBoundingClientRect().height;
