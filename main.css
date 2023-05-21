@@ -730,20 +730,6 @@ body::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 992px) {
-  .company .advantages:last-child {
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  .company .advantages:last-child::after {
-    content: "";
-    display: block;
-    width: 100%;
-    margin: 90px auto;
-    background-color: #a4a4a4;
-    height: 1px;
-  }
-}
-@media only screen and (max-width: 992px) {
   .company .advantages img {
     width: 36px;
     margin: 2px auto 10px;

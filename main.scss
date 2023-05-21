@@ -683,6 +683,16 @@ body::-webkit-scrollbar {
         border-bottom: 1px solid #a4a4a4;
         margin-bottom: 43px;
 
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     height: 1px;
+        //     background-color: #a4a4a4;
+        //     width: 87%;
+        //     margin: auto;
+        // }
+        
+
         @media only screen and (max-width: 1660px) {
             padding-bottom: 23px;
             margin-bottom: 30px;
@@ -700,21 +710,22 @@ body::-webkit-scrollbar {
             text-align: center;
             border-bottom: unset;
         }
+        
 
-        &:last-child {
-            @media only screen and (max-width: 992px) {
-                padding-bottom: 0;
-                margin-bottom: 0;
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    margin: 90px auto;
-                    background-color: #a4a4a4;
-                    height: 1px;
-                }
-            }
-        }
+        // &:last-child {
+        //     @media only screen and (max-width: 992px) {
+        //         padding-bottom: 0;
+        //         margin-bottom: 0;
+        //         &::after {
+        //             content: "";
+        //             display: block;
+        //             width: 100%;
+        //             margin: 90px auto;
+        //             background-color: #a4a4a4;
+        //             height: 1px;
+        //         }
+        //     }
+        // }
 
         img {
             @media only screen and (max-width: 992px) {
