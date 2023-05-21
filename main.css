@@ -18,17 +18,21 @@ body::-webkit-scrollbar {
   display: inline-block;
   transform-origin: bottom center;
   animation: flip-in 2s ease-out forwards;
+  opacity: 0;
 }
 
 @keyframes flip-in {
   0% {
     transform: rotateX(-90deg);
+    opacity: 0;
   }
   50% {
     transform: rotateX(0deg);
+    opacity: 1;
   }
   100% {
     transform: rotateX(0deg);
+    opacity: 1;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -82,13 +86,47 @@ body::-webkit-scrollbar {
   cursor: pointer;
   z-index: 1;
   left: 84px;
-  top: 35px;
+  top: -30px;
+  animation: logo_animate 2s ease-out forwards;
+}
+@keyframes logo_animate {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  50% {
+    transform: rotateX(0deg);
+    top: 35px;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0deg);
+    top: 35px;
+    opacity: 1;
+  }
 }
 @media only screen and (max-width: 1660px) {
   .logo_header {
     left: 34px;
-    top: 41px;
+    top: -30px;
     width: 39px;
+    animation: logo_animate 2s ease-out forwards;
+  }
+  @keyframes logo_animate {
+    0% {
+      top: 0;
+      opacity: 0;
+    }
+    50% {
+      transform: rotateX(0deg);
+      top: 41px;
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(0deg);
+      top: 41px;
+      opacity: 1;
+    }
   }
 }
 @media only screen and (max-width: 992px) {
@@ -96,20 +134,71 @@ body::-webkit-scrollbar {
     position: absolute;
     width: 34px;
     left: 12px;
-    top: 14px;
+    top: -30px;
+    animation: logo_animate 2s ease-out forwards;
+  }
+  @keyframes logo_animate {
+    0% {
+      top: 0;
+      opacity: 0;
+    }
+    50% {
+      transform: rotateX(0deg);
+      top: 14px;
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(0deg);
+      top: 14px;
+      opacity: 1;
+    }
   }
 }
 
 .get_space {
   position: fixed;
   right: 84px;
-  top: 28px;
+  top: -70px;
   z-index: 1;
+  animation: top_to_bottom 2s ease-out forwards;
+}
+@keyframes top_to_bottom {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  50% {
+    transform: rotateX(0deg);
+    top: 28px;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0deg);
+    top: 28px;
+    opacity: 1;
+  }
 }
 @media only screen and (max-width: 1660px) {
   .get_space {
     right: 34px;
-    top: 31px;
+    top: 0;
+    animation: top_to_bottom 2s ease-out forwards;
+  }
+  @keyframes top_to_bottom {
+    0% {
+      top: 0;
+      opacity: 0;
+    }
+    50% {
+      transform: rotateX(0deg);
+      top: 31px;
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(0deg);
+      top: 31px;
+      opacity: 1;
+    }
   }
 }
 @media only screen and (max-width: 992px) {
@@ -218,14 +307,49 @@ body::-webkit-scrollbar {
 }
 .header .logo_holder a .logo_text {
   position: absolute;
-  top: 44px;
+  top: 0;
   left: 141px;
+  opacity: 0;
+  animation: logo_text 2s ease-out forwards;
+}
+@keyframes logo_text {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  50% {
+    transform: rotateX(0deg);
+    top: 44px;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0deg);
+    top: 44px;
+    opacity: 1;
+  }
 }
 @media only screen and (max-width: 1660px) {
   .header .logo_holder a .logo_text {
     left: 83px;
-    top: 48px;
+    top: 0;
     width: 110px;
+    animation: logo_text 2s ease-out forwards;
+  }
+  @keyframes logo_text {
+    0% {
+      top: 0;
+      opacity: 0;
+    }
+    50% {
+      transform: rotateX(0deg);
+      top: 48px;
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(0deg);
+      top: 48px;
+      opacity: 1;
+    }
   }
 }
 @media only screen and (max-width: 992px) {
