@@ -690,12 +690,17 @@ body::-webkit-scrollbar {
                 width: 95%;
             }
         }
+
         .advantages {
             width: 80%;
             margin: auto;
             padding-bottom: 53px;
             border-bottom: 1px solid #a4a4a4;
             margin-bottom: 43px;
+            // backface-visibility: hidden;
+            // transition: transform 0.3s ease-out;
+            // transform: scale(1);
+            // will-change: transform;
 
             @media only screen and (max-width: 1660px) {
                 padding-bottom: 23px;

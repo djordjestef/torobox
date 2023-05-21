@@ -458,19 +458,18 @@ window.addEventListener('load', function (event) {
   scroller.on('scroll', (obj) => {
     const advantages = document.querySelectorAll('.advantages');
     const isMobile = window.innerWidth <= 992;
-    console.log('isMobile',isMobile)
+
     if (!isMobile) {
       advantages.forEach((advantage) => {
         const rect = advantage.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-        function lerp(start, end, t) {
-          return start + (end - start) * t;
-        }
-
         const isAnimated = advantage.getAttribute('data-animated') === 'true';
 
         if (isVisible && !isAnimated) {
+          advantage.setAttribute('data-animated', 'true');
+          advantage.style.transform = 'scale(0.5)';
+
           const startScale = 0.5;
           const endScale = 1;
           const duration = 500; // Animation duration in milliseconds
@@ -488,22 +487,17 @@ window.addEventListener('load', function (event) {
             if (progress < 1) {
               // Continue the animation until it's complete
               animationFrame = requestAnimationFrame(animate);
-            } else {
-              // Animation is complete, mark as animated
-              advantage.setAttribute('data-animated', 'true');
-              // Re-enable scrolling
-              window.addEventListener('scroll', enableScroll);
             }
           }
-
-          // Disable scrolling until animation is finished
-          window.removeEventListener('scroll', enableScroll);
-          window.addEventListener('scroll', disableScroll);
 
           // Start the animation
           animate();
         }
       });
+    }
+
+    function lerp(start, end, t) {
+      return start + (end - start) * t;
     }
 
     function disableScroll() {
