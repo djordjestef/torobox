@@ -1918,10 +1918,30 @@ body::-webkit-scrollbar {
     // background-color: white;
     border-radius: 0.25em;
     display: none;
+
     @media only screen and (max-width: 992px) {
         display: flex;
-        top: 8px;
+        top: 0;
         right: 8px;
+        animation: ham_animate 2s ease-out forwards;
+
+        @keyframes ham_animate {
+            0% {
+                top: 0;
+                opacity: 0;
+            }
+
+            50% {
+                transform: rotateX(0deg);
+                top: 8px;
+                opacity: 1;
+            }
+            100% {
+                transform: rotateX(0deg);
+                top: 8px;
+                opacity: 1;
+            }
+        }
     }
 }
 
