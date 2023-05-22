@@ -1,6 +1,8 @@
 const jsonEN = {
   storage_sub: ' We offer what everyone seems to be missing — space.',
-  storage_tit: ' Rent storage units for your personal possessions.',
+  storage_tit_mobile: ' Rent storage units for your personal possessions.',
+  storage_tit_desktop_1: ' Rent storage units for your',
+  storage_tit_desktop_2: 'personal possessions.',
   storage_lang: 'Storage',
   company_lang: 'Company',
   blog_lang: 'Blog',
@@ -94,7 +96,9 @@ const jsonEN = {
 
 const jsonSR = {
   storage_sub: 'Nudimo ono što izgleda svima nedostaje - prostor',
-  storage_tit: 'Iznajmite skladišne jedinice za svoje lične potrebe.',
+  storage_tit_mobile: 'Iznajmite skladišne jedinice za svoje lične potrebe.',
+  storage_tit_desktop_1: ' Iznajmite skladišne jedinice',
+  storage_tit_desktop_2: 'za svoje lične potrebe.',
   storage_lang: 'Skaldište',
   company_lang: 'Kompanija',
   blog_lang: 'Blog',
