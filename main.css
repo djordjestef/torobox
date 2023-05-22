@@ -95,12 +95,10 @@ body::-webkit-scrollbar {
     opacity: 0;
   }
   50% {
-    transform: rotateX(0deg);
     top: 35px;
     opacity: 1;
   }
   100% {
-    transform: rotateX(0deg);
     top: 35px;
     opacity: 1;
   }
@@ -118,12 +116,10 @@ body::-webkit-scrollbar {
       opacity: 0;
     }
     50% {
-      transform: rotateX(0deg);
       top: 41px;
       opacity: 1;
     }
     100% {
-      transform: rotateX(0deg);
       top: 41px;
       opacity: 1;
     }
@@ -143,12 +139,10 @@ body::-webkit-scrollbar {
       opacity: 0;
     }
     50% {
-      transform: rotateX(0deg);
       top: 14px;
       opacity: 1;
     }
     100% {
-      transform: rotateX(0deg);
       top: 14px;
       opacity: 1;
     }
@@ -168,12 +162,10 @@ body::-webkit-scrollbar {
     opacity: 0;
   }
   50% {
-    transform: rotateX(0deg);
     top: 28px;
     opacity: 1;
   }
   100% {
-    transform: rotateX(0deg);
     top: 28px;
     opacity: 1;
   }
@@ -190,12 +182,10 @@ body::-webkit-scrollbar {
       opacity: 0;
     }
     50% {
-      transform: rotateX(0deg);
       top: 31px;
       opacity: 1;
     }
     100% {
-      transform: rotateX(0deg);
       top: 31px;
       opacity: 1;
     }
@@ -240,12 +230,24 @@ body::-webkit-scrollbar {
 .header.unpinned {
   transform: translate3d(0, -100%, 0);
 }
+@keyframes opacity_animation {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header .my_navbar {
   padding-top: 34px;
   width: 70%;
   margin: auto;
   text-align: center;
   position: sticky;
+  animation: opacity_animation 2s ease-out forwards;
 }
 .header .my_navbar ul {
   padding: 0;
@@ -318,12 +320,10 @@ body::-webkit-scrollbar {
     opacity: 0;
   }
   50% {
-    transform: rotateX(0deg);
     top: 44px;
     opacity: 1;
   }
   100% {
-    transform: rotateX(0deg);
     top: 44px;
     opacity: 1;
   }
@@ -341,12 +341,10 @@ body::-webkit-scrollbar {
       opacity: 0;
     }
     50% {
-      transform: rotateX(0deg);
       top: 48px;
       opacity: 1;
     }
     100% {
-      transform: rotateX(0deg);
       top: 48px;
       opacity: 1;
     }
@@ -364,6 +362,7 @@ body::-webkit-scrollbar {
   font-size: 16px;
   top: 41px;
   font-weight: 300;
+  animation: opacity_animation 2s ease-out forwards;
 }
 @media only screen and (max-width: 1660px) {
   .header .login_holder {
@@ -454,6 +453,8 @@ body::-webkit-scrollbar {
 }
 .storage .holder .img_holder {
   margin-bottom: 255px;
+  animation: flip-in 2s ease-out forwards;
+  opacity: 0;
 }
 @media only screen and (max-width: 1200px) {
   .storage .holder .img_holder {
@@ -1901,12 +1902,10 @@ body::-webkit-scrollbar {
       opacity: 0;
     }
     50% {
-      transform: rotateX(0deg);
       top: 8px;
       opacity: 1;
     }
     100% {
-      transform: rotateX(0deg);
       top: 8px;
       opacity: 1;
     }

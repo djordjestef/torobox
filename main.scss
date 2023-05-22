@@ -96,12 +96,10 @@ body::-webkit-scrollbar {
         }
 
         50% {
-            transform: rotateX(0deg);
             top: 35px;
             opacity: 1;
         }
         100% {
-            transform: rotateX(0deg);
             top: 35px;
             opacity: 1;
         }
@@ -120,12 +118,10 @@ body::-webkit-scrollbar {
             }
 
             50% {
-                transform: rotateX(0deg);
                 top: 41px;
                 opacity: 1;
             }
             100% {
-                transform: rotateX(0deg);
                 top: 41px;
                 opacity: 1;
             }
@@ -136,7 +132,6 @@ body::-webkit-scrollbar {
         width: 34px;
         left: 12px;
         top: -30px;
-
         animation: logo_animate 2s ease-out forwards;
 
         @keyframes logo_animate {
@@ -146,12 +141,10 @@ body::-webkit-scrollbar {
             }
 
             50% {
-                transform: rotateX(0deg);
                 top: 14px;
                 opacity: 1;
             }
             100% {
-                transform: rotateX(0deg);
                 top: 14px;
                 opacity: 1;
             }
@@ -173,12 +166,10 @@ body::-webkit-scrollbar {
         }
 
         50% {
-            transform: rotateX(0deg);
             top: 28px;
             opacity: 1;
         }
         100% {
-            transform: rotateX(0deg);
             top: 28px;
             opacity: 1;
         }
@@ -196,12 +187,10 @@ body::-webkit-scrollbar {
             }
 
             50% {
-                transform: rotateX(0deg);
                 top: 31px;
                 opacity: 1;
             }
             100% {
-                transform: rotateX(0deg);
                 top: 31px;
                 opacity: 1;
             }
@@ -244,12 +233,28 @@ body::-webkit-scrollbar {
         transform: translate3d(0, -100%, 0);
     }
 
+     @keyframes opacity_animation {
+            0% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
     .my_navbar {
         padding-top: 34px;
         width: 70%;
         margin: auto;
         text-align: center;
         position: sticky;
+        animation: opacity_animation 2s ease-out forwards;
+
+       
 
         ul {
             padding: 0;
@@ -322,12 +327,10 @@ body::-webkit-scrollbar {
                     }
 
                     50% {
-                        transform: rotateX(0deg);
                         top: 44px;
                         opacity: 1;
                     }
                     100% {
-                        transform: rotateX(0deg);
                         top: 44px;
                         opacity: 1;
                     }
@@ -346,12 +349,10 @@ body::-webkit-scrollbar {
                         }
 
                         50% {
-                            transform: rotateX(0deg);
                             top: 48px;
                             opacity: 1;
                         }
                         100% {
-                            transform: rotateX(0deg);
                             top: 48px;
                             opacity: 1;
                         }
@@ -371,6 +372,8 @@ body::-webkit-scrollbar {
         font-size: 16px;
         top: 41px;
         font-weight: 300;
+        animation: opacity_animation 2s ease-out forwards;
+        
         @media only screen and (max-width: 1660px) {
             font-size: 14px;
             // top: 41px;
@@ -458,6 +461,8 @@ body::-webkit-scrollbar {
 
         .img_holder {
             margin-bottom: 255px;
+            animation: flip-in 2s ease-out forwards;
+            opacity: 0;
 
             @media only screen and (max-width: 1200px) {
                 margin-bottom: 195px;
@@ -1932,12 +1937,10 @@ body::-webkit-scrollbar {
             }
 
             50% {
-                transform: rotateX(0deg);
                 top: 8px;
                 opacity: 1;
             }
             100% {
-                transform: rotateX(0deg);
                 top: 8px;
                 opacity: 1;
             }
