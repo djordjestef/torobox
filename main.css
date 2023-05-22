@@ -14,6 +14,19 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fade-in-animation 1s ease-in-out forwards;
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .flip-text {
   display: inline-block;
   transform-origin: bottom center;
@@ -453,7 +466,7 @@ body::-webkit-scrollbar {
 }
 .storage .holder .img_holder {
   margin-bottom: 255px;
-  animation: flip-in 2s ease-out forwards;
+  animation: fade-in-animation 1s ease-in-out forwards;
   opacity: 0;
 }
 @media only screen and (max-width: 1200px) {
