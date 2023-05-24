@@ -822,11 +822,13 @@ body::-webkit-scrollbar {
   }
 }
 .company .store {
+  margin-top: 50px;
   margin-bottom: 123px;
 }
 @media only screen and (max-width: 992px) {
   .company .store {
     margin-bottom: 40px;
+    margin-top: 0;
     width: 100%;
     margin-left: auto;
     margin-right: auto;

@@ -456,49 +456,99 @@ window.addEventListener('load', function (event) {
     static = true;
 
   scroller.on('scroll', (obj) => {
-    const advantages = document.querySelectorAll('.advantages');
+    const advantages = document.querySelectorAll('.advantages_animation');
+    const titleAnimation = document.querySelectorAll('.title_animation');
     const isMobile = window.innerWidth <= 992;
 
-    if (!isMobile) {
-      advantages.forEach((advantage) => {
-        const rect = advantage.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+    titleAnimation.forEach((advantage) => {
+      const rect = advantage.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-        const isAnimated = advantage.getAttribute('data-animated') === 'true';
+      const isAnimated = advantage.getAttribute('data-animated') === 'true';
 
-        if (isVisible && !isAnimated) {
-          advantage.setAttribute('data-animated', 'true');
-          advantage.style.transform = 'scale(0.5)';
+      if (isVisible && !isAnimated) {
+        advantage.setAttribute('data-animated', 'true');
+        advantage.style.opacity = '0';
+        advantage.style.transform = 'translateY(100%)';
 
-          const startScale = 0.5;
-          const endScale = 1;
-          const duration = 500; // Animation duration in milliseconds
-          const startTime = Date.now();
-          let animationFrame;
+        const startOpacity = 0;
+        const endOpacity = 1;
+        const startTranslateY = 100;
+        const endTranslateY = 0;
+        const duration = 800; // Animation duration in milliseconds
+        const startTime = Date.now();
+        let animationFrame;
 
-          function animate() {
-            const currentTime = Date.now();
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-
-            const scale = lerp(startScale, endScale, progress);
-            advantage.style.transform = `scale(${scale})`;
-
-            if (progress < 1) {
-              // Continue the animation until it's complete
-              animationFrame = requestAnimationFrame(animate);
-            }
-          }
-
-          // Start the animation
-          animate();
+        function lerp(start, end, progress) {
+          return start * (1 - progress) + end * progress;
         }
-      });
-    }
 
-    function lerp(start, end, t) {
-      return start + (end - start) * t;
-    }
+        function animate() {
+          const currentTime = Date.now();
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          const opacity = lerp(startOpacity, endOpacity, progress);
+          const translateY = lerp(startTranslateY, endTranslateY, progress);
+
+          advantage.style.opacity = opacity;
+          advantage.style.transform = `translateY(${translateY}%)`;
+
+          if (progress < 1) {
+            // Continue the animation until it's complete
+            animationFrame = requestAnimationFrame(animate);
+          }
+        }
+
+        // Start the animation
+        animate();
+      }
+    });
+
+    // if (!isMobile) {
+    advantages.forEach((advantage) => {
+      const rect = advantage.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      const isAnimated = advantage.getAttribute('data-animated') === 'true';
+
+      if (isVisible && !isAnimated) {
+        advantage.setAttribute('data-animated', 'true');
+        advantage.style.transform = 'scale(0.5)';
+
+        const startScale = 0.5;
+        const endScale = 1;
+        const duration = 500; // Animation duration in milliseconds
+        const startTime = Date.now();
+        let animationFrame;
+
+        function lerp(start, end, t) {
+          return start + (end - start) * t;
+        }
+
+        function animate() {
+          const currentTime = Date.now();
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          const scale = lerp(startScale, endScale, progress);
+          advantage.style.transform = `scale(${scale})`;
+
+          if (progress < 1) {
+            // Continue the animation until it's complete
+            animationFrame = requestAnimationFrame(animate);
+          }
+        }
+
+        // Start the animation
+        animate();
+      }
+    });
+    // }
+
+    // function lerp(start, end, progress) {
+    //   return start * (1 - progress) + end * progress;
+    // }
 
     var rect = el.getBoundingClientRect();
     var rect2 = el2.getBoundingClientRect();

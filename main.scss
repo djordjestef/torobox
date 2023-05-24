@@ -857,10 +857,12 @@ body::-webkit-scrollbar {
         margin-bottom: 100px;
     }
     .store {
+        margin-top: 50px;
         margin-bottom: 123px;
 
         @media only screen and (max-width: 992px) {
             margin-bottom: 40px;
+            margin-top: 0;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
