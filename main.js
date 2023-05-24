@@ -500,15 +500,6 @@ window.addEventListener('load', function (event) {
       return start + (end - start) * t;
     }
 
-    function disableScroll() {
-      window.scrollTo(0, 0);
-    }
-
-    function enableScroll() {
-      // Remove the event listener to enable scrolling
-      window.removeEventListener('scroll', enableScroll);
-    }
-
     var rect = el.getBoundingClientRect();
     var rect2 = el2.getBoundingClientRect();
     var headerHeight = headerEl.getBoundingClientRect().height;

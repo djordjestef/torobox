@@ -2,6 +2,34 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.animated-heading {
+  position: relative;
+  perspective: 1000px;
+}
+
+.animated-heading-line {
+  display: inline-block;
+  transform-origin: center bottom;
+  opacity: 0;
+  animation: fade-in-heading 0.5s ease-out forwards, flip-heading 0.8s ease-out forwards;
+}
+
+@keyframes fade-in-heading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes flip-heading {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
 html.has-scroll-smooth {
   overflow: hidden;
 }
@@ -27,27 +55,28 @@ body::-webkit-scrollbar {
     opacity: 1;
   }
 }
-.flip-text {
-  display: inline-block;
-  transform-origin: bottom center;
-  animation: flip-in 2s ease-out forwards;
-  opacity: 0;
+@keyframes fade-in-head {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+.animated-heading-line:nth-child(1) {
+  animation-delay: 0.1s;
 }
 
-@keyframes flip-in {
-  0% {
-    transform: rotateX(-180deg);
-    opacity: 0;
-  }
-  50% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
+.animated-heading-line:nth-child(2) {
+  animation-delay: 0.5s;
 }
+
+.animated-heading-line:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
 @media only screen and (min-width: 992px) {
   .container {
     padding: 0 100px;

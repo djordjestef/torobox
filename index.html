@@ -14,6 +14,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
@@ -137,21 +140,24 @@
         </div>
       </div>
 
-      <div data-scroll-section>
+      <div class="section_animated" data-scroll-section>
         <section class="storage" id="storage" data-scroll>
           <div class="container">
             <div class="row holder_show">
               <div class="col-12">
                 <div class="holder">
-                  <span class="flip-heading">
-                    <div class="subtitle storage_sub fade-in"></div>
-                    <div class="title storage_tit_mobile only_mobile flip-text"></div>
-                    <div style="margin-bottom: 0;" class="title storage_tit_desktop_1 only_desktop flip-text"></div>
-                    <div class="title storage_tit_desktop_2 only_desktop flip-text"></div>
-                  </span>
+                  <div class="subtitle storage_sub fade-in"></div>
+                  <h1 class="animated-heading only_desktop">
+                    <span
+                      style="margin-bottom: 0"
+                      class="title storage_tit_desktop_1 animated-heading-line"
+                    ></span>
+                    <span class="title storage_tit_desktop_2 animated-heading-line"></span>
+                  </h1>
+                  <h1 class="animated-heading only_mobile">
+                    <span class="title storage_tit_mobile animated-heading-line"></span>
+                  </h1>
 
-                  <!-- <div class="subtitle storage_sub"></div>
-                  <div class="title storage_tit"></div> -->
                   <div class="get_space_mobile only_mobile">
                     <a href="#">
                       <lottie-player
@@ -326,6 +332,7 @@
           </div>
         </section>
       </div>
+
       <section class="company">
         <div data-scroll-section>
           <div class="container">
