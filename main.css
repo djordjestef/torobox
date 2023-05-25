@@ -29,7 +29,27 @@ html {
 }
 
 .fixed_target {
-  bottom: -100vh;
+  bottom: -1040px;
+}
+@media only screen and (max-width: 1400px) {
+  .fixed_target {
+    bottom: -660px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fixed_target {
+    bottom: -520px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .fixed_target {
+    bottom: -330px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .fixed_target {
+    bottom: -230px;
+  }
 }
 
 .fixed,
