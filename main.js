@@ -460,6 +460,12 @@ window.addEventListener('load', function (event) {
     const titleAnimation = document.querySelectorAll('.title_animation');
     const isMobile = window.innerWidth <= 992;
 
+
+
+
+
+    
+
     titleAnimation.forEach((advantage) => {
       const rect = advantage.getBoundingClientRect();
       const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
