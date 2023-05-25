@@ -10,6 +10,9 @@ html {
     height: 1040px;
     // margin-top: 120px;
     // height: 800px;
+    @media only screen and (max-width: 1660px) {
+        height: 930px;
+    }
 
     @media only screen and (max-width: 1400px) {
         height: 660px;
@@ -30,6 +33,10 @@ html {
 
 .fixed_target {
     bottom: -1040px;
+
+    @media only screen and (max-width: 1660px) {
+        bottom: -930px;
+    }
     @media only screen and (max-width: 1400px) {
         bottom: -660px;
     }
@@ -558,6 +565,7 @@ body::-webkit-scrollbar {
             @media only screen and (max-width: 1660px) {
                 font-size: 50px;
                 line-height: 60px;
+                margin-bottom: 80px;
             }
 
             @media only screen and (max-width: 1200px) {

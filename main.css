@@ -7,6 +7,11 @@ html {
   overflow: hidden;
   height: 1040px;
 }
+@media only screen and (max-width: 1660px) {
+  .fixed_wrapper {
+    height: 930px;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .fixed_wrapper {
     height: 660px;
@@ -30,6 +35,11 @@ html {
 
 .fixed_target {
   bottom: -1040px;
+}
+@media only screen and (max-width: 1660px) {
+  .fixed_target {
+    bottom: -930px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .fixed_target {
@@ -547,6 +557,7 @@ body::-webkit-scrollbar {
   .storage .holder .title {
     font-size: 50px;
     line-height: 60px;
+    margin-bottom: 80px;
   }
 }
 @media only screen and (max-width: 1200px) {
