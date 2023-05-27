@@ -112,15 +112,6 @@ html {
     transform: rotateX(0deg);
   }
 }
-html.has-scroll-smooth {
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif !important;
 }
