@@ -425,10 +425,10 @@ window.addEventListener('load', function (event) {
     smooth: true,
     getSpeed: true,
     smoothMobile: true,
-    smartphone: { smooth: true },
+    // smartphone: { smooth: true },
     getDirection: true,
     reloadOnContextChange: true,
-    smoothMobileSpeed:2
+    smoothMobileSpeed:1
   });
 
   $('.storage_link').on('click', function () {
