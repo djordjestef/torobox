@@ -212,7 +212,7 @@ body::-webkit-scrollbar {
     background: #4436360d;
 }
 
-.logo_header {
+.logo_header_desktop {
     position: fixed;
     display: block;
     cursor: pointer;
@@ -259,6 +259,13 @@ body::-webkit-scrollbar {
             }
         }
     }
+
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
+.logo_header_mobile {
     @media only screen and (max-width: 992px) {
         position: absolute;
         width: 34px;
@@ -543,7 +550,7 @@ body::-webkit-scrollbar {
         @media only screen and (max-width: 992px) {
             width: 100%;
             margin-bottom: 80px;
-            margin-top: 136px;
+            margin-top: 36px;
         }
 
         .subtitle {

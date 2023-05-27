@@ -209,7 +209,7 @@ body::-webkit-scrollbar {
   background: rgba(68, 54, 54, 0.0509803922);
 }
 
-.logo_header {
+.logo_header_desktop {
   position: fixed;
   display: block;
   cursor: pointer;
@@ -233,7 +233,7 @@ body::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 1660px) {
-  .logo_header {
+  .logo_header_desktop {
     left: 34px;
     top: -30px;
     width: 39px;
@@ -255,7 +255,13 @@ body::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 992px) {
-  .logo_header {
+  .logo_header_desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo_header_mobile {
     position: absolute;
     width: 34px;
     left: 12px;
@@ -530,7 +536,7 @@ body::-webkit-scrollbar {
   .storage .holder {
     width: 100%;
     margin-bottom: 80px;
-    margin-top: 136px;
+    margin-top: 36px;
   }
 }
 .storage .holder .subtitle {

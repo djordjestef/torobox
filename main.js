@@ -456,6 +456,7 @@ window.addEventListener('load', function (event) {
   });
   let hidden = false,
     static = true;
+    
 
   scroller.on('scroll', (obj) => {
     const advantages = document.querySelectorAll('.advantages_animation');
