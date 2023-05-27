@@ -6,6 +6,7 @@ html {
   position: relative;
   overflow: hidden;
   height: 1040px;
+  margin-bottom: 30px;
 }
 @media only screen and (max-width: 1660px) {
   .fixed_wrapper {
@@ -24,12 +25,12 @@ html {
 }
 @media only screen and (max-width: 576px) {
   .fixed_wrapper {
-    height: 330px;
+    height: 400px;
   }
 }
 @media only screen and (max-width: 400px) {
   .fixed_wrapper {
-    height: 230px;
+    height: 340px;
   }
 }
 
@@ -53,12 +54,12 @@ html {
 }
 @media only screen and (max-width: 576px) {
   .fixed_target {
-    bottom: -330px;
+    bottom: -400px;
   }
 }
 @media only screen and (max-width: 400px) {
   .fixed_target {
-    bottom: -230px;
+    bottom: -340px;
   }
 }
 
@@ -112,7 +113,12 @@ html {
   }
 }
 html.has-scroll-smooth {
+  bottom: 0;
+  left: 0;
   overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 body {

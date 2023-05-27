@@ -8,8 +8,8 @@ html {
     position: relative;
     overflow: hidden;
     height: 1040px;
-    // margin-top: 120px;
-    // height: 800px;
+    margin-bottom: 30px;
+
     @media only screen and (max-width: 1660px) {
         height: 930px;
     }
@@ -23,11 +23,11 @@ html {
     }
 
     @media only screen and (max-width: 576px) {
-        height: 330px;
+        height: 400px;
     }
 
     @media only screen and (max-width: 400px) {
-        height: 230px;
+        height: 340px;
     }
 }
 
@@ -46,11 +46,11 @@ html {
     }
 
     @media only screen and (max-width: 576px) {
-        bottom: -330px;
+        bottom: -400px;
     }
 
     @media only screen and (max-width: 400px) {
-        bottom: -230px;
+        bottom: -340px;
     }
 }
 .fixed,
@@ -109,8 +109,17 @@ html {
 
 //end of heading animation
 
+// html.has-scroll-smooth {
+//     overflow: hidden;
+// }
+
 html.has-scroll-smooth {
+    bottom: 0;
+    left: 0;
     overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
 
 body {

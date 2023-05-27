@@ -424,7 +424,8 @@ window.addEventListener('load', function (event) {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     getSpeed: true,
-    // smoothMobile: true,
+    smoothMobile: true,
+    smartphone: { smooth: true },
     getDirection: true,
     reloadOnContextChange: true,
   });
@@ -458,13 +459,7 @@ window.addEventListener('load', function (event) {
   scroller.on('scroll', (obj) => {
     const advantages = document.querySelectorAll('.advantages_animation');
     const titleAnimation = document.querySelectorAll('.title_animation');
-    const isMobile = window.innerWidth <= 992;
-
-
-
-
-
-    
+    // const isMobile = window.innerWidth <= 992;
 
     titleAnimation.forEach((advantage) => {
       const rect = advantage.getBoundingClientRect();
