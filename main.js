@@ -425,6 +425,7 @@ window.addEventListener('load', function (event) {
     smooth: true,
     getSpeed: true,
     // smoothMobile: true,
+    smartphone: { smooth: true },
     getDirection: true,
     reloadOnContextChange: true,
   });
