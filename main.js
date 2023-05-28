@@ -425,7 +425,12 @@ window.addEventListener('load', function (event) {
     smooth: true,
     getSpeed: true,
     smoothMobile: true,
-    smartphone: { smooth: true },
+    smartphone: {
+      breakpoint: 0,
+      smooth: false,
+      getDirection: true,
+    },
+    // smartphone: { smooth: true },
     getDirection: true,
     reloadOnContextChange: true,
     smoothMobileSpeed:1
