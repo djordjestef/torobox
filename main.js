@@ -424,16 +424,17 @@ window.addEventListener('load', function (event) {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     getSpeed: true,
-    smoothMobile: true,
-    smartphone: {
-      breakpoint: 0,
-      smooth: false,
-      getDirection: true,
-    },
+    // smoothMobile: true,
+    // smartphone: {
+    //   breakpoint: 0,
+    //   smooth: false,
+    //   getDirection: true,
+    // },
     // smartphone: { smooth: true },
     getDirection: true,
     reloadOnContextChange: true,
-    smoothMobileSpeed:1
+    smoothMobileSpeed: 1,
+    ////////////////
   });
 
   $('.storage_link').on('click', function () {
@@ -461,7 +462,6 @@ window.addEventListener('load', function (event) {
   });
   let hidden = false,
     static = true;
-    
 
   scroller.on('scroll', (obj) => {
     const advantages = document.querySelectorAll('.advantages_animation');
