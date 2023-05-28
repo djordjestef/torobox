@@ -428,7 +428,7 @@ window.addEventListener('load', function (event) {
     smartphone: { smooth: true },
     getDirection: true,
     reloadOnContextChange: true,
-    // smoothMobileSpeed:1
+    smoothMobileSpeed:1
   });
 
   $('.storage_link').on('click', function () {
