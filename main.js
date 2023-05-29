@@ -424,17 +424,15 @@ window.addEventListener('load', function (event) {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     getSpeed: true,
-    smoothMobile: false,
+    smoothMobile: true,
     smartphone: {
       breakpoint: 0,
       smooth: false,
       getDirection: true,
     },
-    // smartphone: { smooth: true },
     getDirection: true,
     reloadOnContextChange: true,
     smoothMobileSpeed: 1,
-    ////////////////
   });
 
   $('.storage_link').on('click', function () {
