@@ -591,11 +591,11 @@ window.addEventListener('load', function (event) {
       ((rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) || rect.top < 69) &&
       obj.direction === 'down'
     ) {
-      $('.logo_header').css('z-index', 0);
+      $('.logo_header_desktop').css('z-index', 0);
       $('.get_space').css('z-index', 0);
     } else {
       setTimeout(() => {
-        $('.logo_header').css('z-index', 1);
+        $('.logo_header_desktop').css('z-index', 1);
         $('.get_space').css('z-index', 1);
       }, 500);
     }
