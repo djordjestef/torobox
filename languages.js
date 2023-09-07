@@ -24,29 +24,29 @@ const jsonEN = {
     ' Our units are made according to the highest quality standards so they can fulfill their role -to flawlessly keep your valuable belongings, following the Federation of European Self Storage Associations (FEDESSA)',
   storage_lang_small: 'Storage',
   storage_lang_small_mobile: 'Storage',
-  h2_lang_large: 'Large',
-  h2_lang_medium: 'Medium',
-  h2_lang_small: 'Small',
-  h2_lang_mini: 'Mini',
+  h2_lang_large: 'Large container',
+  h2_lang_medium: 'Medium storage',
+  h2_lang_small: 'Small space',
+  h2_lang_mini: 'Mini vault',
   acc_description_large_one:
-    'Large storage box is suitable for you who need a lot of space, either for decoration from an apartment over 70 m2 or for your company.',
+    `This storage container is suitable for those who need a lot of storage space, either for things from an apartment over 70 m\u00B2 or your company.`,
   acc_description_large_two:
-    'Width: 2.5m | Height: 2.5m | Lenght: 6m Surface Area: 15m2 | Volume: 38m3',
+    'Width: 2.5m | Height: 2.5m | Lenght: 6m Surface Area: 15m\u00B2 | Volume: 38m\u00B3',
   rent_large_btn: 'Rent for 170€ / mesečno',
   acc_description_medium_one:
-    'This storage box is suitable for furniture and things from a normally furnished apartment from approx. 60 - 70 m2.',
+    'This storage space is suitable for storing furniture and things from a normally furnished apartment from approx. 60 - 70 m\u00B2.',
   acc_description_medium_two:
-    'Width: 3m | Height: 2.5m | Lenght: 2.5m Surface Area: 7.5m2 | Volume: 19m3',
+    'Width: 3m | Height: 2.5m | Lenght: 2.5m Surface Area: 7.5m\u00B2 | Volume: 19m\u00B3',
   rent_medium_btn: 'Rent for 100€ / mont',
   acc_description_small_one:
-    'Small warehouse is suitable for storing the contents of a 1-room apartment or a normally furnished apartment of up to 30 - 35 m2.',
+    'Small storage box is suitable for storing the contents of a 1-room apartment or a normally furnished apartment of up to 30 - 35 m\u00B2.',
   acc_description_small_two:
-    'Width: 1.5m | Height: 2.5m | Lenght: 2.5m Surface Area: 4m2 | Volume: 9m3',
+    'Width: 1.5m | Height: 2.5m | Lenght: 2.5m Surface Area: 4m\u00B2 | Volume: 9m\u00B3',
   rent_small_btn: 'Rent for 70€ / mont',
   acc_description_mini_one:
-    'This box size offers a little extra space. Here you can store items like documents, laptops and similar type of smaller items.',
+    'Vault size box offers a little extra space. Here you can store items like documents, laptops and similar type of small valuable items.',
   acc_description_mini_two:
-    'Width: 0.5m | Height: 0.5m | Lenght: 0.5m Surface Area: 1.5m2 | Volume: 0.125m3',
+    'Width: 1m | Height: 2.5m | Lenght: 2.5m Surface Area: 1m\u00B2 | Volume: 2.5m\u00B3',
   rent_mini_btn: 'Rent for 50€ / mont',
   company_storage_title: 'We pack, move & store for you.',
   span_1:
@@ -120,29 +120,29 @@ const jsonSR = {
     'Naše jedinice su napravljene prema najvišim standardima kvaliteta tako da mogu ispuniti svoju ulogu - besprekorno čuvanje vaših vrednih stvari, u skladu sa Federacijom evropskih udruženja za skladištenje (FEDESSA).',
   storage_lang_small: 'Skaldište',
   storage_lang_small_mobile: 'Skaldište',
-  h2_lang_large: 'Veliko',
-  h2_lang_medium: 'Srednje',
-  h2_lang_small: 'Malo',
-  h2_lang_mini: 'Mini',
+  h2_lang_large: 'Veliki kontejner',
+  h2_lang_medium: 'Srednje skladište',
+  h2_lang_small: 'Mala jedinica',
+  h2_lang_mini: 'Mini sef',
   acc_description_large_one:
-    'Velika kutija za skladištenje pogodna je za vas kojima je potrebno puno prostora, bilo za dekoraciju u stanovima većim od 70 m2 ili za vašu kompaniju.',
+    'Ovaj kontejner za skladištenje je pogodan za sve koji trebaju puno skladišnog prostora, bilo za stvari iz stana preko 70 m\u00B2 ili za vašu kompaniju.',
   acc_description_large_two:
-    'Širina: 2.5m | Visina: 2.5m | Dužina: 6m Površina: 15m2 | Zapremina: 38m3',
+    'Širina: 2.5m | Visina: 2.5m | Dužina: 6m Površina: 15m\u00B2 | Zapremina: 38m\u00B3',
   rent_large_btn: 'Rentiraj za 170€ / mesečno',
   acc_description_medium_one:
-    'Ova kutija za skladištenje pogodna je za nameštaj i stvari iz normalno nameštenog stana od približno 60 - 70 m2.',
+    'Ovaj prostor za skladištenje je pogodan za čuvanje nameštaja i stvari iz standardno opremljenog stana od približno 60 - 70 m\u00B2.',
   acc_description_medium_two:
-    'Širina: 3m | Visina: 2.5m | Dužina: 2.5m Površina: 7.5m2 | Zapremina: 19m3',
+    'Širina: 3m | Visina: 2.5m | Dužina: 2.5m Površina: 7.5m\u00B2 | Zapremina: 19m\u00B3',
   rent_medium_btn: 'Rentiraj za 100€ / mesečno',
   acc_description_small_one:
-    'Mali skladišni prostor pogodan je za skladištenje sadržaja jednosobnog stana ili normalno namještenog stana veličine do 30 - 35 m2.',
+    'Mala skladišna jedinica je pogodna za čuvanje sadržaja stana sa jednom sobom ili standardno opremljenog stana veličine do 30 - 35 m\u00B2.',
   acc_description_small_two:
-    'Širina: 1.5m | Visina: 2.5m | Dužina: 2.5m Površina: 4m2 | Zapremina: 9m3',
+    'Širina: 1.5m | Visina: 2.5m | Dužina: 2.5m Površina: 4m\u00B2 | Zapremina: 9m\u00B3',
   rent_small_btn: 'Rentiraj za 70€ / mesečno',
   acc_description_mini_one:
-    'Ova veličina kutije pruža malo dodatnog prostora. Ovdje možete pohraniti predmete poput dokumenata, prijenosnih računara i sličnih manjih predmeta.',
+    'Box veličine sefa nudi malo dodatnog prostora. Ovde možete čuvati predmete poput dokumenata, laptopova i sličnih vrednih stvari.',
   acc_description_mini_two:
-    'Širina: 0.5m | Visina: 0.5m | Dužina: 0.5m Površina: 1.5m2 | Zapremina: 0.125m3',
+    'Širina: 1m | Visina: 2.5m | Dužina: 1m Površina: 1m\u00B2 | Zapremina: 2.5m\u00B3',
   rent_mini_btn: 'Rentiraj za 50€ / mesečno',
   company_storage_title: 'Pakujemo, selimo i skladištimo za vas.',
   span_1:

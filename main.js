@@ -5,10 +5,10 @@ window.onload = function () {
   owl_one.owlCarousel({
     margin: viewport_width > 992 ? 20 : 0,
     responsiveClass: true,
-    autoplay: viewport_width > 992 ? true : false,
+    // autoplay: viewport_width > 992 ? true : false,
     autoplayTimeout: 2000,
     autoplayHoverPause: viewport_width > 992 ? true : false,
-    loop: true,
+    // loop: true,
     smartSpeed: 800,
     responsive: {
       0: {
