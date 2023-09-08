@@ -53,7 +53,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
-   
+
     <title>Torobox</title>
   </head>
   <body>
@@ -189,28 +189,31 @@
                     >
                       <div class="img_holder">
                         <video autoplay loop muted playsinline>
-                          <source src="assets/skladistenje-odlaganje-cuvanje-stvari.mp4" type="video/mp4" />
+                          <source
+                            src="assets/skladistenje-odlaganje-cuvanje-stvari.mp4"
+                            type="video/mp4"
+                          />
                           Your browser does not support the video tag.
                         </video>
                       </div>
                     </div>
                   </div>
 
-                  <h6 class="storage_small_mobile only_mobile storage_lang_small_mobile"></h6>
+                  <h6 class="storage_small_mobile storage_lang_small_mobile"></h6>
                   <div class="title_animation">
                     <h2 class="desc_title desc_lang_title"></h2>
-                    <div class="description description_lang"></div>
+                    <div class="description description_lang" id="storage_type"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="storage_type" id="storage_type" data-scroll data-scroll-speed="1">
+          <div class="storage_type" data-scroll data-scroll-speed="1">
             <div class="row storage_type_row_helper" style="width: 100%">
               <div class="col-xl-6 col-lg-7 only_desktop" style="padding-top: 5%">
                 <div class="storage_type_img_holder">
-                  <h6 class="storage_small storage_lang_small"></h6>
+                  <!-- <h6 class="storage_small storage_lang_small"></h6> -->
                   <img src="assets/cube_large.svg" alt="" class="cube_large" id="1" />
                   <img src="assets/cube_small.svg" alt="" class="cube_small" />
                   <img src="assets/cube_mini.svg" alt="" class="cube_mini" />
@@ -294,7 +297,7 @@
                           aria-expanded="false"
                           aria-controls="flush-collapseThree"
                         >
-                          <h4 class="h2_lang_small"> </h4>
+                          <h4 class="h2_lang_small"></h4>
                           <img class="arr_small" src="assets/white_arrow.png" alt="" />
                         </button>
                       </h2>
@@ -326,7 +329,7 @@
                           aria-expanded="false"
                           aria-controls="flush-collapseTFour"
                         >
-                          <h4 class="h2_lang_mini"> </h4>
+                          <h4 class="h2_lang_mini"></h4>
                           <img class="arr_mini" src="assets/white_arrow.png" alt="" />
                         </button>
                       </h2>
@@ -493,21 +496,51 @@
                 <div class="col-xl-5 col-lg-6 col-12">
                   <div class="title_mobile only_mobile">
                     <h6 class="company_small_mobile"></h6>
-                    <h2 class="company_head_mobile"> </h2>
+                    <h2 class="company_head_mobile"></h2>
                   </div>
                   <div class="owl-carousel owl_one">
-                    <div><img src="assets/torobox-mini-micro-srednje-veliko-odlaganje-stvari.jpg" alt="" class="slide_img" /></div>
-                    <div><img src="assets/skladistenje-prevoznih-sredstava-motora.jpg" alt="" class="slide_img" /></div>
-                    <div><img src="assets/skladiste-za-biznis-preduzeca.jpg" alt="" class="slide_img" /></div>
-                    <div><img src="assets/skladistenje-privatnih-sitnica.jpg.jpg" alt="" class="slide_img" /></div>
-                    <div><img src="assets/prostor-za-odlaganje-imovine.jpg" alt="" class="slide_img" /></div>
+                    <div>
+                      <img
+                        src="assets/torobox-mini-micro-srednje-veliko-odlaganje-stvari.jpg"
+                        alt=""
+                        class="slide_img"
+                      />
+                    </div>
+                    <div>
+                      <img src="assets/bezbedno-skladiste-stvari.png" alt="" class="slide_img" />
+                    </div>
+
+                    <div>
+                      <img
+                        src="assets/skladistenje-prevoznih-sredstava-motora.jpg"
+                        alt=""
+                        class="slide_img"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="assets/skladiste-za-biznis-preduzeca.jpg"
+                        alt=""
+                        class="slide_img"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="assets/skladistenje-privatnih-sitnica.jpg.jpg"
+                        alt=""
+                        class="slide_img"
+                      />
+                    </div>
+                    <div>
+                      <img src="assets/prostor-za-odlaganje-imovine.jpg" alt="" class="slide_img" />
+                    </div>
                   </div>
                 </div>
                 <div class="col-xl-7 col-lg-6 col-12 position_helper">
                   <div class="holder title_animation">
                     <div class="title only_desktop">
                       <h6 class="company_small"></h6>
-                      <h2 class="company_head"> </h2>
+                      <h2 class="company_head"></h2>
                     </div>
                     <div class="description company_description"></div>
                   </div>

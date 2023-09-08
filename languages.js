@@ -22,7 +22,7 @@ const jsonEN = {
   desc_lang_title: 'Simple, safe & secure self-storage.',
   description_lang:
     ' Our units are made according to the highest quality standards so they can fulfill their role -to flawlessly keep your valuable belongings, following the Federation of European Self Storage Associations (FEDESSA)',
-  storage_lang_small: 'Storage',
+  // storage_lang_small: 'Storage',
   storage_lang_small_mobile: 'Storage',
   h2_lang_large: 'Large container',
   h2_lang_medium: 'Medium storage',
@@ -118,7 +118,7 @@ const jsonSR = {
   desc_lang_title: 'Jednostavno, bezbedno i sigurno skladištenje.',
   description_lang:
     'Naša skladišta su izrađena prema najvišim standardima kvaliteta kako bi besprekorno čuvali vaše dragocene stvari, u skladu sa Savezom evropskih udruženja za samo-skladištenje (FEDESSA).',
-  storage_lang_small: 'Skaldište',
+  // storage_lang_small: 'Skaldište',
   storage_lang_small_mobile: 'Skaldište',
   h2_lang_large: 'Veliki kontejner',
   h2_lang_medium: 'Srednje skladište',
