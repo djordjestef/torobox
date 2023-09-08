@@ -171,10 +171,10 @@ const jsonSR = {
   adv_decription_6: 'Opcije za onlajn plaćanje dostupne 24/7, sa ili bez mesečne pretplate.',
   company_small: 'Kompanija',
   company_small_mobile: 'Kompanija',
-  company_head: 'Torobox nudi ono što mnogima nedostaje - prostor.',
-  company_head_mobile: 'Torobox nudi ono što mnogima nedostaje - prostor.',
+  company_head: 'Mi imamo ono što svima nedostaje - prostor.',
+  company_head_mobile: 'Mi imamo ono što svima nedostaje - prostor.',
   company_description:
-    'Mi smo posvećeni pružanju usluge visokog kvaliteta i jedina kompanija u Srbiji koja profesionalno upravlja ovim segmentom tržišta. Naše dugogodišnje iskustvo u iznajmljivanju velikih poslovnih prostora i ekspertiza omogućavaju vam da nam verujete baš kao što su to činili naši klijenti tokom godina: Eurobanka, Sky Music, Dom Perignon, Emotion, Sorbon i mnogi drugi.',
+    'Mi smo korisnički orijentisan poslovni subjekt i jedina firma u Srbiji koja profesionalno upravlja ovim segmentom tržišta. Naše dugogodišnje iskustvo i stručnost u iznajmljivanju velikih komercijalnih prostora omogućavaju nam da izađemo u susret, kako našim starim klijentima: Eurobanka, Sky Music, Dom Perignon, Emotion, Sorbon, tako i vama.',
   blog_small: 'Pročitajte naš blog.',
   blog_title_lang: 'Poslednje vesti',
   title_address_lang: 'Iznajmi prostor office@torobox.rs',

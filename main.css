@@ -2,6 +2,20 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+h4 {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1200px) {
+  h4 {
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
 .fixed_wrapper {
   position: relative;
   overflow: hidden;
@@ -994,7 +1008,7 @@ body::-webkit-scrollbar {
 .company .advantages_wrapper .advantages {
   width: 80%;
   margin: auto;
-  padding-bottom: 53px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #a4a4a4;
   margin-bottom: 43px;
 }
@@ -1199,6 +1213,28 @@ body::-webkit-scrollbar {
     font-weight: 300;
   }
 }
+.company_offers .holder .title .company_head {
+  font-size: 50px;
+  line-height: 65px;
+}
+@media only screen and (max-width: 1660px) {
+  .company_offers .holder .title .company_head {
+    font-size: 43px;
+    line-height: 52px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .company_offers .holder .title .company_head {
+    font-size: 39px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .company_offers .holder .title .company_head {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .company_offers .holder .description {
   font-size: 18px;
   padding-left: 120px;
@@ -1400,7 +1436,7 @@ body::-webkit-scrollbar {
   color: #000;
   display: inline-block;
   float: right;
-  margin-top: 12px;
+  margin-top: 4px;
   font-weight: 400;
 }
 .blog_small:hover {
@@ -1432,7 +1468,6 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 992px) {
   .blog_small {
     font-size: 12px;
-    margin-top: 10px;
   }
 }
 .blog .margin_helper {
