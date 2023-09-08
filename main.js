@@ -416,7 +416,7 @@ function getFormData() {
 //locomotive scroll
 let checkbox = document.getElementById('checkbox');
 let el = document.querySelector('#contact');
-let el2 = document.querySelector('#storage_type');
+let el2 = document.querySelector('#storage_animate');
 let headerEl = document.querySelector('#header');
 let scroller;
 window.addEventListener('load', function (event) {
@@ -586,9 +586,10 @@ window.addEventListener('load', function (event) {
     }
 
     if (
-      ((rect2.top < 68.41444396972656 && rect2.bottom > 27.796875) || rect.top < 69) &&
+      ((rect2.top < 74.41444396972656 && rect2.bottom > 27.796875) || rect.top < 69) &&
       obj.direction === 'down'
     ) {
+      console.log('rect2.top',rect2.top)
       $('.logo_header_desktop').css('z-index', 0);
       $('.get_space').css('z-index', 0);
     } else {
