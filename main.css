@@ -20,7 +20,7 @@ h4 {
   position: relative;
   overflow: hidden;
   height: 1020px;
-  margin-bottom: 30px;
+  margin-bottom: 130px;
 }
 @media only screen and (max-width: 1660px) {
   .fixed_wrapper {
@@ -40,6 +40,7 @@ h4 {
 @media only screen and (max-width: 576px) {
   .fixed_wrapper {
     height: 400px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -538,7 +539,7 @@ body::-webkit-scrollbar {
 
 .storage .holder {
   width: 84%;
-  margin: 280px auto 103px;
+  margin: 280px auto 30px;
   text-align: center;
 }
 @media only screen and (max-width: 1660px) {
@@ -554,7 +555,7 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 992px) {
   .storage .holder {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     margin-top: 36px;
   }
 }
@@ -705,7 +706,7 @@ body::-webkit-scrollbar {
   }
 }
 .storage .storage_type_img_holder {
-  width: 57%;
+  width: 45%;
   margin: auto;
   position: relative;
   min-height: 494px;
@@ -734,20 +735,20 @@ body::-webkit-scrollbar {
 }
 .storage .storage_type_img_holder .cube_medium {
   position: absolute;
-  top: 173px;
-  left: 122px;
+  top: 171px;
+  left: 125px;
   opacity: 0.2;
 }
 .storage .storage_type_img_holder .cube_small {
   position: absolute;
-  bottom: -11px;
-  left: 110px;
+  bottom: -18px;
+  left: 51px;
   opacity: 0.2;
 }
 .storage .storage_type_img_holder .cube_mini {
   position: absolute;
-  bottom: -25px;
-  left: 144px;
+  bottom: -46px;
+  left: 76px;
   opacity: 0.2;
 }
 .storage .storage_type_accordion {
@@ -809,8 +810,37 @@ body::-webkit-scrollbar {
 .storage .storage_type_accordion .accordion-item .acc_description_helper_mini {
   width: 300px;
 }
-.storage .storage_type_accordion .accordion-item .mobile_cube {
+.storage .storage_type_accordion .accordion-item .mobile_cube_large {
   margin: 36px auto 20px;
+}
+@media only screen and (max-width: 576px) {
+  .storage .storage_type_accordion .accordion-item .mobile_cube_large {
+    width: 76%;
+  }
+}
+.storage .storage_type_accordion .accordion-item .mobile_cube_medium {
+  margin: 36px auto 20px;
+}
+@media only screen and (max-width: 576px) {
+  .storage .storage_type_accordion .accordion-item .mobile_cube_medium {
+    width: 46%;
+  }
+}
+.storage .storage_type_accordion .accordion-item .mobile_cube_small {
+  margin: 36px auto 20px;
+}
+@media only screen and (max-width: 576px) {
+  .storage .storage_type_accordion .accordion-item .mobile_cube_small {
+    width: 36%;
+  }
+}
+.storage .storage_type_accordion .accordion-item .mobile_cube_mini {
+  margin: 36px auto 20px;
+}
+@media only screen and (max-width: 576px) {
+  .storage .storage_type_accordion .accordion-item .mobile_cube_mini {
+    width: 26%;
+  }
 }
 .storage .storage_type_accordion .accordion-item .rent_btn {
   all: unset;

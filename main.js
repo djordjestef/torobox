@@ -118,28 +118,28 @@ $('#item_large').click(function () {
     $('.cube_large').animate(
       {
         opacity: 1,
-        top: '-100',
+        top: '-142',
       },
       300,
     );
     $('.cube_medium').animate(
       {
         opacity: 0.2,
-        top: '173',
+        top: '171',
       },
       300,
     );
     $('.cube_small').animate(
       {
         opacity: 0.2,
-        bottom: '-11',
+        bottom: '-18',
       },
       300,
     );
     $('.cube_mini').animate(
       {
         opacity: 0.2,
-        bottom: '-25',
+        bottom: '-46',
       },
       300,
     );
@@ -168,7 +168,7 @@ $('#item_medium').click(function () {
     $('.cube_medium').animate(
       {
         opacity: 1,
-        top: '73',
+        top: '29',
       },
       300,
     );
@@ -182,14 +182,14 @@ $('#item_medium').click(function () {
     $('.cube_small').animate(
       {
         opacity: 0.2,
-        bottom: '-11',
+        bottom: '-18',
       },
       300,
     );
     $('.cube_mini').animate(
       {
         opacity: 0.2,
-        bottom: '-25',
+        bottom: '-46',
       },
       300,
     );
@@ -198,7 +198,7 @@ $('#item_medium').click(function () {
     $('.cube_medium').animate(
       {
         opacity: 0.2,
-        top: '173',
+        top: '171',
       },
       300,
     );
@@ -218,7 +218,7 @@ $('#item_small').click(function () {
     $('.cube_small').animate(
       {
         opacity: 1,
-        bottom: '89',
+        bottom: '124',
       },
       300,
     );
@@ -232,14 +232,14 @@ $('#item_small').click(function () {
     $('.cube_medium').animate(
       {
         opacity: 0.2,
-        top: '173',
+        top: '171',
       },
       300,
     );
     $('.cube_mini').animate(
       {
         opacity: 0.2,
-        bottom: '-25',
+        bottom: '-46',
       },
       300,
     );
@@ -248,7 +248,7 @@ $('#item_small').click(function () {
     $('.cube_small').animate(
       {
         opacity: 0.2,
-        bottom: '-11',
+        bottom: '-18',
       },
       300,
     );
@@ -268,7 +268,7 @@ $('#item_mini').click(function () {
     $('.cube_mini').animate(
       {
         opacity: 1,
-        bottom: '75',
+        bottom: '95',
       },
       300,
     );
@@ -282,14 +282,14 @@ $('#item_mini').click(function () {
     $('.cube_medium').animate(
       {
         opacity: 0.2,
-        top: '173',
+        top: '171',
       },
       300,
     );
     $('.cube_small').animate(
       {
         opacity: 0.2,
-        bottom: '-11',
+        bottom: '-18',
       },
       300,
     );
@@ -298,7 +298,7 @@ $('#item_mini').click(function () {
     $('.cube_mini').animate(
       {
         opacity: 0.2,
-        bottom: '-25',
+        bottom: '-46',
       },
       300,
     );
@@ -589,7 +589,7 @@ window.addEventListener('load', function (event) {
       ((rect2.top < 74.41444396972656 && rect2.bottom > 27.796875) || rect.top < 69) &&
       obj.direction === 'down'
     ) {
-      console.log('rect2.top',rect2.top)
+      console.log('rect2.top', rect2.top);
       $('.logo_header_desktop').css('z-index', 0);
       $('.get_space').css('z-index', 0);
     } else {

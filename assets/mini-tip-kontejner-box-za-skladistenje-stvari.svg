@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.3 184.73"><defs><style>.cls-1{fill:#dcdcdc;}.cls-1,.cls-2,.cls-3{stroke-width:0px;}.cls-2{fill:#898989;}.cls-4{isolation:isolate;}.cls-3{fill:#c5c5c5;}</style></defs><g id="Layer_1-2"><g class="cls-4"><polygon class="cls-2" points="176.89 41.37 176.66 122.88 106.43 82.33 106.66 .82 176.89 41.37"/><polygon class="cls-3" points="106.66 .82 106.43 82.33 1.41 143.36 1.64 61.85 106.66 .82"/><polygon class="cls-2" points="71.87 102.4 71.64 183.91 1.41 143.36 1.64 61.85 71.87 102.4"/><polygon class="cls-3" points="176.89 41.37 176.66 122.88 71.64 183.91 71.87 102.4 176.89 41.37"/><path class="cls-1" d="m106.66,0l71.65,41.37-106.43,61.85L.23,61.85,106.66,0Zm-34.78,102.4l105.02-61.03L106.66.82,1.64,61.85l70.23,40.55"/><polygon class="cls-1" points="176.89 41.37 71.87 102.4 1.64 61.85 106.66 .82 176.89 41.37"/><polygon class="cls-2" points="71.88 103.21 71.65 184.73 0 143.36 .23 61.85 71.88 103.21"/><polygon class="cls-3" points="178.3 41.37 178.07 122.88 71.65 184.73 71.88 103.21 178.3 41.37"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.979" height="198.844" viewBox="0 0 99.979 198.844">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1865" data-name="Rectangle 1865" width="99.979" height="198.844" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_9113" data-name="Group 9113" style="isolation: isolate">
+    <g id="Group_9123" data-name="Group 9123">
+      <g id="Group_9122" data-name="Group 9122" clip-path="url(#clip-path)">
+        <path id="Path_14936" data-name="Path 14936" d="M155.769,521.645l-.4,141.429L106.4,634.934l.4-141.428Z" transform="translate(-56.775 -492.937)" fill="#898989"/>
+        <path id="Path_14937" data-name="Path 14937" d="M85.675,493.505l-.4,141.429-48.644,28.14.4-141.428Z" transform="translate(-35.644 -492.937)" fill="#c5c5c5"/>
+        <path id="Path_14938" data-name="Path 14938" d="M85.994,562.194l-.4,141.429-48.962-28.14.4-141.429Z" transform="translate(-35.644 -505.346)" fill="#898989"/>
+        <path id="Path_14939" data-name="Path 14939" d="M155.907,534.053l-.4,141.429-48.644,28.14.4-141.428Z" transform="translate(-56.913 -505.346)" fill="#c5c5c5"/>
+        <path id="Path_14940" data-name="Path 14940" d="M134.813,521.645,86.169,549.786l-48.962-28.14,48.644-28.141Z" transform="translate(-35.819 -492.937)" fill="#dcdcdc"/>
+        <path id="Path_14941" data-name="Path 14941" d="M85.569,562.762l-.4,141.429-49.95-28.708.4-141.428Z" transform="translate(-35.216 -505.346)" fill="#898989"/>
+        <path id="Path_14942" data-name="Path 14942" d="M156.893,534.053l-.4,141.429L106.865,704.19l.4-141.429Z" transform="translate(-56.915 -505.346)" fill="#c5c5c5"/>
+        <path id="Path_14943" data-name="Path 14943" d="M85.42,492.687l49.95,28.708L85.744,550.1,35.794,521.4Zm.321,56.848,48.644-28.14-48.962-28.14L36.779,521.4l48.962,28.14" transform="translate(-35.391 -492.687)" fill="#dcdcdc"/>
+      </g>
+    </g>
+  </g>
+</svg>
