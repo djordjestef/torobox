@@ -49,6 +49,33 @@ window.onload = function () {
   $('.owl-next').html('<img src="assets/right_arrow.png" alt="" class="right_arrow">');
 };
 
+
+
+
+
+
+
+
+// const fixedElement = document.querySelector('.fixed');
+// const fixedTarget = document.querySelector('#fixed-target');
+
+// window.addEventListener('scroll', () => {
+//   const scrollY = window.scrollY 
+//   console.log('scrollY',scrollY)
+//   const targetOffset = fixedTarget.getBoundingClientRect().top;
+  
+//   console.log('targetOffset',targetOffset)
+//   const translateY = Math.max(0, scrollY - targetOffset-305);
+  
+//   console.log('translateY',translateY)
+
+//   fixedElement.style.transform = `translateY(${translateY}px)`;
+// });
+
+
+
+
+
 $('#item_large').dblclick(function () {
   setTimeout(() => {
     if ($('.accordion-collapse').hasClass('show')) {
@@ -118,7 +145,7 @@ $('#item_large').click(function () {
     $('.cube_large').animate(
       {
         opacity: 1,
-        top: '-142',
+        top: '-141',
       },
       300,
     );
@@ -422,17 +449,9 @@ let scroller;
 window.addEventListener('load', function (event) {
   scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
     getSpeed: true,
-    smoothMobile: true,
-    smartphone: {
-      breakpoint: 0,
-      smooth: false,
-      getDirection: true,
-    },
     getDirection: true,
     reloadOnContextChange: true,
-    smoothMobileSpeed: 1,
   });
 
   $('.storage_link').on('click', function () {
@@ -589,7 +608,6 @@ window.addEventListener('load', function (event) {
       ((rect2.top < 74.41444396972656 && rect2.bottom > 27.796875) || rect.top < 69) &&
       obj.direction === 'down'
     ) {
-      console.log('rect2.top', rect2.top);
       $('.logo_header_desktop').css('z-index', 0);
       $('.get_space').css('z-index', 0);
     } else {
