@@ -49,33 +49,6 @@ window.onload = function () {
   $('.owl-next').html('<img src="assets/right_arrow.png" alt="" class="right_arrow">');
 };
 
-
-
-
-
-
-
-
-// const fixedElement = document.querySelector('.fixed');
-// const fixedTarget = document.querySelector('#fixed-target');
-
-// window.addEventListener('scroll', () => {
-//   const scrollY = window.scrollY 
-//   console.log('scrollY',scrollY)
-//   const targetOffset = fixedTarget.getBoundingClientRect().top;
-  
-//   console.log('targetOffset',targetOffset)
-//   const translateY = Math.max(0, scrollY - targetOffset-305);
-  
-//   console.log('translateY',translateY)
-
-//   fixedElement.style.transform = `translateY(${translateY}px)`;
-// });
-
-
-
-
-
 $('#item_large').dblclick(function () {
   setTimeout(() => {
     if ($('.accordion-collapse').hasClass('show')) {
@@ -449,9 +422,16 @@ let scroller;
 window.addEventListener('load', function (event) {
   scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
     getSpeed: true,
+    smartphone: {
+      smooth: false,
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+    },
     getDirection: true,
     reloadOnContextChange: true,
+    smoothMobileSpeed: 0,
   });
 
   $('.storage_link').on('click', function () {
