@@ -31,7 +31,10 @@ window.onload = function () {
   owl_two.owlCarousel({
     margin: 20,
     responsiveClass: true,
-    nav: true,
+    nav: false,
+    // autoplay:true,
+    loop:true,
+    autoplayTimeout:2000,
     autoHeight: true,
     responsive: {
       0: {
@@ -40,9 +43,13 @@ window.onload = function () {
       600: {
         items: 1,
       },
-      1000: {
+      992: {
         items: 1,
+        nav:true,
+        loop:false,
+        autoplay:false
       },
+      
     },
   });
   $('.owl-prev').html('<img src="assets/left_arrow.png" alt="" class="left_arrow">');

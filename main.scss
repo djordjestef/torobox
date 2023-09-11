@@ -39,7 +39,8 @@ h4 {
     }
 
     @media only screen and (max-width: 400px) {
-        height: 340px;
+        height: 230px;
+        margin-bottom: 60px;
     }
 }
 
@@ -62,7 +63,7 @@ h4 {
     }
 
     @media only screen and (max-width: 400px) {
-        bottom: -340px;
+        bottom: -230px;
     }
 }
 .fixed,
@@ -573,7 +574,7 @@ body::-webkit-scrollbar {
 
         @media only screen and (max-width: 992px) {
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 80px;
             margin-top: 36px;
         }
 
@@ -1003,7 +1004,7 @@ body::-webkit-scrollbar {
             @media only screen and (max-width: 992px) {
                 font-size: 20px;
                 line-height: 30px;
-                margin-top: 90px;
+                margin-top: 80px;
                 width: 72%;
             }
         }
@@ -1346,13 +1347,12 @@ body::-webkit-scrollbar {
 
             @media only screen and (max-width: 992px) {
                 font-size: 12px;
-                width: 94%;
-                margin: auto;
+                width: 74%;
             }
         }
         .user {
             @media only screen and (max-width: 992px) {
-                width: 94%;
+                width: 100%;
                 margin: auto;
                 margin-top: 5px;
             }
@@ -1500,7 +1500,8 @@ body::-webkit-scrollbar {
         }
 
         @media only screen and (max-width: 992px) {
-            font-size: 12px;
+            margin-right: 30px;
+            margin-right: 15%;
         }
     }
 
@@ -1511,9 +1512,9 @@ body::-webkit-scrollbar {
     .float_helper {
         float: right;
 
-        @media only screen and (max-width: 992px) {
-            float: unset;
-        }
+        // @media only screen and (max-width: 992px) {
+        //     float: unset;
+        // }
     }
 
     .card_scroller {
@@ -1528,7 +1529,7 @@ body::-webkit-scrollbar {
 
             @media only screen and (max-width: 992px) {
                 padding-right: 0;
-                width: 78%;
+                width: 69%;
             }
             &:last-child {
                 @media only screen and (max-width: 992px) {
@@ -1557,8 +1558,8 @@ body::-webkit-scrollbar {
         transition: all 0.5s;
 
         @media only screen and (max-width: 992px) {
-            margin: 0 auto 20px;
-            width: 100%;
+            // margin: 0 auto 20px;
+            width: 90%;
         }
 
         &:hover {
@@ -1689,8 +1690,10 @@ body::-webkit-scrollbar {
             }
 
             @media only screen and (max-width: 1200px) {
-                padding: 8px 50px;
+                padding: 13px 57px;
                 font-size: 14px;
+                font-weight: bolder;
+                letter-spacing: 0.7px;
             }
         }
         .privacy_policy {
@@ -1703,6 +1706,10 @@ body::-webkit-scrollbar {
 
             @media only screen and (max-width: 1200px) {
                 font-size: 12px;
+            }
+            @media only screen and (max-width: 992px) {
+                width: 41%;
+                font-size: 10px;
             }
         }
 
@@ -1933,27 +1940,35 @@ body::-webkit-scrollbar {
     border-top: 1px solid #d9d9d9;
     font-weight: 300;
     background: #fff;
+    letter-spacing: 0.6px;
 
     @media only screen and (max-width: 1660px) {
         font-size: 14px;
     }
 
     @media only screen and (max-width: 992px) {
-        padding-bottom: 85px;
+        padding-bottom: 70px;
+        font-size: 12px;
+    }
+
+    &_container_helper {
+        @media only screen and (max-width: 992px) {
+            min-height: 300px;
+        }
     }
 
     &_position_helper {
         position: relative;
+
+        @media only screen and (max-width: 576px) {
+            height: 340px;
+        }
     }
 
     .year {
         position: absolute;
         bottom: 0;
         left: calc(var(--bs-gutter-x) * 0.5);
-
-        @media only screen and (max-width: 992px) {
-            bottom: -60px;
-        }
     }
 
     &_list,
@@ -1966,6 +1981,10 @@ body::-webkit-scrollbar {
             display: block;
             margin-bottom: 12px;
             cursor: pointer;
+
+            @media only screen and (max-width: 992px) {
+                margin-bottom: 29px;
+            }
         }
     }
 
@@ -1979,7 +1998,7 @@ body::-webkit-scrollbar {
         @media only screen and (max-width: 576px) {
             position: absolute;
             left: calc(var(--bs-gutter-x) * 0.5);
-            margin: 40px 0;
+            margin: 80px 0;
         }
     }
 
@@ -1988,6 +2007,10 @@ body::-webkit-scrollbar {
             position: absolute;
             left: 40%;
             margin: 40px 0;
+        }
+
+        @media only screen and (max-width: 576px) {
+            margin: 80px 0;
         }
     }
 
@@ -2011,8 +2034,12 @@ body::-webkit-scrollbar {
             }
 
             @media only screen and (max-width: 1200px) {
-                padding: 8px 16px;
+                padding: 13px 0;
                 font-size: 14px;
+                font-weight: bolder;
+                letter-spacing: 0.7px;
+                width: 150px;
+                text-align: center;
             }
         }
 
@@ -2022,10 +2049,6 @@ body::-webkit-scrollbar {
             bottom: 0;
             right: calc(var(--bs-gutter-x) * 0.5);
             cursor: pointer;
-
-            @media only screen and (max-width: 992px) {
-                bottom: -60px;
-            }
         }
     }
 }

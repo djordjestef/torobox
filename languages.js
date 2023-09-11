@@ -78,7 +78,7 @@ const jsonEN = {
   company_head_mobile: 'Torobox offers what everyone seems to be missing — space.',
   company_description:
     ' We’re a customer-service driven business and the only company in Serbi professionally managing this market segment. Our long-term experience leasing large commercial spaces and our expertise allow you to put your trust in us just as these clients have over the years: Eurobank, Sky Music, Dom Perignon, Emotion, Sorbon, and many others.',
-  blog_small: 'Read our blog',
+  blog_small: 'Blog',
   blog_title_lang: 'Latest news',
   title_address_lang: 'Get space office@torobox.rs',
   address_lang: 'Address:',
@@ -91,7 +91,7 @@ const jsonEN = {
   form_phone: 'Phone Number',
   form_comment: 'Comment',
   form_optional: '(Optional)',
-  privacy_text: 'By clicking the Submit button you agree to our Privacy Policy terms.',
+  privacy_text: 'By clicking the Send button you agree to our Privacy Policy terms.',
 };
 
 const jsonSR = {
@@ -175,7 +175,7 @@ const jsonSR = {
   company_head_mobile: 'Mi imamo ono što svima nedostaje - prostor.',
   company_description:
     'Mi smo korisnički orijentisan poslovni subjekt i jedina firma u Srbiji koja profesionalno upravlja ovim segmentom tržišta. Naše dugogodišnje iskustvo i stručnost u iznajmljivanju velikih komercijalnih prostora omogućavaju nam da izađemo u susret, kako našim starim klijentima: Eurobanka, Sky Music, Dom Perignon, Emotion, Sorbon, tako i vama.',
-  blog_small: 'Pročitajte naš blog.',
+  blog_small: 'Blog',
   blog_title_lang: 'Poslednje vesti',
   title_address_lang: 'Iznajmi prostor office@torobox.rs',
   address_lang: 'Adresa:',
@@ -188,7 +188,7 @@ const jsonSR = {
   form_phone: 'Broj Telefona',
   form_comment: 'Komentar',
   form_optional: '(Opciono)',
-  privacy_text: 'Klikom na dugme "Potvrdi" se slažete sa uslovima naše Politike privatnosti.',
+  privacy_text: 'Klikom na dugme "Pošalji" se slažete sa uslovima naše Politike privatnosti.',
 };
 
 $('.en').click(function () {
@@ -211,13 +211,13 @@ $(document).ready(function () {
       $('.en').addClass('active');
       for (let key in jsonSR) {
         document.querySelector('.' + key).textContent = jsonSR[key];
-        $('.form_btn_lang').attr('value', 'Potvrdi');
+        $('.form_btn_lang').attr('value', 'Pošalji');
       }
     } else {
       $('.sr').addClass('active');
       for (let key in jsonEN) {
         document.querySelector('.' + key).textContent = jsonEN[key];
-        $('.form_btn_lang').attr('value', 'Submit');
+        $('.form_btn_lang').attr('value', 'Send');
       }
     }
   }
