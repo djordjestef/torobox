@@ -1947,6 +1947,7 @@ body::-webkit-scrollbar {
     }
 
     @media only screen and (max-width: 992px) {
+        padding-top: 60px;
         padding-bottom: 70px;
         font-size: 12px;
     }
@@ -1960,7 +1961,7 @@ body::-webkit-scrollbar {
     &_position_helper {
         position: relative;
 
-        @media only screen and (max-width: 576px) {
+        @media only screen and (max-width: 992px) {
             height: 340px;
         }
     }
@@ -1990,13 +1991,13 @@ body::-webkit-scrollbar {
 
     &_list {
         @media only screen and (max-width: 992px) {
-            position: unset;
+            position: absolute;
             float: unset;
             margin: 40px 0 40px -11vw;
         }
 
         @media only screen and (max-width: 576px) {
-            position: absolute;
+            // position: absolute;
             left: calc(var(--bs-gutter-x) * 0.5);
             margin: 80px 0;
         }
@@ -2017,6 +2018,10 @@ body::-webkit-scrollbar {
     .btn_holder {
         float: right;
         margin-bottom: 116px;
+
+        @media only screen and (max-width: 992px) {
+            margin-top: -15px;
+        }
 
         .space {
             all: unset;

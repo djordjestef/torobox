@@ -1886,6 +1886,7 @@ body::-webkit-scrollbar {
 }
 @media only screen and (max-width: 992px) {
   .footer {
+    padding-top: 60px;
     padding-bottom: 70px;
     font-size: 12px;
   }
@@ -1898,7 +1899,7 @@ body::-webkit-scrollbar {
 .footer_position_helper {
   position: relative;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
   .footer_position_helper {
     height: 340px;
   }
@@ -1925,14 +1926,13 @@ body::-webkit-scrollbar {
 }
 @media only screen and (max-width: 992px) {
   .footer_list {
-    position: unset;
+    position: absolute;
     float: unset;
     margin: 40px 0 40px -11vw;
   }
 }
 @media only screen and (max-width: 576px) {
   .footer_list {
-    position: absolute;
     left: calc(var(--bs-gutter-x) * 0.5);
     margin: 80px 0;
   }
@@ -1952,6 +1952,11 @@ body::-webkit-scrollbar {
 .footer .btn_holder {
   float: right;
   margin-bottom: 116px;
+}
+@media only screen and (max-width: 992px) {
+  .footer .btn_holder {
+    margin-top: -15px;
+  }
 }
 .footer .btn_holder .space {
   all: unset;
