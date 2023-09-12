@@ -1,20 +1,20 @@
 window.onload = function () {
   const isMobile = window.innerWidth <= 576;
   var viewport_width = window.innerWidth;
-if(isMobile){
-  $('.accordion-collapse[aria-labelledby="flush-headingTwo"]').addClass('show');
-  $('.arr_medium').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
-}
+  if (isMobile) {
+    $('.accordion-collapse[aria-labelledby="flush-headingTwo"]').addClass('show');
+    $('.arr_medium').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
+  }
 
   var owl_one = $('.owl_one');
   var owl_two = $('.owl_two');
   owl_one.owlCarousel({
     margin: viewport_width > 992 ? 20 : 0,
     responsiveClass: true,
-    // autoplay: viewport_width > 992 ? true : false,
+    autoplay: isMobile ? true : false,
     autoplayTimeout: 2000,
-    autoplayHoverPause: viewport_width > 992 ? true : false,
-    // loop: true,
+    // autoplayHoverPause: isM ? true : false,
+    loop:isMobile ? true:false,
     smartSpeed: 800,
     responsive: {
       0: {

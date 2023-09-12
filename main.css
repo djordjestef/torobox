@@ -1166,7 +1166,7 @@ body::-webkit-scrollbar {
 .company_offers .owl_one .owl-dots .owl-dot {
   width: 12px;
   height: 12px;
-  background-color: rgba(78, 78, 78, 0.3607843137);
+  background-color: #e3e1e1;
   border-radius: 50%;
   margin: 0 7px;
 }
