@@ -1,5 +1,11 @@
 window.onload = function () {
+  const isMobile = window.innerWidth <= 576;
   var viewport_width = window.innerWidth;
+if(isMobile){
+  $('.accordion-collapse[aria-labelledby="flush-headingTwo"]').addClass('show');
+  $('.arr_medium').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
+}
+
   var owl_one = $('.owl_one');
   var owl_two = $('.owl_two');
   owl_one.owlCarousel({
@@ -425,10 +431,11 @@ let el = document.querySelector('#contact');
 let el2 = document.querySelector('#storage_animate');
 let headerEl = document.querySelector('#header');
 let scroller;
+
 window.addEventListener('load', function (event) {
   scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
+    smooth: navigator.userAgent.indexOf('Firefox') != -1 ? false : true,
     getSpeed: true,
     smartphone: {
       smooth: false,
@@ -473,7 +480,6 @@ window.addEventListener('load', function (event) {
   scroller.on('scroll', (obj) => {
     const advantages = document.querySelectorAll('.advantages_animation');
     const titleAnimation = document.querySelectorAll('.title_animation');
-    // const isMobile = window.innerWidth <= 992;
 
     titleAnimation.forEach((advantage) => {
       const rect = advantage.getBoundingClientRect();
@@ -608,6 +614,10 @@ window.addEventListener('load', function (event) {
     }
   });
 });
+
+setTimeout(() => {
+  scroller.update();
+}, 2000);
 
 $('.login').on('click', function () {
   checkbox.checked = false;

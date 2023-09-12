@@ -110,6 +110,7 @@ h4 {
   transform-origin: center bottom;
   opacity: 0;
   animation: fade-in-heading 0.4s ease-out forwards, flip-heading 0.4s ease-out forwards;
+  -webkit-animation: fade-in-heading 0.4s ease-out forwards, flip-heading 0.4s ease-out forwards;
 }
 
 @keyframes fade-in-heading {
@@ -143,6 +144,7 @@ body::-webkit-scrollbar {
 .fade-in {
   opacity: 0;
   animation: fade-in-animation 1s ease-in-out forwards;
+  -webkit-animation: fade-in-animation 1s ease-in-out forwards;
 }
 
 @keyframes fade-in-animation {
@@ -228,6 +230,7 @@ body::-webkit-scrollbar {
   left: 84px;
   top: -30px;
   animation: logo_animate 2s ease-out forwards;
+  -webkit-animation: logo_animate 2s ease-out forwards;
 }
 @keyframes logo_animate {
   0% {
@@ -249,6 +252,7 @@ body::-webkit-scrollbar {
     top: -30px;
     width: 39px;
     animation: logo_animate 2s ease-out forwards;
+    -webkit-animation: logo_animate 2s ease-out forwards;
   }
   @keyframes logo_animate {
     0% {
@@ -278,6 +282,7 @@ body::-webkit-scrollbar {
     left: 12px;
     top: -30px;
     animation: logo_animate 2s ease-out forwards;
+    -webkit-animation: logo_animate 2s ease-out forwards;
   }
   @keyframes logo_animate {
     0% {
@@ -301,6 +306,7 @@ body::-webkit-scrollbar {
   top: -70px;
   z-index: 1;
   animation: top_to_bottom 2s ease-out forwards;
+  -webkit-animation: top_to_bottom 2s ease-out forwards;
 }
 @keyframes top_to_bottom {
   0% {
@@ -321,6 +327,7 @@ body::-webkit-scrollbar {
     right: 34px;
     top: 0;
     animation: top_to_bottom 2s ease-out forwards;
+    -webkit-animation: top_to_bottom 2s ease-out forwards;
   }
   @keyframes top_to_bottom {
     0% {
@@ -395,6 +402,9 @@ body::-webkit-scrollbar {
   position: sticky;
   animation: opacity_animation 2s ease-out forwards;
 }
+.header .my_navbar .language {
+  font-weight: 400;
+}
 .header .my_navbar ul {
   padding: 0;
 }
@@ -419,7 +429,7 @@ body::-webkit-scrollbar {
   all: unset;
   color: #000;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 23px;
   padding: 8px;
   width: 100px;
@@ -459,6 +469,7 @@ body::-webkit-scrollbar {
   left: 141px;
   opacity: 0;
   animation: logo_text 2s ease-out forwards;
+  -webkit-animation: logo_text 2s ease-out forwards;
 }
 @keyframes logo_text {
   0% {
@@ -480,6 +491,7 @@ body::-webkit-scrollbar {
     top: 0;
     width: 110px;
     animation: logo_text 2s ease-out forwards;
+    -webkit-animation: logo_text 2s ease-out forwards;
   }
   @keyframes logo_text {
     0% {
@@ -745,12 +757,14 @@ body::-webkit-scrollbar {
   bottom: -18px;
   left: 51px;
   opacity: 0.2;
+  z-index: 1;
 }
 .storage .storage_type_img_holder .cube_mini {
   position: absolute;
   bottom: -46px;
   left: 76px;
   opacity: 0.2;
+  z-index: 1;
 }
 .storage .storage_type_accordion {
   background-color: #191b1d;
@@ -840,7 +854,7 @@ body::-webkit-scrollbar {
 }
 @media only screen and (max-width: 576px) {
   .storage .storage_type_accordion .accordion-item .mobile_cube_mini {
-    width: 26%;
+    width: 20%;
   }
 }
 .storage .storage_type_accordion .accordion-item .rent_btn {
@@ -1127,6 +1141,16 @@ body::-webkit-scrollbar {
 }
 .company_offers .slide_img {
   width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .company_offers .slide_img {
+    width: 288px;
+    height: 287px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 13% 27%;
+       object-position: 13% 27%;
+  }
 }
 .company_offers .owl_one .owl-stage {
   display: flex;
@@ -1982,6 +2006,13 @@ body::-webkit-scrollbar {
     text-align: center;
   }
 }
+@media only screen and (max-width: 576px) {
+  .footer .btn_holder .space {
+    background: #d22730 0% 0% no-repeat padding-box;
+    color: #fff;
+    border-color: #d22730;
+  }
+}
 .footer .btn_holder .privacy {
   all: unset;
   position: absolute;
@@ -2042,9 +2073,19 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
+.menu_white_logo {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+
 .get_space_menu_wrapper {
   width: 242px;
   margin: 95px auto 0;
+  position: absolute;
+  bottom: 160px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .get_space_menu_wrapper .space {
   all: unset;
@@ -2068,7 +2109,7 @@ body::-webkit-scrollbar {
 
 .social_links_holder {
   position: absolute;
-  bottom: 32px;
+  bottom: 92px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;
@@ -2153,6 +2194,7 @@ body::-webkit-scrollbar {
     top: 0;
     right: 8px;
     animation: ham_animate 2s ease-out forwards;
+    -webkit-animation: ham_animate 2s ease-out forwards;
   }
   @keyframes ham_animate {
     0% {
