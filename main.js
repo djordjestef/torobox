@@ -3,6 +3,7 @@ window.onload = function () {
   var viewport_width = window.innerWidth;
   if (isMobile) {
     $('.accordion-collapse[aria-labelledby="flush-headingTwo"]').addClass('show');
+    $('#item_medium').addClass('active');
     $('.arr_medium').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
   }
 
@@ -14,7 +15,7 @@ window.onload = function () {
     autoplay: isMobile ? true : false,
     autoplayTimeout: 2000,
     // autoplayHoverPause: isM ? true : false,
-    loop:isMobile ? true:false,
+    loop: isMobile ? true : false,
     smartSpeed: 800,
     responsive: {
       0: {
