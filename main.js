@@ -33,8 +33,8 @@ window.onload = function () {
     responsiveClass: true,
     nav: false,
     // autoplay:true,
-    loop:true,
-    autoplayTimeout:2000,
+    loop: true,
+    autoplayTimeout: 2000,
     autoHeight: true,
     responsive: {
       0: {
@@ -45,11 +45,10 @@ window.onload = function () {
       },
       992: {
         items: 1,
-        nav:true,
-        loop:false,
-        autoplay:false
+        nav: true,
+        loop: false,
+        autoplay: false,
       },
-      
     },
   });
   $('.owl-prev').html('<img src="assets/left_arrow.png" alt="" class="left_arrow">');
@@ -462,6 +461,10 @@ window.addEventListener('load', function (event) {
   $('.blog_link').on('click', function () {
     const slider = document.getElementById('blog');
     scroller.scrollTo(slider);
+    checkbox.checked = false;
+  });
+
+  $('.header_link_social').on('click', function () {
     checkbox.checked = false;
   });
   let hidden = false,

@@ -11,14 +11,14 @@ const jsonEN = {
   company_lang_footer: 'Company',
   blog_lang_footer: 'Blog',
   contact_lang_footer: 'Contact',
-  login_lang: 'Login',
-  register_lang: 'Register',
+  // login_lang: 'Login',
+  // register_lang: 'Register',
   storage_lang_burger: 'Storage',
   company_lang_burger: 'Company',
   blog_lang_burger: 'Blog',
   contact_lang_burger: 'Contact',
-  login_lang_burger: 'Login',
-  register_lang_burger: 'Register',
+  // login_lang_burger: 'Login',
+  // register_lang_burger: 'Register',
   desc_lang_title: 'Simple, safe & secure self-storage.',
   description_lang:
     ' Our units are made according to the highest quality standards so they can fulfill their role -to flawlessly keep your valuable belongings, following the Federation of European Self Storage Associations (FEDESSA)',
@@ -89,9 +89,11 @@ const jsonEN = {
   form_name: 'Name',
   form_email: 'Email',
   form_phone: 'Phone Number',
-  form_comment: 'Comment',
-  form_optional: '(Optional)',
+  form_comment: 'Message',
+  form_optional: '',
   privacy_text: 'By clicking the Send button you agree to our Privacy Policy terms.',
+  get_space_lang: 'Get space',
+  get_space_lang_header_menu: 'Get space',
 };
 
 const jsonSR = {
@@ -107,14 +109,14 @@ const jsonSR = {
   company_lang_footer: 'Kompanija',
   blog_lang_footer: 'Blog',
   contact_lang_footer: 'Kontakt',
-  login_lang: 'Login',
-  register_lang: 'Registracija',
+  // login_lang: 'Login',
+  // register_lang: 'Registracija',
   storage_lang_burger: 'Skaldište',
   company_lang_burger: 'Kompanija',
   blog_lang_burger: 'Blog',
   contact_lang_burger: 'Kontakt',
-  login_lang_burger: 'Login',
-  register_lang_burger: 'Registracija',
+  // login_lang_burger: 'Login',
+  // register_lang_burger: 'Registracija',
   desc_lang_title: 'Jednostavno, bezbedno i sigurno skladištenje.',
   description_lang:
     'Naša skladišta su izrađena prema najvišim standardima kvaliteta kako bi besprekorno čuvali vaše dragocene stvari, u skladu sa Savezom evropskih udruženja za samo-skladištenje (FEDESSA).',
@@ -128,22 +130,22 @@ const jsonSR = {
     'Ovaj kontejner za skladištenje je pogodan za sve koji trebaju puno skladišnog prostora, bilo za stvari iz stana preko 70 m\u00B2 ili za vašu kompaniju.',
   acc_description_large_two:
     'Širina: 2.5m | Visina: 2.5m | Dužina: 6m Površina: 15m\u00B2 | Zapremina: 38m\u00B3',
-  rent_large_btn: 'Rentiraj za 170€ / mesečno',
+  rent_large_btn: 'Iznajmi za 170€ / mesečno',
   acc_description_medium_one:
     'Ovaj prostor za skladištenje je pogodan za čuvanje nameštaja i stvari iz standardno opremljenog stana od približno 60 - 70 m\u00B2.',
   acc_description_medium_two:
     'Širina: 3m | Visina: 2.5m | Dužina: 2.5m Površina: 7.5m\u00B2 | Zapremina: 19m\u00B3',
-  rent_medium_btn: 'Rentiraj za 100€ / mesečno',
+  rent_medium_btn: 'Iznajmi za 100€ / mesečno',
   acc_description_small_one:
     'Mala skladišna jedinica je pogodna za čuvanje sadržaja stana sa jednom sobom ili standardno opremljenog stana veličine do 30 - 35 m\u00B2.',
   acc_description_small_two:
     'Širina: 1.5m | Visina: 2.5m | Dužina: 2.5m Površina: 4m\u00B2 | Zapremina: 9m\u00B3',
-  rent_small_btn: 'Rentiraj za 70€ / mesečno',
+  rent_small_btn: 'Iznajmi za 70€ / mesečno',
   acc_description_mini_one:
     'Box veličine sefa nudi malo dodatnog prostora. Ovde možete čuvati predmete poput dokumenata, laptopova i sličnih vrednih stvari.',
   acc_description_mini_two:
     'Širina: 1m | Visina: 2.5m | Dužina: 1m Površina: 1m\u00B2 | Zapremina: 2.5m\u00B3',
-  rent_mini_btn: 'Rentiraj za 50€ / mesečno',
+  rent_mini_btn: 'Iznajmi za 50€ / mesečno',
   company_storage_title: 'Skladištimo i selimo vaše stvari.',
   span_1:
     'Torobox pruža širok spektar rešenja za skladištenje vama i/ili vašem poslovanju. Naše skladišne jedinice su',
@@ -186,9 +188,11 @@ const jsonSR = {
   form_name: 'Ime',
   form_email: 'Email',
   form_phone: 'Broj Telefona',
-  form_comment: 'Komentar',
-  form_optional: '(Opciono)',
+  form_comment: 'Poruka',
+  form_optional: '',
   privacy_text: 'Klikom na dugme "Pošalji" se slažete sa uslovima naše Politike privatnosti.',
+  get_space_lang: 'Iznajmi',
+  get_space_lang_header_menu: 'Iznajmi',
 };
 
 $('.en').click(function () {
