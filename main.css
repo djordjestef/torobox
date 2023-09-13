@@ -103,12 +103,15 @@ h4 {
 .animated-heading {
   position: relative;
   perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
 
 .animated-heading-line {
   display: inline-block;
   transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
   opacity: 0;
+  -moz-animation-delay: -1s !important;
   animation: fade-in-heading 0.4s ease-out forwards, flip-heading 0.4s ease-out forwards;
   -webkit-animation: fade-in-heading 0.4s ease-out forwards, flip-heading 0.4s ease-out forwards;
 }
@@ -231,6 +234,7 @@ body::-webkit-scrollbar {
   top: -30px;
   animation: logo_animate 2s ease-out forwards;
   -webkit-animation: logo_animate 2s ease-out forwards;
+  -moz-animation-delay: -1s !important;
 }
 @keyframes logo_animate {
   0% {
@@ -307,6 +311,7 @@ body::-webkit-scrollbar {
   z-index: 1;
   animation: top_to_bottom 2s ease-out forwards;
   -webkit-animation: top_to_bottom 2s ease-out forwards;
+  -moz-animation-delay: -1s !important;
 }
 @keyframes top_to_bottom {
   0% {
@@ -470,6 +475,7 @@ body::-webkit-scrollbar {
   opacity: 0;
   animation: logo_text 2s ease-out forwards;
   -webkit-animation: logo_text 2s ease-out forwards;
+  -moz-animation-delay: -1s !important;
 }
 @keyframes logo_text {
   0% {

@@ -93,12 +93,16 @@ h4 {
 .animated-heading {
     position: relative;
     perspective: 1000px;
+    -webkit-perspective: 1000px;
 }
 
 .animated-heading-line {
     display: inline-block;
     transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
     opacity: 0;
+    // animation-delay: 1s !important;
+    -moz-animation-delay: -1s !important;
     animation:
         fade-in-heading 0.4s ease-out forwards,
         flip-heading 0.4s ease-out forwards;
@@ -130,15 +134,6 @@ h4 {
 html.has-scroll-smooth {
     overflow: hidden;
 }
-
-// html.has-scroll-smooth {
-//     bottom: 0;
-//     left: 0;
-//     overflow: hidden;
-//     position: fixed;
-//     right: 0;
-//     top: 0;
-// }
 
 body {
     font-family: "Roboto", sans-serif !important;
@@ -240,6 +235,7 @@ body::-webkit-scrollbar {
     top: -30px;
     animation: logo_animate 2s ease-out forwards;
     -webkit-animation: logo_animate 2s ease-out forwards;
+    -moz-animation-delay: -1s !important;
 
     @keyframes logo_animate {
         0% {
@@ -320,6 +316,7 @@ body::-webkit-scrollbar {
     z-index: 1;
     animation: top_to_bottom 2s ease-out forwards;
     -webkit-animation: top_to_bottom 2s ease-out forwards;
+    -moz-animation-delay: -1s !important;
 
     @keyframes top_to_bottom {
         0% {
@@ -485,6 +482,7 @@ body::-webkit-scrollbar {
                 opacity: 0;
                 animation: logo_text 2s ease-out forwards;
                 -webkit-animation: logo_text 2s ease-out forwards;
+                -moz-animation-delay: -1s !important;
 
                 @keyframes logo_text {
                     0% {

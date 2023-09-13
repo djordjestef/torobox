@@ -436,7 +436,8 @@ let scroller;
 window.addEventListener('load', function (event) {
   scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: navigator.userAgent.indexOf('Firefox') != -1 ? false : true,
+    // smooth: navigator.userAgent.indexOf('Firefox') != -1 ? false : true,
+    smooth:true,
     getSpeed: true,
     smartphone: {
       smooth: false,
