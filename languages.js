@@ -45,7 +45,7 @@ const jsonEN = {
   acc_description_mini_one:
     'Vault size box offers a little extra space. Here you can store items like documents, laptops and similar type of small valuable items.',
   acc_description_mini_two:
-    'Width: 1m | Height: 2.5m | Lenght: 2.5m Surface Area: 1m\u00B2 | Volume: 2.5m\u00B3',
+    'Width: 1m | Height: 2.5m | Lenght: 1m Surface Area: 1m\u00B2 | Volume: 2.5m\u00B3',
   rent_mini_btn: 'Rent for 50€ / mont',
   company_storage_title: 'We pack, move & store for you.',
   span_1:
