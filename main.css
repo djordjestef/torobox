@@ -1689,6 +1689,7 @@ body::-webkit-scrollbar {
 .contact .form_btn:hover {
   background: #d22730 0% 0% no-repeat padding-box;
   color: #fff;
+  border-color: #d22730;
 }
 @media only screen and (max-width: 1660px) {
   .contact .form_btn {
@@ -2001,6 +2002,7 @@ body::-webkit-scrollbar {
 .footer .btn_holder .space:hover {
   background: #d22730 0% 0% no-repeat padding-box;
   color: #fff;
+  border-color: #d22730;
 }
 @media only screen and (max-width: 1200px) {
   .footer .btn_holder .space {

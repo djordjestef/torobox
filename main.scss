@@ -1705,6 +1705,7 @@ body::-webkit-scrollbar {
             &:hover {
                 background: #d22730 0% 0% no-repeat padding-box;
                 color: #fff;
+                border-color: #d22730;
             }
 
             @media only screen and (max-width: 1660px) {
@@ -2058,6 +2059,8 @@ body::-webkit-scrollbar {
             &:hover {
                 background: #d22730 0% 0% no-repeat padding-box;
                 color: #fff;
+                border-color: #d22730;
+                
             }
 
             @media only screen and (max-width: 1200px) {
