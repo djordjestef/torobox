@@ -144,6 +144,11 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 
+button,
+input {
+  font-weight: 400 !important;
+}
+
 .fade-in {
   opacity: 0;
   animation: fade-in-animation 1s ease-in-out forwards;
@@ -725,25 +730,15 @@ body::-webkit-scrollbar {
   }
 }
 .storage .storage_type_img_holder {
-  width: 45%;
+  width: 560px;
   margin: auto;
   position: relative;
   min-height: 494px;
   max-height: 494px;
 }
-@media only screen and (max-width: 1920px) {
-  .storage .storage_type_img_holder {
-    width: 70%;
-  }
-}
 @media only screen and (max-width: 1660px) {
   .storage .storage_type_img_holder {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .storage .storage_type_img_holder {
-    width: 90%;
+    width: 558px;
   }
 }
 .storage .storage_type_img_holder .cube_large {
@@ -751,6 +746,13 @@ body::-webkit-scrollbar {
   top: 0;
   left: 100px;
   opacity: 0.09;
+}
+.storage .storage_type_img_holder .cube_large_animation {
+  position: absolute;
+  top: -58px;
+  left: 31px;
+  transform: scale(1.13);
+  opacity: 0;
 }
 .storage .storage_type_img_holder .cube_medium {
   position: absolute;
@@ -1906,7 +1908,7 @@ body::-webkit-scrollbar {
   font-size: 16px;
   padding: 45px 0;
   border-top: 1px solid #d9d9d9;
-  font-weight: 300;
+  font-weight: 400;
   background: #fff;
   letter-spacing: 0.6px;
 }

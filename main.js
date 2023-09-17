@@ -123,6 +123,7 @@ $('#item_large').click(function () {
   $('#item_medium').removeClass('active');
   $('#item_small').removeClass('active');
   $('#item_mini').removeClass('active');
+
   if ($('#item_large').hasClass('active')) {
     $('.arr_large').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -132,6 +133,13 @@ $('#item_large').click(function () {
       {
         opacity: 1,
         top: '-141',
+      },
+      300,
+    );
+    $('.cube_large_animation').animate(
+      {
+        opacity: 1,
+        top: '-197',
       },
       300,
     );
@@ -165,6 +173,13 @@ $('#item_large').click(function () {
       },
       300,
     );
+    $('.cube_large_animation').animate(
+      {
+        opacity: 0,
+        top: '-58',
+      },
+      300,
+    );
   }
 });
 
@@ -189,6 +204,13 @@ $('#item_medium').click(function () {
       {
         opacity: 0.09,
         top: '0',
+      },
+      300,
+    );
+    $('.cube_large_animation').animate(
+      {
+        opacity: 0,
+        top: '-58',
       },
       300,
     );
@@ -242,6 +264,13 @@ $('#item_small').click(function () {
       },
       300,
     );
+    $('.cube_large_animation').animate(
+      {
+        opacity: 0,
+        top: '-58',
+      },
+      300,
+    );
     $('.cube_medium').animate(
       {
         opacity: 0.2,
@@ -289,6 +318,13 @@ $('#item_mini').click(function () {
       {
         opacity: 0.09,
         top: '0',
+      },
+      300,
+    );
+    $('.cube_large_animation').animate(
+      {
+        opacity: 0,
+        top: '-58',
       },
       300,
     );
@@ -437,7 +473,7 @@ window.addEventListener('load', function (event) {
   scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     // smooth: navigator.userAgent.indexOf('Firefox') != -1 ? false : true,
-    smooth:true,
+    smooth: true,
     getSpeed: true,
     smartphone: {
       smooth: false,
