@@ -309,7 +309,8 @@ input {
   }
 }
 
-.get_space {
+.get_space_en,
+.get_space_sr {
   position: fixed;
   right: 84px;
   top: -70px;
@@ -317,6 +318,11 @@ input {
   animation: top_to_bottom 2s ease-out forwards;
   -webkit-animation: top_to_bottom 2s ease-out forwards;
   -moz-animation-delay: -1s !important;
+  display: none;
+}
+.get_space_en.active,
+.get_space_sr.active {
+  display: block;
 }
 @keyframes top_to_bottom {
   0% {
@@ -333,7 +339,8 @@ input {
   }
 }
 @media only screen and (max-width: 1660px) {
-  .get_space {
+  .get_space_en,
+  .get_space_sr {
     right: 34px;
     top: 0;
     animation: top_to_bottom 2s ease-out forwards;
@@ -355,24 +362,33 @@ input {
   }
 }
 @media only screen and (max-width: 992px) {
-  .get_space {
+  .get_space_en,
+  .get_space_sr {
     display: none;
   }
 }
-.get_space lottie-player {
+.get_space_en lottie-player,
+.get_space_sr lottie-player {
   width: 113px;
   height: 50px;
 }
 @media only screen and (max-width: 1660px) {
-  .get_space lottie-player {
+  .get_space_en lottie-player,
+  .get_space_sr lottie-player {
     width: 90px;
     height: 40px;
   }
 }
 
-.get_space_mobile {
+.get_space_mobile_en,
+.get_space_mobile_sr {
   height: 50px;
   margin-bottom: 80px;
+  display: none;
+}
+.get_space_mobile_en.active,
+.get_space_mobile_sr.active {
+  display: block;
 }
 
 .header {

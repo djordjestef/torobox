@@ -216,7 +216,7 @@ input {
     display: none;
 
     @media only screen and (max-width: 992px) {
-        display: block;
+        display: block ;
     }
 }
 
@@ -314,7 +314,8 @@ input {
     }
 }
 
-.get_space {
+.get_space_en,
+.get_space_sr {
     position: fixed;
     right: 84px;
     top: -70px;
@@ -322,6 +323,11 @@ input {
     animation: top_to_bottom 2s ease-out forwards;
     -webkit-animation: top_to_bottom 2s ease-out forwards;
     -moz-animation-delay: -1s !important;
+    display: none;
+
+    &.active {
+        display: block;
+    }
 
     @keyframes top_to_bottom {
         0% {
@@ -375,9 +381,15 @@ input {
     }
 }
 
-.get_space_mobile {
+.get_space_mobile_en,
+.get_space_mobile_sr {
     height: 50px;
     margin-bottom: 80px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
 }
 
 .header {
