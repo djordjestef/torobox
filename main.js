@@ -131,7 +131,7 @@ $('#item_large').click(function () {
     $('.arr_mini').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_large').animate(
       {
-        opacity: 1,
+        // opacity: 1,
         top: '-141',
       },
       300,
@@ -150,6 +150,14 @@ $('#item_large').click(function () {
       },
       300,
     );
+
+    $('.cube_medium_animation').animate(
+      {
+        opacity: 0,
+        top: '72',
+      },
+      300,
+    );
     $('.cube_small').animate(
       {
         opacity: 0.2,
@@ -157,10 +165,24 @@ $('#item_large').click(function () {
       },
       300,
     );
+    $('.cube_small_animation').animate(
+      {
+        opacity: 0,
+        top: '137',
+      },
+      300,
+    );
     $('.cube_mini').animate(
       {
         opacity: 0.2,
         bottom: '-46',
+      },
+      300,
+    );
+    $('.cube_mini_animation').animate(
+      {
+        opacity: 0,
+        bottom: '-193',
       },
       300,
     );
@@ -195,8 +217,15 @@ $('#item_medium').click(function () {
     $('.arr_mini').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_medium').animate(
       {
-        opacity: 1,
+        // opacity: 1,
         top: '29',
+      },
+      300,
+    );
+    $('.cube_medium_animation').animate(
+      {
+        opacity: 1,
+        top: '-69',
       },
       300,
     );
@@ -221,10 +250,24 @@ $('#item_medium').click(function () {
       },
       300,
     );
+    $('.cube_small_animation').animate(
+      {
+        opacity: 0,
+        top: '137',
+      },
+      300,
+    );
     $('.cube_mini').animate(
       {
         opacity: 0.2,
         bottom: '-46',
+      },
+      300,
+    );
+    $('.cube_mini_animation').animate(
+      {
+        opacity: 0,
+        bottom: '-193',
       },
       300,
     );
@@ -234,6 +277,13 @@ $('#item_medium').click(function () {
       {
         opacity: 0.2,
         top: '171',
+      },
+      300,
+    );
+    $('.cube_medium_animation').animate(
+      {
+        opacity: 0,
+        top: '72',
       },
       300,
     );
@@ -252,8 +302,15 @@ $('#item_small').click(function () {
     $('.arr_mini').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_small').animate(
       {
-        opacity: 1,
+        // opacity: 1,
         bottom: '124',
+      },
+      300,
+    );
+    $('.cube_small_animation').animate(
+      {
+        opacity: 1,
+        top: '-5',
       },
       300,
     );
@@ -278,10 +335,24 @@ $('#item_small').click(function () {
       },
       300,
     );
+    $('.cube_medium_animation').animate(
+      {
+        opacity: 0,
+        top: '72',
+      },
+      300,
+    );
     $('.cube_mini').animate(
       {
         opacity: 0.2,
         bottom: '-46',
+      },
+      300,
+    );
+    $('.cube_mini_animation').animate(
+      {
+        opacity: 0,
+        bottom: '-193',
       },
       300,
     );
@@ -291,6 +362,13 @@ $('#item_small').click(function () {
       {
         opacity: 0.2,
         bottom: '-18',
+      },
+      300,
+    );
+    $('.cube_small_animation').animate(
+      {
+        opacity: 0,
+        top: '137',
       },
       300,
     );
@@ -309,8 +387,15 @@ $('#item_mini').click(function () {
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_mini').animate(
       {
-        opacity: 1,
+        // opacity: 1,
         bottom: '95',
+      },
+      300,
+    );
+    $('.cube_mini_animation').animate(
+      {
+        opacity: 1,
+        bottom: '-52',
       },
       300,
     );
@@ -335,10 +420,24 @@ $('#item_mini').click(function () {
       },
       300,
     );
+    $('.cube_medium_animation').animate(
+      {
+        opacity: 0,
+        top: '72',
+      },
+      300,
+    );
     $('.cube_small').animate(
       {
         opacity: 0.2,
         bottom: '-18',
+      },
+      300,
+    );
+    $('.cube_small_animation').animate(
+      {
+        opacity: 0,
+        top: '137',
       },
       300,
     );
@@ -348,6 +447,13 @@ $('#item_mini').click(function () {
       {
         opacity: 0.2,
         bottom: '-46',
+      },
+      300,
+    );
+    $('.cube_mini_animation').animate(
+      {
+        opacity: 0,
+        bottom: '-193',
       },
       300,
     );

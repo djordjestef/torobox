@@ -785,11 +785,9 @@ input {
 
             .cube_large_animation {
                 position: absolute;
-                // top: -197px;
                 top: -58px;
                 left: 31px;
                 transform: scale(1.13);
-                // display: none;
                 opacity: 0;
             }
 
@@ -800,6 +798,14 @@ input {
                 opacity: 0.2;
             }
 
+            .cube_medium_animation {
+                position: absolute;
+                transform: scale(1.13);
+                top: 72px;
+                left: -18px;
+                opacity: 0;
+            }
+
             .cube_small {
                 position: absolute;
                 bottom: -18px;
@@ -808,12 +814,30 @@ input {
                 z-index: 1;
             }
 
+            .cube_small_animation {
+                position: absolute;
+                top: 137px;
+                left: -129px;
+                transform: scale(1.13);
+                opacity: 0;
+                z-index: 999;
+            }
+
             .cube_mini {
                 position: absolute;
                 bottom: -46px;
-                left: 76px;
+                left: 75px;
                 opacity: 0.2;
                 z-index: 1;
+            }
+
+            .cube_mini_animation {
+                position: absolute;
+                transform: scale(1.13);
+                left: -154px;
+                bottom: -193px;
+                opacity: 0;
+                z-index: 999;
             }
         }
 
