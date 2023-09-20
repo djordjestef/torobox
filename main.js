@@ -749,11 +749,13 @@ window.addEventListener('load', function (event) {
       obj.direction === 'down'
     ) {
       $('.logo_header_desktop').css('z-index', 0);
-      $('.get_space').css('z-index', 0);
+      $('.get_space_sr').css('z-index', 0);
+      $('.get_space_en').css('z-index', 0);
     } else {
       setTimeout(() => {
         $('.logo_header_desktop').css('z-index', 1);
-        $('.get_space').css('z-index', 1);
+        $('.get_space_sr').css('z-index', 1);
+        $('.get_space_en').css('z-index', 1);
       }, 500);
     }
   });
