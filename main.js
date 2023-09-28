@@ -118,13 +118,30 @@ $('#item_mini').dblclick(function () {
   }, 300);
 });
 
+let lottieLarge;
+
 $('#item_large').click(function () {
+  // bodymovin.play()
   $('#item_large').toggleClass('active');
   $('#item_medium').removeClass('active');
   $('#item_small').removeClass('active');
   $('#item_mini').removeClass('active');
 
+  if (!lottieLarge) {
+    lottieLarge = bodymovin.loadAnimation({
+      container: document.getElementById('myLottieAnimation'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: 'assets/ani_in_large_box.json',
+    });
+  } else {
+    if ($('#item_large').hasClass('active')) {
+      lottieLarge.goToAndPlay(0);
+    }
+  }
   if ($('#item_large').hasClass('active')) {
+    lottieLarge.play();
     $('.arr_large').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -187,6 +204,9 @@ $('#item_large').click(function () {
       300,
     );
   } else {
+    if (lottieLarge && lottieLarge.isLoaded && !lottieLarge.isPaused) {
+      lottieLarge.pause();
+    }
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_large').animate(
       {

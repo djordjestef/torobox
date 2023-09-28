@@ -216,7 +216,7 @@ input {
     display: none;
 
     @media only screen and (max-width: 992px) {
-        display: block ;
+        display: block;
     }
 }
 
@@ -798,7 +798,7 @@ input {
             .cube_large_animation {
                 position: absolute;
                 top: -58px;
-                left: 31px;
+                left: 63px;
                 transform: scale(1.13);
                 opacity: 0;
             }
@@ -2186,8 +2186,8 @@ input {
     font-size: 14px;
     letter-spacing: 0.7;
     font-weight: 300;
-    border: 4px solid #191B1D;
-    background-color: #191B1D;
+    border: 4px solid #191b1d;
+    background-color: #191b1d;
     transform: translateX(100%);
     transition:
         transform 200ms ease-in-out,

@@ -48,7 +48,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css "
     />
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie_svg.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
@@ -242,6 +246,8 @@
             </div>
           </div>
 
+          <div id="bm"></div>
+
           <div class="storage_type" data-scroll data-scroll-speed="1" id="storage_animate">
             <div class="row storage_type_row_helper" style="width: 100%">
               <div class="col-xl-6 col-lg-7 only_desktop" style="padding-top: 3%">
@@ -254,13 +260,20 @@
                     id="1"
                   />
 
-                  <lottie-player
+                  <!-- <lottie-player
+                  id="myLottieAnimation"
                     src="assets/ani_in_large_box.json"
                     background="transparent"
                     class="cube_large_animation only_desktop"
-                    loop
+                    
                     autoplay
-                  ></lottie-player>
+                  ></lottie-player> -->
+
+                  <div
+                    id="myLottieAnimation"
+                    src="assets/ani_in_large_box.json"
+                    class="cube_large_animation only_desktop"
+                  ></div>
                   <img
                     src="assets/mali-tip-kontejner-box-za-skladistenje-stvari.svg"
                     alt=""
@@ -867,5 +880,6 @@
     </div>
     <script src="main.js"></script>
     <script src="languages.js"></script>
+    <script></script>
   </body>
 </html>
