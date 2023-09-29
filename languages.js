@@ -206,7 +206,7 @@ $('.sr').click(function () {
 });
 
 $(document).ready(function () {
-  const isMobileTablet = window.innerWidth <= 992;
+  const isMobileTablet = window.innerWidth < 992;
 
   if (localStorage.getItem('lang') === null) {
     localStorage.setItem('lang', 'en');

@@ -1,5 +1,6 @@
 window.onload = function () {
   const isMobile = window.innerWidth <= 576;
+
   var viewport_width = window.innerWidth;
   if (isMobile) {
     $('.accordion-collapse[aria-labelledby="flush-headingTwo"]').addClass('show');
@@ -119,9 +120,26 @@ $('#item_mini').dblclick(function () {
 });
 
 let lottieLarge;
+let lottieLargeMobile;
+
 let lottieMedium;
+let lottieMediumMobile;
 let lottieSmall;
+let lottieSmallMobile;
 let lottieMini;
+let lottieMiniMobile;
+
+const isMobileTablet = window.innerWidth < 992;
+
+if (isMobileTablet) {
+  lottieMediumMobile = bodymovin.loadAnimation({
+    container: document.getElementById('lottie_medium_mobile'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: 'assets/ani_in_medium_box.json',
+  });
+}
 
 $('#item_large').click(function () {
   $('#item_large').toggleClass('active');
@@ -129,21 +147,38 @@ $('#item_large').click(function () {
   $('#item_small').removeClass('active');
   $('#item_mini').removeClass('active');
 
-  if (!lottieLarge) {
-    lottieLarge = bodymovin.loadAnimation({
-      container: document.getElementById('lottie_large'),
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: 'assets/ani_in_large_box.json',
-    });
+  if (!isMobileTablet) {
+    if (!lottieLarge) {
+      lottieLarge = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_large'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_large_box.json',
+      });
+    } else {
+      if ($('#item_large').hasClass('active')) {
+        lottieLarge.goToAndPlay(0);
+      }
+    }
   } else {
-    if ($('#item_large').hasClass('active')) {
-      lottieLarge.goToAndPlay(0);
+    if (!lottieLargeMobile) {
+      lottieLargeMobile = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_large_mobile'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_large_box.json',
+      });
+    } else {
+      if ($('#item_large').hasClass('active')) {
+        lottieLargeMobile.goToAndPlay(0);
+      }
     }
   }
+
   if ($('#item_large').hasClass('active')) {
-    lottieLarge.play();
+    isMobileTablet ? lottieLargeMobile.play() : lottieLarge.play();
     $('.arr_large').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -209,6 +244,9 @@ $('#item_large').click(function () {
     if (lottieLarge && lottieLarge.isLoaded && !lottieLarge.isPaused) {
       lottieLarge.pause();
     }
+    if (lottieLargeMobile && lottieLargeMobile.isLoaded && !lottieLargeMobile.isPaused) {
+      lottieLargeMobile.pause();
+    }
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_large').animate(
       {
@@ -233,21 +271,38 @@ $('#item_medium').click(function () {
   $('#item_small').removeClass('active');
   $('#item_mini').removeClass('active');
 
-  if (!lottieMedium) {
-    lottieMedium = bodymovin.loadAnimation({
-      container: document.getElementById('lottie_medium'),
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: 'assets/ani_in_medium_box.json',
-    });
+  if (!isMobileTablet) {
+    if (!lottieMedium) {
+      lottieMedium = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_medium'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_medium_box.json',
+      });
+    } else {
+      if ($('#item_medium').hasClass('active')) {
+        lottieMedium.goToAndPlay(0);
+      }
+    }
   } else {
-    if ($('#item_medium').hasClass('active')) {
-      lottieMedium.goToAndPlay(0);
+    if (!lottieMediumMobile) {
+      lottieMediumMobile = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_medium_mobile'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_medium_box.json',
+      });
+    } else {
+      if ($('#item_medium').hasClass('active')) {
+        lottieMediumMobile.goToAndPlay(0);
+      }
     }
   }
+
   if ($('#item_medium').hasClass('active')) {
-    lottieMedium.play();
+    isMobileTablet ? lottieMediumMobile.play() : lottieMedium.play();
     $('.arr_medium').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -312,6 +367,9 @@ $('#item_medium').click(function () {
     if (lottieMedium && lottieMedium.isLoaded && !lottieMedium.isPaused) {
       lottieMedium.pause();
     }
+    if (lottieMediumMobile && lottieMediumMobile.isLoaded && !lottieMediumMobile.isPaused) {
+      lottieMediumMobile.pause();
+    }
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_medium').animate(
       {
@@ -336,21 +394,38 @@ $('#item_small').click(function () {
   $('#item_mini').removeClass('active');
   $('#item_medium').removeClass('active');
 
-  if (!lottieSmall) {
-    lottieSmall = bodymovin.loadAnimation({
-      container: document.getElementById('lottie_small'),
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: 'assets/ani_in_small_box.json',
-    });
+  if (!isMobileTablet) {
+    if (!lottieSmall) {
+      lottieSmall = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_small'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_small_box.json',
+      });
+    } else {
+      if ($('#item_small').hasClass('active')) {
+        lottieSmall.goToAndPlay(0);
+      }
+    }
   } else {
-    if ($('#item_small').hasClass('active')) {
-      lottieSmall.goToAndPlay(0);
+    if (!lottieSmallMobile) {
+      lottieSmallMobile = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_small_mobile'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_small_box.json',
+      });
+    } else {
+      if ($('#item_small').hasClass('active')) {
+        lottieSmallMobile.goToAndPlay(0);
+      }
     }
   }
+
   if ($('#item_small').hasClass('active')) {
-    lottieSmall.play();
+    isMobileTablet ? lottieSmallMobile.play() : lottieSmall.play();
     $('.arr_small').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -415,6 +490,10 @@ $('#item_small').click(function () {
     if (lottieSmall && lottieSmall.isLoaded && !lottieSmall.isPaused) {
       lottieSmall.pause();
     }
+
+    if (lottieSmallMobile && lottieSmallMobile.isLoaded && !lottieSmallMobile.isPaused) {
+      lottieSmallMobile.pause();
+    }
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_small').animate(
       {
@@ -438,21 +517,39 @@ $('#item_mini').click(function () {
   $('#item_large').removeClass('active');
   $('#item_small').removeClass('active');
   $('#item_medium').removeClass('active');
-  if (!lottieMini) {
-    lottieMini = bodymovin.loadAnimation({
-      container: document.getElementById('lottie_mini'),
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: 'assets/ani_in_mini_box.json',
-    });
+
+  if (!isMobileTablet) {
+    if (!lottieMini) {
+      lottieMini = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_mini'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_mini_box.json',
+      });
+    } else {
+      if ($('#item_mini').hasClass('active')) {
+        lottieMini.goToAndPlay(0);
+      }
+    }
   } else {
-    if ($('#item_mini').hasClass('active')) {
-      lottieMini.goToAndPlay(0);
+    if (!lottieMiniMobile) {
+      lottieMiniMobile = bodymovin.loadAnimation({
+        container: document.getElementById('lottie_mini_mobile'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/ani_in_mini_box.json',
+      });
+    } else {
+      if ($('#item_mini').hasClass('active')) {
+        lottieMiniMobile.goToAndPlay(0);
+      }
     }
   }
+
   if ($('#item_mini').hasClass('active')) {
-    lottieMini.play();
+    isMobileTablet ? lottieMiniMobile.play() : lottieMini.play();
     $('.arr_mini').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -516,6 +613,10 @@ $('#item_mini').click(function () {
   } else {
     if (lottieMini && lottieMini.isLoaded && !lottieMini.isPaused) {
       lottieMini.pause();
+    }
+
+    if (lottieMiniMobile && lottieMiniMobile.isLoaded && !lottieMiniMobile.isPaused) {
+      lottieMiniMobile.pause();
     }
     $('.arr_mini').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_mini').animate(
