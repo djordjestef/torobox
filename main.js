@@ -120,9 +120,10 @@ $('#item_mini').dblclick(function () {
 
 let lottieLarge;
 let lottieMedium;
+let lottieSmall;
+let lottieMini;
 
 $('#item_large').click(function () {
-  // bodymovin.play()
   $('#item_large').toggleClass('active');
   $('#item_medium').removeClass('active');
   $('#item_small').removeClass('active');
@@ -233,7 +234,7 @@ $('#item_medium').click(function () {
   $('#item_mini').removeClass('active');
 
   if (!lottieMedium) {
-    lottieMedium= bodymovin.loadAnimation({
+    lottieMedium = bodymovin.loadAnimation({
       container: document.getElementById('lottie_medium'),
       renderer: 'svg',
       loop: false,
@@ -334,7 +335,22 @@ $('#item_small').click(function () {
   $('#item_large').removeClass('active');
   $('#item_mini').removeClass('active');
   $('#item_medium').removeClass('active');
+
+  if (!lottieSmall) {
+    lottieSmall = bodymovin.loadAnimation({
+      container: document.getElementById('lottie_small'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: 'assets/ani_in_small_box.json',
+    });
+  } else {
+    if ($('#item_small').hasClass('active')) {
+      lottieSmall.goToAndPlay(0);
+    }
+  }
   if ($('#item_small').hasClass('active')) {
+    lottieSmall.play();
     $('.arr_small').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -396,6 +412,9 @@ $('#item_small').click(function () {
       300,
     );
   } else {
+    if (lottieSmall && lottieSmall.isLoaded && !lottieSmall.isPaused) {
+      lottieSmall.pause();
+    }
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_small').animate(
       {
@@ -419,7 +438,21 @@ $('#item_mini').click(function () {
   $('#item_large').removeClass('active');
   $('#item_small').removeClass('active');
   $('#item_medium').removeClass('active');
+  if (!lottieMini) {
+    lottieMini = bodymovin.loadAnimation({
+      container: document.getElementById('lottie_mini'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: 'assets/ani_in_mini_box.json',
+    });
+  } else {
+    if ($('#item_mini').hasClass('active')) {
+      lottieMini.goToAndPlay(0);
+    }
+  }
   if ($('#item_mini').hasClass('active')) {
+    lottieMini.play();
     $('.arr_mini').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -481,6 +514,9 @@ $('#item_mini').click(function () {
       300,
     );
   } else {
+    if (lottieMini && lottieMini.isLoaded && !lottieMini.isPaused) {
+      lottieMini.pause();
+    }
     $('.arr_mini').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_mini').animate(
       {

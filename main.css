@@ -794,7 +794,8 @@ input {
 .storage .storage_type_img_holder .cube_small_animation {
   position: absolute;
   top: 137px;
-  left: -129px;
+  left: -97px;
+  right: 162px;
   transform: scale(1.13);
   opacity: 0;
   z-index: 999;
@@ -809,7 +810,8 @@ input {
 .storage .storage_type_img_holder .cube_mini_animation {
   position: absolute;
   transform: scale(1.13);
-  left: -154px;
+  left: -124px;
+  right: 185px;
   bottom: -193px;
   opacity: 0;
   z-index: 999;
