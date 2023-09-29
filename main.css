@@ -780,7 +780,8 @@ input {
   position: absolute;
   transform: scale(1.13);
   top: 72px;
-  left: -18px;
+  left: 15px;
+  right: 52px;
   opacity: 0;
 }
 .storage .storage_type_img_holder .cube_small {

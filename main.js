@@ -119,6 +119,7 @@ $('#item_mini').dblclick(function () {
 });
 
 let lottieLarge;
+let lottieMedium;
 
 $('#item_large').click(function () {
   // bodymovin.play()
@@ -129,7 +130,7 @@ $('#item_large').click(function () {
 
   if (!lottieLarge) {
     lottieLarge = bodymovin.loadAnimation({
-      container: document.getElementById('myLottieAnimation'),
+      container: document.getElementById('lottie_large'),
       renderer: 'svg',
       loop: false,
       autoplay: true,
@@ -230,7 +231,22 @@ $('#item_medium').click(function () {
   $('#item_large').removeClass('active');
   $('#item_small').removeClass('active');
   $('#item_mini').removeClass('active');
+
+  if (!lottieMedium) {
+    lottieMedium= bodymovin.loadAnimation({
+      container: document.getElementById('lottie_medium'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: 'assets/ani_in_medium_box.json',
+    });
+  } else {
+    if ($('#item_medium').hasClass('active')) {
+      lottieMedium.goToAndPlay(0);
+    }
+  }
   if ($('#item_medium').hasClass('active')) {
+    lottieMedium.play();
     $('.arr_medium').css({ transform: 'rotate(' + 0 + 'deg)', opacity: 1 });
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.arr_small').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
@@ -245,7 +261,7 @@ $('#item_medium').click(function () {
     $('.cube_medium_animation').animate(
       {
         opacity: 1,
-        top: '-69',
+        top: '-68',
       },
       300,
     );
@@ -292,6 +308,9 @@ $('#item_medium').click(function () {
       300,
     );
   } else {
+    if (lottieMedium && lottieMedium.isLoaded && !lottieMedium.isPaused) {
+      lottieMedium.pause();
+    }
     $('.arr_medium').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_medium').animate(
       {
