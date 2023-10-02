@@ -871,7 +871,7 @@ input {
 .storage .storage_type_accordion .accordion-item .cube_large_animation_mobile {
   position: relative;
   height: 298px;
-  transform: scale(1.35);
+  transform: scale(1.15);
   width: 79%;
   margin: auto;
 }
@@ -2130,7 +2130,7 @@ input {
 
 .menu-items {
   position: fixed;
-  padding: 6rem 3rem 9rem;
+  padding: 15vh 3rem 9rem;
   top: 0;
   left: 0;
   right: 0;
@@ -2158,7 +2158,7 @@ input {
   width: 242px;
   margin: 95px auto 0;
   position: absolute;
-  bottom: 160px;
+  bottom: 22vh;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -2184,7 +2184,7 @@ input {
 
 .social_links_holder {
   position: absolute;
-  bottom: 92px;
+  bottom: 15vh;
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;
