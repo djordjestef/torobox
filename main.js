@@ -250,7 +250,7 @@ $('#item_large').click(function () {
     $('.arr_large').css({ transform: 'rotate(' + 180 + 'deg)', opacity: 0.3 });
     $('.cube_large').animate(
       {
-        opacity: 0.09,
+        opacity: 0.14,
         top: '0',
       },
       300,
@@ -323,7 +323,7 @@ $('#item_medium').click(function () {
     );
     $('.cube_large').animate(
       {
-        opacity: 0.09,
+        opacity: 0.14,
         top: '0',
       },
       300,
@@ -446,7 +446,7 @@ $('#item_small').click(function () {
     );
     $('.cube_large').animate(
       {
-        opacity: 0.09,
+        opacity: 0.14,
         top: '0',
       },
       300,
@@ -570,7 +570,7 @@ $('#item_mini').click(function () {
     );
     $('.cube_large').animate(
       {
-        opacity: 0.09,
+        opacity: 0.14,
         top: '0',
       },
       300,
@@ -674,7 +674,7 @@ $('#item_medium').hover(
     if (!$('#item_medium').hasClass('active')) {
       $('.cube_medium').animate(
         {
-          opacity: 0.09,
+          opacity: 0.2,
         },
         200,
       );
@@ -697,7 +697,7 @@ $('#item_small').hover(
     if (!$('#item_small').hasClass('active')) {
       $('.cube_small').animate(
         {
-          opacity: 0.09,
+          opacity: 0.2,
         },
         200,
       );
@@ -720,7 +720,7 @@ $('#item_mini').hover(
     if (!$('#item_mini').hasClass('active')) {
       $('.cube_mini').animate(
         {
-          opacity: 0.09,
+          opacity: 0.2,
         },
         200,
       );
