@@ -651,7 +651,7 @@ $('#item_large').hover(
     if (!$('#item_large').hasClass('active')) {
       $('.cube_large').animate(
         {
-          opacity: 0.09,
+          opacity: 0.14,
         },
         200,
       );

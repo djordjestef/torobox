@@ -2,6 +2,10 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    color: #000;
+}
+
 //video animation
 
 h4 {
@@ -733,7 +737,7 @@ input {
     .storage_type {
         background: #fff;
         padding: 10% 0;
-        background: #191b1d;
+        background: #000;
         position: relative;
 
         @media only screen and (max-width: 991px) {
@@ -792,7 +796,7 @@ input {
                 position: absolute;
                 top: 0;
                 left: 100px;
-                opacity: 0.09;
+                opacity: 0.14;
             }
 
             .cube_large_animation {
@@ -857,7 +861,7 @@ input {
         }
 
         &_accordion {
-            background-color: #191b1d;
+            background-color: #000;
             width: 80%;
 
             @media only screen and (max-width: 1200px) {
@@ -1019,7 +1023,7 @@ input {
                         transition: all 0.3s;
                     }
                     &.collapsed {
-                        background-color: #191b1d;
+                        background-color: #000;
                         color: #fff;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.311);
                         border-bottom-left-radius: 0 !important;
@@ -1050,7 +1054,7 @@ input {
                         box-shadow: unset;
                     }
                     &:not(.collapsed) {
-                        background-color: #191b1d;
+                        background-color: #000;
                         color: #fff;
                     }
                     &::after {
@@ -2214,8 +2218,8 @@ input {
     font-size: 14px;
     letter-spacing: 0.7;
     font-weight: 300;
-    border: 4px solid #191b1d;
-    background-color: #191b1d;
+    border: 4px solid #000;
+    background-color: #000;
     transform: translateX(100%);
     transition:
         transform 200ms ease-in-out,
