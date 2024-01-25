@@ -768,21 +768,35 @@ window.addEventListener('load', function (event) {
   });
 
   $('.storage_link').on('click', function () {
-    const slider = document.getElementById('storage_type');
-    scroller.scrollTo(slider, -200);
-    checkbox.checked = false;
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+      const slider = document.getElementById('storage_type');
+      scroller.scrollTo(slider, -200);
+      checkbox.checked = false;
+    } else {
+      window.location.href = '/';
+    }
   });
 
   $('.company_link').on('click', function () {
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
     const slider = document.getElementById('company');
     scroller.scrollTo(slider);
     checkbox.checked = false;
+    }else {
+      window.location.href='/'
+    }
   });
 
   $('.contact_link').on('click', function () {
+
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
     const slider = document.getElementById('contact');
     scroller.scrollTo(slider);
     checkbox.checked = false;
+
+    }else {
+      window.location.href='/'
+    }
   });
 
   $('.blog_link').on('click', function () {
