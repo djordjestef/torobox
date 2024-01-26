@@ -1,8 +1,4 @@
-if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-  console.log('index');
-} else {
-  console.log('nije ');
-}
+console.log('window.location.pathname', window.location.pathname);
 const jsonEN =
   window.location.pathname === '/index.html' || window.location.pathname === '/'
     ? {
@@ -87,9 +83,9 @@ const jsonEN =
           ' We’re a customer-service driven business and the only company in Serbi professionally managing this market segment. Our long-term experience leasing large commercial spaces and our expertise allow you to put your trust in us just as these clients have over the years: Eurobank, Sky Music, Dom Perignon, Emotion, Sorbon, and many others.',
         blog_small: 'Blog',
         blog_title_lang: 'Latest news',
-        blog_index_lang_1:'english_1',
-        blog_index_lang_2:'english_2',
-        blog_index_lang_3:'english_3',
+        blog_index_lang_1: 'english_1',
+        blog_index_lang_2: 'english_2',
+        blog_index_lang_3: 'english_3',
         title_address_lang: 'Get space office@torobox.rs',
         address_lang: 'Address:',
         phone: 'Phone:',
@@ -104,11 +100,12 @@ const jsonEN =
         privacy_text: 'By clicking the Send button you agree to our Privacy Policy terms.',
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
-        blog_date_1:'March 20.2024',
-        blog_date_2:'March 20.2024',
-        blog_date_3:'March 20.2024',
+        blog_date_1: 'March 20.2024',
+        blog_date_2: 'March 20.2024',
+        blog_date_3: 'March 20.2024',
       }
-    : {
+    : window.location.pathname === '/blog.html'
+    ? {
         storage_lang: 'Storage',
         company_lang: 'Company',
         blog_lang: 'Blog',
@@ -127,13 +124,37 @@ const jsonEN =
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
         privacy: 'Privacy policy',
-        blog_lang_1:'english_1',
-        blog_lang_2:'english_2',
-        blog_lang_3:'english_3',
-        blog_date_1:'March 20.2024',
-        blog_date_2:'March 20.2024',
-        blog_date_3:'March 20.2024',
-      };
+        blog_lang_1: 'english_1',
+        blog_lang_2: 'english_2',
+        blog_lang_3: 'english_3',
+        blog_date_1: 'March 20.2024',
+        blog_date_2: 'March 20.2024',
+        blog_date_3: 'March 20.2024',
+        blog_main_subtitle: 'Torobox makes storage simple',
+        blog_main_title: 'Hints and tips to save you time and money',
+      }
+    : window.location.pathname === '/blog_1.html'
+    ? {
+        storage_lang: 'Storage',
+        company_lang: 'Company',
+        blog_lang: 'Blog',
+        contact_lang: 'Contact',
+        storage_lang_footer: 'Storage',
+        company_lang_footer: 'Company',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Contact',
+        // login_lang: 'Login',
+        // register_lang: 'Register',
+        storage_lang_burger: 'Storage',
+        company_lang_burger: 'Company',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Contact',
+        get_space_lang: 'Get space',
+        get_space_lang_header_menu: 'Get space',
+        privacy: 'Privacy policy',
+        test: 'English',
+      }
+    : {};
 
 const jsonSR =
   window.location.pathname === '/index.html' || window.location.pathname === '/'
@@ -220,9 +241,9 @@ const jsonSR =
           'Mi smo korisnički orijentisan poslovni subjekt i jedina firma u Srbiji koja profesionalno upravlja ovim segmentom tržišta. Naše dugogodišnje iskustvo i stručnost u iznajmljivanju velikih komercijalnih prostora omogućavaju nam da izađemo u susret, kako našim starim klijentima: Eurobanka, Sky Music, Dom Perignon, Emotion, Sorbon, tako i vama.',
         blog_small: 'Blog',
         blog_title_lang: 'Poslednje vesti',
-        blog_index_lang_1:'serbian_1',
-        blog_index_lang_2:'serbian_2',
-        blog_index_lang_3:'serbian_3',
+        blog_index_lang_1: 'serbian_1',
+        blog_index_lang_2: 'serbian_2',
+        blog_index_lang_3: 'serbian_3',
         title_address_lang: 'Iznajmi prostor office@torobox.rs',
         address_lang: 'Adresa:',
         phone: 'Telefon:',
@@ -237,11 +258,12 @@ const jsonSR =
         privacy_text: 'Klikom na dugme "Pošalji" se slažete sa uslovima naše Politike privatnosti.',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        blog_date_1:'Mart 20.2024',
-        blog_date_2:'Mart 20.2024',
-        blog_date_3:'Mart 20.2024',
+        blog_date_1: 'Mart 20.2024',
+        blog_date_2: 'Mart 20.2024',
+        blog_date_3: 'Mart 20.2024',
       }
-    : {
+    : window.location.pathname === '/blog.html'
+    ? {
         storage_lang: 'Skaldište',
         company_lang: 'Kompanija',
         blog_lang: 'Blog',
@@ -260,13 +282,37 @@ const jsonSR =
         privacy: 'Politika privatnosti',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        blog_lang_1:'serbian_1',
-        blog_lang_2:'serbian_2',
-        blog_lang_3:'serbian_3',
-        blog_date_1:'Mart 20.2024',
-        blog_date_2:'Mart 20.2024',
-        blog_date_3:'Mart 20.2024',
-      };
+        blog_lang_1: 'serbian_1',
+        blog_lang_2: 'serbian_2',
+        blog_lang_3: 'serbian_3',
+        blog_date_1: 'Mart 20.2024',
+        blog_date_2: 'Mart 20.2024',
+        blog_date_3: 'Mart 20.2024',
+        blog_main_subtitle: 'Torobox čini skladištenje jednostavnim',
+        blog_main_title: 'Saveti za uštedu vremena i novca',
+      }
+    : window.location.pathname === '/blog_1.html'
+    ? {
+        storage_lang: 'Skaldište',
+        company_lang: 'Kompanija',
+        blog_lang: 'Blog',
+        contact_lang: 'Kontakt',
+        storage_lang_footer: 'Skaldište',
+        company_lang_footer: 'Kompanija',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Kontakt',
+        // login_lang: 'Login',
+        // register_lang: 'Registracija',
+        storage_lang_burger: 'Skaldište',
+        company_lang_burger: 'Kompanija',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Kontakt',
+        privacy: 'Politika privatnosti',
+        get_space_lang: 'Iznajmi',
+        get_space_lang_header_menu: 'Iznajmi',
+        test: 'Serbian',
+      }
+    : {};
 
 $('.en').click(function () {
   localStorage.setItem('lang', 'en');
