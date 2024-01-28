@@ -1622,6 +1622,12 @@ input {
         cursor: pointer;
     }
 
+    .mobile_flex_helper {
+        @media only screen and (max-width: 991px) {
+            margin-right: 15px;
+        }
+    }
+
     &_title {
         margin-bottom: 100px;
         font-family: "Poppins", sans-serif;
