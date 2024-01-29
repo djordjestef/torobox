@@ -1,6 +1,8 @@
 console.log('window.location.pathname', window.location.pathname);
 const jsonEN =
-  window.location.pathname === '/index.html' || window.location.pathname === '/'
+  window.location.pathname === '/index.html' ||
+  window.location.pathname === '/' ||
+  window.location.pathname === '/torobox/index.html'
     ? {
         storage_sub: ' We offer what everyone seems to be missing — space.',
         storage_tit_mobile: ' Rent storage units for your personal possessions.',
@@ -104,7 +106,7 @@ const jsonEN =
         blog_date_2: 'March 20.2024',
         blog_date_3: 'March 20.2024',
       }
-    : window.location.pathname === '/blog.html'
+    : window.location.pathname === '/blog.html' || window.location.pathname === '/torobox/blog.html'
     ? {
         storage_lang: 'Storage',
         company_lang: 'Company',
@@ -137,7 +139,7 @@ const jsonEN =
         blog_main_subtitle: 'Torobox makes storage simple',
         blog_main_title: 'Hints and tips to save you time and money',
       }
-    : window.location.pathname === '/blog_1.html'
+    : window.location.pathname === '/blog_1.html' || window.location.pathname === '/torobox/blog_1.html'
     ? {
         storage_lang: 'Storage',
         company_lang: 'Company',
@@ -161,7 +163,9 @@ const jsonEN =
     : {};
 
 const jsonSR =
-  window.location.pathname === '/index.html' || window.location.pathname === '/'
+  window.location.pathname === '/index.html' ||
+  window.location.pathname === '/' ||
+  window.location.pathname === '/torobox/index.html'
     ? {
         storage_sub: 'Mi imamo ono što svima nedostaje - prostor.',
         storage_tit_mobile: 'Iznajmljivanje skladišnih jedinica za vaše stvari.',
@@ -266,7 +270,7 @@ const jsonSR =
         blog_date_2: 'Mart 20.2024',
         blog_date_3: 'Mart 20.2024',
       }
-    : window.location.pathname === '/blog.html'
+    : window.location.pathname === '/blog.html' || window.location.pathname === '/torobox/blog.html'
     ? {
         storage_lang: 'Skaldište',
         company_lang: 'Kompanija',
@@ -299,7 +303,7 @@ const jsonSR =
         blog_main_subtitle: 'Torobox čini skladištenje jednostavnim',
         blog_main_title: 'Saveti za uštedu vremena i novca',
       }
-    : window.location.pathname === '/blog_1.html'
+    : window.location.pathname === '/blog_1.html' || window.location.pathname === '/torobox/blog_1.html'
     ? {
         storage_lang: 'Skaldište',
         company_lang: 'Kompanija',
