@@ -138,7 +138,8 @@ const jsonEN =
         blog_main_subtitle: 'Torobox makes storage simple',
         blog_main_title: 'Hints and tips to save you time and money',
       }
-    : window.location.pathname === '/blog_1.html' || window.location.pathname === '/torobox/blog_1.html'
+    : window.location.pathname === '/blog_1.html' ||
+      window.location.pathname === '/torobox/blog_1.html'
     ? {
         storage_lang: 'Storage',
         company_lang: 'Company',
@@ -157,7 +158,89 @@ const jsonEN =
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
         privacy: 'Privacy policy',
-        test: 'English',
+        blog_title_1: 'Title',
+        blog_description_1: 'description',
+        blog_single_small_1: '< Blog',
+        blog_single_small_mobile_1: '< Blog',
+        blog_single_head_mobile_1: 'Title',
+      }
+    : window.location.pathname === '/blog_2.html' ||
+      window.location.pathname === '/torobox/blog_2.html'
+    ? {
+        storage_lang: 'Storage',
+        company_lang: 'Company',
+        blog_lang: 'Blog',
+        contact_lang: 'Contact',
+        storage_lang_footer: 'Storage',
+        company_lang_footer: 'Company',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Contact',
+        // login_lang: 'Login',
+        // register_lang: 'Register',
+        storage_lang_burger: 'Storage',
+        company_lang_burger: 'Company',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Contact',
+        get_space_lang: 'Get space',
+        get_space_lang_header_menu: 'Get space',
+        privacy: 'Privacy policy',
+        blog_title_2: 'Title2',
+        blog_description_2: 'description2',
+        blog_single_small_2: '< Blog',
+        blog_single_small_mobile_2: '< Blog',
+        blog_single_head_mobile_2: 'Title2',
+      }
+    : window.location.pathname === '/blog_3.html' ||
+      window.location.pathname === '/torobox/blog_3.html'
+    ? {
+        storage_lang: 'Storage',
+        company_lang: 'Company',
+        blog_lang: 'Blog',
+        contact_lang: 'Contact',
+        storage_lang_footer: 'Storage',
+        company_lang_footer: 'Company',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Contact',
+        // login_lang: 'Login',
+        // register_lang: 'Register',
+        storage_lang_burger: 'Storage',
+        company_lang_burger: 'Company',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Contact',
+        get_space_lang: 'Get space',
+        get_space_lang_header_menu: 'Get space',
+        privacy: 'Privacy policy',
+        blog_title_3: 'Title3',
+        blog_description_3: 'description3',
+        blog_single_small_3: '< Blog',
+        blog_single_small_mobile_3: '< Blog',
+        blog_single_head_mobile_3: 'Title3',
+      }
+    : window.location.pathname === '/blog_4.html' ||
+      window.location.pathname === '/torobox/blog_4.html'
+    ? {
+        storage_lang: 'Storage',
+        company_lang: 'Company',
+        blog_lang: 'Blog',
+        contact_lang: 'Contact',
+        storage_lang_footer: 'Storage',
+        company_lang_footer: 'Company',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Contact',
+        // login_lang: 'Login',
+        // register_lang: 'Register',
+        storage_lang_burger: 'Storage',
+        company_lang_burger: 'Company',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Contact',
+        get_space_lang: 'Get space',
+        get_space_lang_header_menu: 'Get space',
+        privacy: 'Privacy policy',
+        blog_title_4: 'Title4',
+        blog_description_4: 'description4',
+        blog_single_small_4: '< Blog',
+        blog_single_small_mobile_4: '< Blog',
+        blog_single_head_mobile_4: 'Title4',
       }
     : {};
 
@@ -302,7 +385,8 @@ const jsonSR =
         blog_main_subtitle: 'Torobox čini skladištenje jednostavnim',
         blog_main_title: 'Saveti za uštedu vremena i novca',
       }
-    : window.location.pathname === '/blog_1.html' || window.location.pathname === '/torobox/blog_1.html'
+    : window.location.pathname === '/blog_1.html' ||
+      window.location.pathname === '/torobox/blog_1.html'
     ? {
         storage_lang: 'Skaldište',
         company_lang: 'Kompanija',
@@ -321,7 +405,89 @@ const jsonSR =
         privacy: 'Politika privatnosti',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        test: 'Serbian',
+        blog_title_1: 'naslov',
+        blog_description_1: 'tekst',
+        blog_single_small_1: '< Blog',
+        blog_single_small_mobile_1: '< Blog',
+        blog_single_head_mobile_1: 'Naslov',
+      }
+    : window.location.pathname === '/blog_2.html' ||
+      window.location.pathname === '/torobox/blog_2.html'
+    ? {
+        storage_lang: 'Skaldište',
+        company_lang: 'Kompanija',
+        blog_lang: 'Blog',
+        contact_lang: 'Kontakt',
+        storage_lang_footer: 'Skaldište',
+        company_lang_footer: 'Kompanija',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Kontakt',
+        // login_lang: 'Login',
+        // register_lang: 'Registracija',
+        storage_lang_burger: 'Skaldište',
+        company_lang_burger: 'Kompanija',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Kontakt',
+        privacy: 'Politika privatnosti',
+        get_space_lang: 'Iznajmi',
+        get_space_lang_header_menu: 'Iznajmi',
+        blog_title_2: 'naslov2',
+        blog_description_2: 'tekst2',
+        blog_single_small_2: '< Blog',
+        blog_single_small_mobile_2: '< Blog',
+        blog_single_head_mobile_2: 'Naslov2',
+      }
+    : window.location.pathname === '/blog_3.html' ||
+      window.location.pathname === '/torobox/blog_3.html'
+    ? {
+        storage_lang: 'Skaldište',
+        company_lang: 'Kompanija',
+        blog_lang: 'Blog',
+        contact_lang: 'Kontakt',
+        storage_lang_footer: 'Skaldište',
+        company_lang_footer: 'Kompanija',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Kontakt',
+        // login_lang: 'Login',
+        // register_lang: 'Registracija',
+        storage_lang_burger: 'Skaldište',
+        company_lang_burger: 'Kompanija',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Kontakt',
+        privacy: 'Politika privatnosti',
+        get_space_lang: 'Iznajmi',
+        get_space_lang_header_menu: 'Iznajmi',
+        blog_title_3: 'naslov3',
+        blog_description_3: 'tekst3',
+        blog_single_small_3: '< Blog',
+        blog_single_small_mobile_3: '< Blog',
+        blog_single_head_mobile_3: 'Naslov3',
+      }
+    : window.location.pathname === '/blog_4.html' ||
+      window.location.pathname === '/torobox/blog_4.html'
+    ? {
+        storage_lang: 'Skaldište',
+        company_lang: 'Kompanija',
+        blog_lang: 'Blog',
+        contact_lang: 'Kontakt',
+        storage_lang_footer: 'Skaldište',
+        company_lang_footer: 'Kompanija',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Kontakt',
+        // login_lang: 'Login',
+        // register_lang: 'Registracija',
+        storage_lang_burger: 'Skaldište',
+        company_lang_burger: 'Kompanija',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Kontakt',
+        privacy: 'Politika privatnosti',
+        get_space_lang: 'Iznajmi',
+        get_space_lang_header_menu: 'Iznajmi',
+        blog_title_4: 'naslov4',
+        blog_description_4: 'tekst4',
+        blog_single_small_4: '< Blog',
+        blog_single_small_mobile_4: '< Blog',
+        blog_single_head_mobile_4: 'Naslov4',
       }
     : {};
 

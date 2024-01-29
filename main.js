@@ -768,6 +768,7 @@ window.addEventListener('load', function (event) {
   });
 
   console.log('this.location',location)
+ 
 
   $('.storage_link').on('click', function () {
     if (
@@ -779,8 +780,7 @@ window.addEventListener('load', function (event) {
       scroller.scrollTo(slider, -200);
       checkbox.checked = false;
     } else {
-    //  location.pathname = '/index.html';
-     window.location=location.protocol + "//" + location.hostname + "/index.html"
+     location.pathname = '/index.html';
     }
   });
 

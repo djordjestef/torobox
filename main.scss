@@ -2482,3 +2482,151 @@ input {
     display: block;
     transform: rotate(-45deg);
 }
+
+.blog_single_helper {
+    padding-top: 280px;
+
+    @media only screen and (max-width: 991px) {
+        padding-top: 36px;
+    }
+}
+.blog_single {
+    padding-bottom: 280px;
+
+    @media only screen and (max-width: 991px) {
+        padding-bottom: 36px;
+    }
+
+    .slide_img {
+        width: 100%;
+    }
+    .title_mobile {
+        .blog_single_head_mobile {
+            font-family: "Poppins", sans-serif;
+            width: 100%;
+            margin-bottom: 20px;
+            display: block;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .blog_single_small_mobile {
+            font-size: 14px;
+            margin-bottom: 6px;
+            letter-spacing: 0.7;
+        }
+    }
+
+    .holder {
+        position: absolute;
+        top: 20%;
+
+        @media only screen and (max-width: 1400px) {
+            top: 9%;
+        }
+
+        @media only screen and (max-width: 991px) {
+            top: 0;
+        }
+        .title {
+            font-size: 50px;
+            font-family: "Poppins", sans-serif;
+            line-height: 65px;
+            width: 95%;
+            padding-left: 120px;
+            margin-bottom: 40px;
+            @media only screen and (max-width: 1660px) {
+                font-size: 43px;
+                line-height: 52px;
+            }
+
+            @media only screen and (max-width: 1400px) {
+                width: 100%;
+                padding-left: 50px;
+                margin-bottom: 30px;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                font-size: 38px;
+                line-height: 45px;
+                padding-left: 0;
+            }
+
+            @media only screen and (max-width: 991px) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .blog_single_small {
+                font-size: 18px;
+                font-weight: 400;
+                font-family: "Roboto", sans-serif;
+                cursor: pointer;
+
+                @media only screen and (max-width: 1660px) {
+                    font-size: 16px;
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+            .blog_single_head {
+                font-size: 50px;
+                line-height: 65px;
+
+                @media only screen and (max-width: 1660px) {
+                    font-size: 43px;
+                    line-height: 52px;
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    font-size: 39px;
+                    line-height: 45px;
+                }
+
+                @media only screen and (max-width: 991px) {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .description {
+            font-size: 18px;
+            padding-left: 120px;
+
+            @media only screen and (max-width: 1660px) {
+                font-size: 16px;
+            }
+
+            @media only screen and (max-width: 1400px) {
+                padding-left: 50px;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                padding-left: 0;
+                font-size: 14px;
+            }
+
+            @media only screen and (max-width: 991px) {
+                font-size: 12px;
+                margin-top: 20px;
+                width: 90%;
+                line-height: 22px;
+                font-weight: 400;
+                letter-spacing: 0.6;
+            }
+        }
+    }
+
+    .position_helper {
+        position: relative;
+
+        @media only screen and (max-width: 991px) {
+            min-height: 130px;
+        }
+    }
+}
