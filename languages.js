@@ -1,4 +1,4 @@
-console.log('window.location.pathname', window.location.pathname);
+console.log('window.location.pathname', window.location);
 const jsonEN =
   window.location.pathname === '/index.html' ||
   window.location.pathname === '/' ||
