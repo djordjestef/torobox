@@ -768,7 +768,11 @@ window.addEventListener('load', function (event) {
   });
 
   $('.storage_link').on('click', function () {
-    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+    if (
+      window.location.pathname === '/index.html' ||
+      window.location.pathname === '/' ||
+      window.location.pathname === '/torobox/index.html'
+    ) {
       const slider = document.getElementById('storage_type');
       scroller.scrollTo(slider, -200);
       checkbox.checked = false;
@@ -778,24 +782,30 @@ window.addEventListener('load', function (event) {
   });
 
   $('.company_link').on('click', function () {
-    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    const slider = document.getElementById('company');
-    scroller.scrollTo(slider);
-    checkbox.checked = false;
-    }else {
-      window.location.pathname='/index.html'
+    if (
+      window.location.pathname === '/index.html' ||
+      window.location.pathname === '/' ||
+      window.location.pathname === '/torobox/index.html'
+    ) {
+      const slider = document.getElementById('company');
+      scroller.scrollTo(slider);
+      checkbox.checked = false;
+    } else {
+      window.location.pathname = '/index.html';
     }
   });
 
   $('.contact_link').on('click', function () {
-
-    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    const slider = document.getElementById('contact');
-    scroller.scrollTo(slider);
-    checkbox.checked = false;
-
-    }else {
-      window.location.pathname='/index.html'
+    if (
+      window.location.pathname === '/index.html' ||
+      window.location.pathname === '/' ||
+      window.location.pathname === '/torobox/index.html'
+    ) {
+      const slider = document.getElementById('contact');
+      scroller.scrollTo(slider);
+      checkbox.checked = false;
+    } else {
+      window.location.pathname = '/index.html';
     }
   });
 
