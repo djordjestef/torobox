@@ -777,7 +777,7 @@ window.addEventListener('load', function (event) {
       scroller.scrollTo(slider, -200);
       checkbox.checked = false;
     } else {
-      window.location.pathname = '/index.html';
+      window.location.href = 'index.html';
     }
   });
 
@@ -791,7 +791,7 @@ window.addEventListener('load', function (event) {
       scroller.scrollTo(slider);
       checkbox.checked = false;
     } else {
-      window.location.pathname = '/index.html';
+      window.location.href = 'index.html';
     }
   });
 
@@ -805,7 +805,7 @@ window.addEventListener('load', function (event) {
       scroller.scrollTo(slider);
       checkbox.checked = false;
     } else {
-      window.location.pathname = '/index.html';
+      window.location.href = 'index.html';
     }
   });
 
