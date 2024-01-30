@@ -767,20 +767,20 @@ window.addEventListener('load', function (event) {
     smoothMobileSpeed: 0,
   });
 
-  console.log('this.location',location)
- 
+  console.log('this.location', location);
 
   $('.storage_link').on('click', function () {
     if (
       window.location.pathname === '/index.html' ||
       window.location.pathname === '/' ||
-      window.location.pathname === '/torobox/index.html'
+      window.location.pathname === '/torobox/index.html' ||
+      window.location.pathname === ''
     ) {
       const slider = document.getElementById('storage_type');
       scroller.scrollTo(slider, -200);
       checkbox.checked = false;
     } else {
-     location.pathname = '/index.html';
+      window.location.href = '/';
     }
   });
 
@@ -788,13 +788,14 @@ window.addEventListener('load', function (event) {
     if (
       window.location.pathname === '/index.html' ||
       window.location.pathname === '/' ||
-      window.location.pathname === '/torobox/index.html'
+      window.location.pathname === '/torobox/index.html' ||
+      window.location.pathname === ''
     ) {
       const slider = document.getElementById('company');
       scroller.scrollTo(slider);
       checkbox.checked = false;
     } else {
-      location.pathname = '/index.html';
+      window.location.href = '/';
     }
   });
 
@@ -802,13 +803,14 @@ window.addEventListener('load', function (event) {
     if (
       window.location.pathname === '/index.html' ||
       window.location.pathname === '/' ||
-      window.location.pathname === '/torobox/index.html'
+      window.location.pathname === '/torobox/index.html' ||
+      window.location.pathname === ''
     ) {
       const slider = document.getElementById('contact');
       scroller.scrollTo(slider);
       checkbox.checked = false;
     } else {
-      location.pathname = '/index.html';
+      window.location.href = '/';
     }
   });
 
