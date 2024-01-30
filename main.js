@@ -767,8 +767,6 @@ window.addEventListener('load', function (event) {
     smoothMobileSpeed: 0,
   });
 
-  console.log('this.location', location);
-
   $('.storage_link').on('click', function () {
     if (
       window.location.pathname === '/index.html' ||
@@ -782,7 +780,6 @@ window.addEventListener('load', function (event) {
     } else {
       const currentPath = window.location.pathname;
       const newPath = currentPath.substring(0, currentPath.lastIndexOf('/')) + '/index.html';
-      console.log('newPath',newPath)
       window.location.href = newPath;
     }
   });
@@ -798,7 +795,9 @@ window.addEventListener('load', function (event) {
       scroller.scrollTo(slider);
       checkbox.checked = false;
     } else {
-      window.location.href = '/';
+      const currentPath = window.location.pathname;
+      const newPath = currentPath.substring(0, currentPath.lastIndexOf('/')) + '/index.html';
+      window.location.href = newPath;
     }
   });
 
@@ -813,7 +812,9 @@ window.addEventListener('load', function (event) {
       scroller.scrollTo(slider);
       checkbox.checked = false;
     } else {
-      window.location.href = '/';
+      const currentPath = window.location.pathname;
+      const newPath = currentPath.substring(0, currentPath.lastIndexOf('/')) + '/index.html';
+      window.location.href = newPath;
     }
   });
 
