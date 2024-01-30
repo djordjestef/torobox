@@ -2,6 +2,7 @@ const jsonEN =
   window.location.pathname === '/index.html' ||
   window.location.pathname === '/' ||
   window.location.pathname === '/torobox/index.html'
+  window.location.pathname === ''
     ? {
         storage_sub: ' We offer what everyone seems to be missing — space.',
         storage_tit_mobile: ' Rent storage units for your personal possessions.',
@@ -248,6 +249,7 @@ const jsonSR =
   window.location.pathname === '/index.html' ||
   window.location.pathname === '/' ||
   window.location.pathname === '/torobox/index.html'
+  window.location.pathname === ''
     ? {
         storage_sub: 'Mi imamo ono što svima nedostaje - prostor.',
         storage_tit_mobile: 'Iznajmljivanje skladišnih jedinica za vaše stvari.',
