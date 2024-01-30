@@ -1,7 +1,7 @@
 const jsonEN =
   window.location.pathname === '/index.html' ||
   window.location.pathname === '/' ||
-  window.location.pathname === '/torobox/index.html'
+  window.location.pathname === '/torobox/index.html' ||
   window.location.pathname === ''
     ? {
         storage_sub: ' We offer what everyone seems to be missing — space.',
@@ -248,7 +248,7 @@ const jsonEN =
 const jsonSR =
   window.location.pathname === '/index.html' ||
   window.location.pathname === '/' ||
-  window.location.pathname === '/torobox/index.html'
+  window.location.pathname === '/torobox/index.html' ||
   window.location.pathname === ''
     ? {
         storage_sub: 'Mi imamo ono što svima nedostaje - prostor.',
