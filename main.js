@@ -780,7 +780,10 @@ window.addEventListener('load', function (event) {
       scroller.scrollTo(slider, -200);
       checkbox.checked = false;
     } else {
-      window.location.href = '/';
+      const currentPath = window.location.pathname;
+      const newPath = currentPath.substring(0, currentPath.lastIndexOf('/')) + '/index.html';
+      console.log('newPath',newPath)
+      window.location.href = newPath;
     }
   });
 
