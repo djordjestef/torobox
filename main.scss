@@ -216,6 +216,14 @@ input {
     }
 }
 
+.only_desktop_card_scroller {
+    display: flex;
+
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
 .only_mobile {
     display: none;
 
