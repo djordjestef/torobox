@@ -88,7 +88,7 @@ const jsonEN =
         blog_title_lang: 'Latest news',
         blog_index_lang_1: 'Storing Things',
         blog_index_lang_2: 'Packing and Storing Tips',
-        blog_index_lang_3: 'english_3',
+        blog_index_lang_3: '10 questions you should ask when renting self-storage unit',
         title_address_lang: 'Get space office@torobox.rs',
         address_lang: 'Address:',
         phone: 'Phone:',
@@ -129,14 +129,18 @@ const jsonEN =
         privacy: 'Privacy policy',
         blog_lang_1: 'Storing Things',
         blog_lang_2: 'Packing and Storing Tips',
-        blog_lang_3: 'english_3',
-        blog_lang_4: 'english_4',
-        blog_lang_4_desktop: 'english_4',
+        blog_lang_3: '10 questions you should ask when renting self-storage unit',
+        blog_lang_4: 'Guide to Storage Made Simple: List of Things in Self-storage',
+        blog_lang_4_desktop: 'Guide to Storage Made Simple: List of Things in Self-storage',
+        blog_lang_5: 'Reasons for having self-storage unit',
+        blog_lang_5_desktop: 'Reasons for having self-storage unit',
         blog_date_1: 'March 20.2024',
         blog_date_2: 'March 20.2024',
         blog_date_3: 'March 20.2024',
         blog_date_4: 'March 20.2024',
         blog_date_4_desktop: 'March 20.2024',
+        blog_date_5: 'March 20.2024',
+        blog_date_5_desktop: 'March 20.2024',
         blog_main_subtitle: 'Torobox makes storage simple',
         blog_main_title: 'Hints and tips to save you time and money',
       }
@@ -163,7 +167,7 @@ const jsonEN =
         blog_title_1: 'Storing Things',
         blog_single_small_1: '< Blog',
         blog_single_small_mobile_1: '< Blog',
-        blog_single_head_mobile_1: 'Title',
+        blog_single_head_mobile_1: 'Storing Things',
       }
     : window.location.pathname === '/blog_2.html' ||
       window.location.pathname === '/torobox/blog_2.html'
@@ -188,7 +192,7 @@ const jsonEN =
         blog_title_2: 'Packing and Storing Tips',
         blog_single_small_2: '< Blog',
         blog_single_small_mobile_2: '< Blog',
-        blog_single_head_mobile_2: 'Title2',
+        blog_single_head_mobile_2: 'Packing and Storing Tips',
       }
     : window.location.pathname === '/blog_3.html' ||
       window.location.pathname === '/torobox/blog_3.html'
@@ -210,11 +214,10 @@ const jsonEN =
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
         privacy: 'Privacy policy',
-        blog_title_3: 'Title3',
-        blog_description_3: 'description3',
+        blog_title_3: '10 questions you should ask when renting self-storage unit',
         blog_single_small_3: '< Blog',
         blog_single_small_mobile_3: '< Blog',
-        blog_single_head_mobile_3: 'Title3',
+        blog_single_head_mobile_3: '10 questions you should ask when renting self-storage unit',
       }
     : window.location.pathname === '/blog_4.html' ||
       window.location.pathname === '/torobox/blog_4.html'
@@ -236,11 +239,35 @@ const jsonEN =
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
         privacy: 'Privacy policy',
-        blog_title_4: 'Title4',
-        blog_description_4: 'description4',
+        blog_title_4: 'Guide to Storage Made Simple: List of Things in Self-storage',
         blog_single_small_4: '< Blog',
         blog_single_small_mobile_4: '< Blog',
-        blog_single_head_mobile_4: 'Title4',
+        blog_single_head_mobile_4: 'Guide to Storage Made Simple: List of Things in Self-storage',
+      }
+    : window.location.pathname === '/blog_5.html' ||
+      window.location.pathname === '/torobox/blog_5.html'
+    ? {
+        storage_lang: 'Storage',
+        company_lang: 'Company',
+        blog_lang: 'Blog',
+        contact_lang: 'Contact',
+        storage_lang_footer: 'Storage',
+        company_lang_footer: 'Company',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Contact',
+        // login_lang: 'Login',
+        // register_lang: 'Register',
+        storage_lang_burger: 'Storage',
+        company_lang_burger: 'Company',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Contact',
+        get_space_lang: 'Get space',
+        get_space_lang_header_menu: 'Get space',
+        privacy: 'Privacy policy',
+        blog_title_5: 'Reasons for having self-storage unit',
+        blog_single_small_5: '< Blog',
+        blog_single_small_mobile_5: '< Blog',
+        blog_single_head_mobile_5: 'Reasons for having self-storage unit',
       }
     : {};
 
@@ -335,7 +362,7 @@ const jsonSR =
         blog_title_lang: 'Poslednje vesti',
         blog_index_lang_1: 'Skladištenje stvari',
         blog_index_lang_2: 'Saveti za pakovanje i skladištenje',
-        blog_index_lang_3: 'serbian_3',
+        blog_index_lang_3: '10 pitanja koja treba da postavite kada iznajmljujete mini skladište',
         title_address_lang: 'Iznajmi prostor office@torobox.rs',
         address_lang: 'Adresa:',
         phone: 'Telefon:',
@@ -376,14 +403,18 @@ const jsonSR =
         get_space_lang_header_menu: 'Iznajmi',
         blog_lang_1: 'Skladištenje stvari',
         blog_lang_2: 'Saveti za pakovanje i skladištenje',
-        blog_lang_3: 'serbian_3',
-        blog_lang_4: 'serbian_4',
-        blog_lang_4_desktop: 'serbian_4',
+        blog_lang_3: '10 pitanja koja treba da postavite kada iznajmljujete mini skladište',
+        blog_lang_4: 'Spisak stvari u mini skladištu (jednostavan vodič)',
+        blog_lang_4_desktop: 'Spisak stvari u mini skladištu (jednostavan vodič)',
+        blog_lang_5: 'Zašto vam je potrebno mini skladište',
+        blog_lang_5_desktop: 'Zašto vam je potrebno mini skladište',
         blog_date_1: 'Mart 20.2024',
         blog_date_2: 'Mart 20.2024',
         blog_date_3: 'Mart 20.2024',
         blog_date_4: 'Mart 20.2024',
         blog_date_4_desktop: 'Mart 20.2024',
+        blog_date_5: 'Mart 20.2024',
+        blog_date_5_desktop: 'Mart 20.2024',
         blog_main_subtitle: 'Torobox čini skladištenje jednostavnim',
         blog_main_title: 'Saveti za uštedu vremena i novca',
       }
@@ -410,7 +441,7 @@ const jsonSR =
         blog_title_1: 'Skladištenje stvari',
         blog_single_small_1: '< Blog',
         blog_single_small_mobile_1: '< Blog',
-        blog_single_head_mobile_1: 'Naslov',
+        blog_single_head_mobile_1: 'Skladištenje stvari',
       }
     : window.location.pathname === '/blog_2.html' ||
       window.location.pathname === '/torobox/blog_2.html'
@@ -435,7 +466,7 @@ const jsonSR =
         blog_title_2: 'Saveti za pakovanje i skladištenje',
         blog_single_small_2: '< Blog',
         blog_single_small_mobile_2: '< Blog',
-        blog_single_head_mobile_2: 'Naslov2',
+        blog_single_head_mobile_2: 'Saveti za pakovanje i skladištenje',
       }
     : window.location.pathname === '/blog_3.html' ||
       window.location.pathname === '/torobox/blog_3.html'
@@ -457,11 +488,11 @@ const jsonSR =
         privacy: 'Politika privatnosti',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        blog_title_3: 'naslov3',
-        blog_description_3: 'tekst3',
+        blog_title_3: '10 pitanja koja treba da postavite kada iznajmljujete mini skladište',
         blog_single_small_3: '< Blog',
         blog_single_small_mobile_3: '< Blog',
-        blog_single_head_mobile_3: 'Naslov3',
+        blog_single_head_mobile_3:
+          '10 pitanja koja treba da postavite kada iznajmljujete mini skladište',
       }
     : window.location.pathname === '/blog_4.html' ||
       window.location.pathname === '/torobox/blog_4.html'
@@ -483,11 +514,35 @@ const jsonSR =
         privacy: 'Politika privatnosti',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        blog_title_4: 'naslov4',
-        blog_description_4: 'tekst4',
+        blog_title_4: 'Spisak stvari u mini skladištu (jednostavan vodič)',
         blog_single_small_4: '< Blog',
         blog_single_small_mobile_4: '< Blog',
-        blog_single_head_mobile_4: 'Naslov4',
+        blog_single_head_mobile_4: 'Spisak stvari u mini skladištu (jednostavan vodič)',
+      }
+    : window.location.pathname === '/blog_5.html' ||
+      window.location.pathname === '/torobox/blog_5.html'
+    ? {
+        storage_lang: 'Skaldište',
+        company_lang: 'Kompanija',
+        blog_lang: 'Blog',
+        contact_lang: 'Kontakt',
+        storage_lang_footer: 'Skaldište',
+        company_lang_footer: 'Kompanija',
+        blog_lang_footer: 'Blog',
+        contact_lang_footer: 'Kontakt',
+        // login_lang: 'Login',
+        // register_lang: 'Registracija',
+        storage_lang_burger: 'Skaldište',
+        company_lang_burger: 'Kompanija',
+        blog_lang_burger: 'Blog',
+        contact_lang_burger: 'Kontakt',
+        privacy: 'Politika privatnosti',
+        get_space_lang: 'Iznajmi',
+        get_space_lang_header_menu: 'Iznajmi',
+        blog_title_5: 'Zašto vam je potrebno mini skladište',
+        blog_single_small_5: '< Blog',
+        blog_single_small_mobile_5: '< Blog',
+        blog_single_head_mobile_5: 'Zašto vam je potrebno mini skladište',
       }
     : {};
 
@@ -514,35 +569,22 @@ $(document).ready(function () {
       $('.get_space_mobile_en').removeClass('active');
     }
 
-
-
-    $('.blog_1_en').addClass('active')
-    $('.blog_2_en').addClass('active')
-    $('.blog_3_en').addClass('active')
-    $('.blog_4_en').addClass('active')
-    $('.blog_5_en').addClass('active')
-
-
-
-
-
-
+    $('.blog_1_en').addClass('active');
+    $('.blog_2_en').addClass('active');
+    $('.blog_3_en').addClass('active');
+    $('.blog_4_en').addClass('active');
+    $('.blog_5_en').addClass('active');
 
     $('.sr').addClass('active');
-
-
-
 
     location.reload();
   } else {
     if (localStorage.getItem('lang') === 'sr') {
-
-      $('.blog_1_sr').addClass('active')
-      $('.blog_2_sr').addClass('active')
-      $('.blog_3_sr').addClass('active')
-      $('.blog_4_sr').addClass('active')
-      $('.blog_5_sr').addClass('active')
-
+      $('.blog_1_sr').addClass('active');
+      $('.blog_2_sr').addClass('active');
+      $('.blog_3_sr').addClass('active');
+      $('.blog_4_sr').addClass('active');
+      $('.blog_5_sr').addClass('active');
 
       $('.en').addClass('active');
       if (isMobileTablet) {
@@ -557,17 +599,11 @@ $(document).ready(function () {
         $('.form_btn_lang').attr('value', 'Pošalji');
       }
     } else {
-
-
-      $('.blog_1_en').addClass('active')
-      $('.blog_2_en').addClass('active')
-      $('.blog_3_en').addClass('active')
-      $('.blog_4_en').addClass('active')
-      $('.blog_5_en').addClass('active')
-
-
-
-
+      $('.blog_1_en').addClass('active');
+      $('.blog_2_en').addClass('active');
+      $('.blog_3_en').addClass('active');
+      $('.blog_4_en').addClass('active');
+      $('.blog_5_en').addClass('active');
 
       $('.sr').addClass('active');
       if (isMobileTablet) {
