@@ -2441,17 +2441,16 @@ input {
   letter-spacing: 0.7;
 }
 .blog_single .holder {
-  position: absolute;
-  top: 20%;
+  margin-top: 20%;
 }
 @media only screen and (max-width: 1400px) {
   .blog_single .holder {
-    top: 9%;
+    margin-top: 9%;
   }
 }
 @media only screen and (max-width: 991px) {
   .blog_single .holder {
-    top: 0;
+    margin-top: 0;
   }
 }
 .blog_single .holder .title {
@@ -2563,4 +2562,74 @@ input {
   .blog_single .position_helper {
     min-height: 130px;
   }
+}
+
+.blog_1_sr {
+  display: none;
+}
+.blog_1_sr.active {
+  display: block;
+}
+
+.blog_1_en {
+  display: none;
+}
+.blog_1_en.active {
+  display: block;
+}
+
+.blog_2_sr {
+  display: none;
+}
+.blog_2_sr.active {
+  display: block;
+}
+
+.blog_2_en {
+  display: none;
+}
+.blog_2_en.active {
+  display: block;
+}
+
+.blog_3_sr {
+  display: none;
+}
+.blog_3_sr.active {
+  display: block;
+}
+
+.blog_3_en {
+  display: none;
+}
+.blog_3_en.active {
+  display: block;
+}
+
+.blog_4_sr {
+  display: none;
+}
+.blog_4_sr.active {
+  display: block;
+}
+
+.blog_4_en {
+  display: none;
+}
+.blog_4_en.active {
+  display: block;
+}
+
+.blog_5_sr {
+  display: none;
+}
+.blog_5_sr.active {
+  display: block;
+}
+
+.blog_5_en {
+  display: none;
+}
+.blog_5_en.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

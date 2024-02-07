@@ -86,8 +86,8 @@ const jsonEN =
           ' We’re a customer-service driven business and the only company in Serbi professionally managing this market segment. Our long-term experience leasing large commercial spaces and our expertise allow you to put your trust in us just as these clients have over the years: Eurobank, Sky Music, Dom Perignon, Emotion, Sorbon, and many others.',
         blog_small: 'Blog',
         blog_title_lang: 'Latest news',
-        blog_index_lang_1: 'english_1',
-        blog_index_lang_2: 'english_2',
+        blog_index_lang_1: 'Storing Things',
+        blog_index_lang_2: 'Packing and Storing Tips',
         blog_index_lang_3: 'english_3',
         title_address_lang: 'Get space office@torobox.rs',
         address_lang: 'Address:',
@@ -127,8 +127,8 @@ const jsonEN =
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
         privacy: 'Privacy policy',
-        blog_lang_1: 'english_1',
-        blog_lang_2: 'english_2',
+        blog_lang_1: 'Storing Things',
+        blog_lang_2: 'Packing and Storing Tips',
         blog_lang_3: 'english_3',
         blog_lang_4: 'english_4',
         blog_lang_4_desktop: 'english_4',
@@ -160,8 +160,7 @@ const jsonEN =
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
         privacy: 'Privacy policy',
-        blog_title_1: 'Title',
-        blog_description_1: 'description',
+        blog_title_1: 'Storing Things',
         blog_single_small_1: '< Blog',
         blog_single_small_mobile_1: '< Blog',
         blog_single_head_mobile_1: 'Title',
@@ -186,8 +185,7 @@ const jsonEN =
         get_space_lang: 'Get space',
         get_space_lang_header_menu: 'Get space',
         privacy: 'Privacy policy',
-        blog_title_2: 'Title2',
-        blog_description_2: 'description2',
+        blog_title_2: 'Packing and Storing Tips',
         blog_single_small_2: '< Blog',
         blog_single_small_mobile_2: '< Blog',
         blog_single_head_mobile_2: 'Title2',
@@ -335,8 +333,8 @@ const jsonSR =
           'Mi smo korisnički orijentisan poslovni subjekt i jedina firma u Srbiji koja profesionalno upravlja ovim segmentom tržišta. Naše dugogodišnje iskustvo i stručnost u iznajmljivanju velikih komercijalnih prostora omogućavaju nam da izađemo u susret, kako našim starim klijentima: Eurobanka, Sky Music, Dom Perignon, Emotion, Sorbon, tako i vama.',
         blog_small: 'Blog',
         blog_title_lang: 'Poslednje vesti',
-        blog_index_lang_1: 'serbian_1',
-        blog_index_lang_2: 'serbian_2',
+        blog_index_lang_1: 'Skladištenje stvari',
+        blog_index_lang_2: 'Saveti za pakovanje i skladištenje',
         blog_index_lang_3: 'serbian_3',
         title_address_lang: 'Iznajmi prostor office@torobox.rs',
         address_lang: 'Adresa:',
@@ -376,8 +374,8 @@ const jsonSR =
         privacy: 'Politika privatnosti',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        blog_lang_1: 'serbian_1',
-        blog_lang_2: 'serbian_2',
+        blog_lang_1: 'Skladištenje stvari',
+        blog_lang_2: 'Saveti za pakovanje i skladištenje',
         blog_lang_3: 'serbian_3',
         blog_lang_4: 'serbian_4',
         blog_lang_4_desktop: 'serbian_4',
@@ -409,8 +407,7 @@ const jsonSR =
         privacy: 'Politika privatnosti',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        blog_title_1: 'naslov',
-        blog_description_1: 'tekst',
+        blog_title_1: 'Skladištenje stvari',
         blog_single_small_1: '< Blog',
         blog_single_small_mobile_1: '< Blog',
         blog_single_head_mobile_1: 'Naslov',
@@ -435,8 +432,7 @@ const jsonSR =
         privacy: 'Politika privatnosti',
         get_space_lang: 'Iznajmi',
         get_space_lang_header_menu: 'Iznajmi',
-        blog_title_2: 'naslov2',
-        blog_description_2: 'tekst2',
+        blog_title_2: 'Saveti za pakovanje i skladištenje',
         blog_single_small_2: '< Blog',
         blog_single_small_mobile_2: '< Blog',
         blog_single_head_mobile_2: 'Naslov2',
@@ -518,10 +514,36 @@ $(document).ready(function () {
       $('.get_space_mobile_en').removeClass('active');
     }
 
+
+
+    $('.blog_1_en').addClass('active')
+    $('.blog_2_en').addClass('active')
+    $('.blog_3_en').addClass('active')
+    $('.blog_4_en').addClass('active')
+    $('.blog_5_en').addClass('active')
+
+
+
+
+
+
+
     $('.sr').addClass('active');
+
+
+
+
     location.reload();
   } else {
     if (localStorage.getItem('lang') === 'sr') {
+
+      $('.blog_1_sr').addClass('active')
+      $('.blog_2_sr').addClass('active')
+      $('.blog_3_sr').addClass('active')
+      $('.blog_4_sr').addClass('active')
+      $('.blog_5_sr').addClass('active')
+
+
       $('.en').addClass('active');
       if (isMobileTablet) {
         $('.get_space_mobile_sr').addClass('active');
@@ -535,6 +557,18 @@ $(document).ready(function () {
         $('.form_btn_lang').attr('value', 'Pošalji');
       }
     } else {
+
+
+      $('.blog_1_en').addClass('active')
+      $('.blog_2_en').addClass('active')
+      $('.blog_3_en').addClass('active')
+      $('.blog_4_en').addClass('active')
+      $('.blog_5_en').addClass('active')
+
+
+
+
+
       $('.sr').addClass('active');
       if (isMobileTablet) {
         $('.get_space_mobile_en').addClass('active');
