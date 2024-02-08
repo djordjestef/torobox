@@ -1738,10 +1738,12 @@ input {
 .blog .card .card-body {
   padding: 37px 42px;
   position: relative;
+  max-height: 160px;
 }
 @media only screen and (max-width: 1660px) {
   .blog .card .card-body {
     padding: 21px 25px;
+    max-height: 150px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1750,7 +1752,7 @@ input {
   }
 }
 .blog .card .card-body .card-text {
-  font-size: 18px;
+  font-size: 17px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
