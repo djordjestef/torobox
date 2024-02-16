@@ -2645,4 +2645,18 @@ input {
 }
 .blog_5_en.active {
   display: block;
+}
+
+.english {
+  display: none;
+}
+.english.active {
+  display: block;
+}
+
+.serbian {
+  display: none;
+}
+.serbian.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

@@ -5,10 +5,10 @@ const jsonEN =
   window.location.pathname === '' ||
   window.location.pathname === '/torobox/'
     ? {
-        storage_sub: ' We offer what everyone seems to be missing — space.',
+        // storage_sub: ' We offer what everyone seems to be missing — space.',
         storage_tit_mobile: ' Rent storage units for your personal possessions.',
-        storage_tit_desktop_1: ' Rent storage units for your',
-        storage_tit_desktop_2: 'personal possessions.',
+        // storage_tit_desktop_1: ' Rent storage units for your',
+        // storage_tit_desktop_2: 'personal possessions.',
         storage_lang: 'Storage',
         company_lang: 'Company',
         blog_lang: 'Blog',
@@ -284,10 +284,10 @@ const jsonSR =
   window.location.pathname === '' ||
   window.location.pathname === '/torobox/'
     ? {
-        storage_sub: 'Mi imamo ono što svima nedostaje - prostor.',
+        // storage_sub: 'Mi imamo ono što svima nedostaje - prostor.',
         storage_tit_mobile: 'Iznajmljivanje skladišnih jedinica za vaše stvari.',
-        storage_tit_desktop_1: ' Iznajmljivanje skladišnih',
-        storage_tit_desktop_2: 'jedinica za vaše stvari.',
+        // storage_tit_desktop_1: ' Iznajmljivanje skladišnih',
+        // storage_tit_desktop_2: 'jedinica za vaše stvari.',
         storage_lang: 'Skaldište',
         company_lang: 'Kompanija',
         blog_lang: 'Blog',
@@ -586,6 +586,7 @@ $(document).ready(function () {
     $('.blog_3_en').addClass('active');
     $('.blog_4_en').addClass('active');
     $('.blog_5_en').addClass('active');
+    $('.english').addClass('active')
 
     $('.sr').addClass('active');
 
@@ -597,6 +598,7 @@ $(document).ready(function () {
       $('.blog_3_sr').addClass('active');
       $('.blog_4_sr').addClass('active');
       $('.blog_5_sr').addClass('active');
+      $('.serbian').addClass('active')
 
       $('.en').addClass('active');
       if (isMobileTablet) {
@@ -616,6 +618,7 @@ $(document).ready(function () {
       $('.blog_3_en').addClass('active');
       $('.blog_4_en').addClass('active');
       $('.blog_5_en').addClass('active');
+      $('.english').addClass('active')
 
       $('.sr').addClass('active');
       if (isMobileTablet) {

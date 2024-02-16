@@ -2718,3 +2718,19 @@ input {
         display: block;
     }
 }
+
+.english {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.serbian {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
