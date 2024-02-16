@@ -2648,15 +2648,15 @@ input {
 }
 
 .english {
-  display: none;
+  display: none !important;
 }
 .english.active {
-  display: block;
+  display: block !important;
 }
 
 .serbian {
-  display: none;
+  display: none !important;
 }
 .serbian.active {
-  display: block;
+  display: block !important;
 }/*# sourceMappingURL=main.css.map */

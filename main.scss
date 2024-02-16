@@ -2720,17 +2720,17 @@ input {
 }
 
 .english {
-    display: none;
+    display: none!important;
 
     &.active {
-        display: block;
+        display: block!important;
     }
 }
 
 .serbian {
-    display: none;
+    display: none!important;
 
     &.active {
-        display: block;
+        display: block!important;
     }
 }

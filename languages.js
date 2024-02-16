@@ -6,7 +6,7 @@ const jsonEN =
   window.location.pathname === '/torobox/'
     ? {
         // storage_sub: ' We offer what everyone seems to be missing — space.',
-        storage_tit_mobile: ' Rent storage units for your personal possessions.',
+        // storage_tit_mobile: ' Rent storage units for your personal possessions.',
         // storage_tit_desktop_1: ' Rent storage units for your',
         // storage_tit_desktop_2: 'personal possessions.',
         storage_lang: 'Storage',
@@ -25,15 +25,15 @@ const jsonEN =
         contact_lang_burger: 'Contact',
         // login_lang_burger: 'Login',
         // register_lang_burger: 'Register',
-        desc_lang_title: 'Simple, safe & secure self-storage.',
+        // desc_lang_title: 'Simple, safe & secure self-storage.',
         description_lang:
           ' Our units are made according to the highest quality standards so they can fulfill their role -to flawlessly keep your valuable belongings, following the Federation of European Self Storage Associations (FEDESSA)',
         // storage_lang_small: 'Storage',
-        storage_lang_small_mobile: 'Storage',
-        h2_lang_large: 'Large container',
-        h2_lang_medium: 'Medium storage',
-        h2_lang_small: 'Small space',
-        h2_lang_mini: 'Mini vault',
+        // storage_lang_small_mobile: 'Storage',
+        // h2_lang_large: 'Large container',
+        // h2_lang_medium: 'Medium storage',
+        // h2_lang_small: 'Small space',
+        // h2_lang_mini: 'Mini vault',
         acc_description_large_one: `This storage container is suitable for those who need a lot of storage space, either for things from an apartment over 70 m\u00B2 or your company.`,
         acc_description_large_two:
           'Width: 2.5m | Height: 2.5m | Lenght: 6m Surface Area: 15m\u00B2 | Volume: 38m\u00B3',
@@ -53,7 +53,7 @@ const jsonEN =
         acc_description_mini_two:
           'Width: 1m | Height: 2.5m | Lenght: 1m Surface Area: 1m\u00B2 | Volume: 2.5m\u00B3',
         rent_mini_btn: 'Rent for 50€ / mont',
-        company_storage_title: 'We pack, move & store for you.',
+        // company_storage_title: 'We pack, move & store for you.',
         span_1:
           'Torobox provides a wide range of storage solutions to suit you and/or your business. Our storage units are',
         span_2: 'optionally',
@@ -66,28 +66,28 @@ const jsonEN =
         strong_3: 'alarm',
         strong_4: 'surveillance',
         strong_5: 'guarded 24/7.',
-        adv_title_1: 'Easy access',
-        adv_title_2: 'Secure facility',
-        adv_title_3: 'Air conditioning',
-        adv_title_4: 'Moving & packing',
-        adv_title_5: 'Portable container',
-        adv_title_6: 'Online payment',
+        // adv_title_1: 'Easy access',
+        // adv_title_2: 'Secure facility',
+        // adv_title_3: 'Air conditioning',
+        // adv_title_4: 'Moving & packing',
+        // adv_title_5: 'Portable container',
+        // adv_title_6: 'Online payment',
         adv_decription_1: 'Our site presents wide driveways, easy access and parking space.',
         adv_decription_2: 'Secured entry monitored by CCTV cameras and patrols 24/7.',
         adv_decription_3: 'Optional air-conditioning for selected units.',
         adv_decription_4: 'We can do everything for you, packing, moving and storing your items.',
         adv_decription_5: 'Container at your location so you can pack stuff ready for transport.',
         adv_decription_6: '24/7 Online payment options with or without recurring subscription.',
-        testimonial_1:'Description 1',
-        testimonial_name_1:'Name',
-        testimonial_date_1:'22.22.2222',
-        testimonial_2:'Description 2',
-        testimonial_name_2:'Name 2',
-        testimonial_date_2:'22.22.2222',
-        company_small: 'Company',
-        company_small_mobile: 'Company',
-        company_head: 'Torobox offers what everyone seems to be missing — space.',
-        company_head_mobile: 'Torobox offers what everyone seems to be missing — space.',
+        testimonial_1: 'Description 1',
+        testimonial_name_1: 'Name',
+        testimonial_date_1: '22.22.2222',
+        testimonial_2: 'Description 2',
+        testimonial_name_2: 'Name 2',
+        testimonial_date_2: '22.22.2222',
+        // company_small: 'Company',
+        // company_small_mobile: 'Company',
+        // company_head: 'Torobox offers what everyone seems to be missing — space.',
+        // company_head_mobile: 'Torobox offers what everyone seems to be missing — space.',
         company_description:
           ' We’re a customer-service driven business and the only company in Serbi professionally managing this market segment. Our long-term experience leasing large commercial spaces and our expertise allow you to put your trust in us just as these clients have over the years: Eurobank, Sky Music, Dom Perignon, Emotion, Sorbon, and many others.',
         blog_small: 'Blog',
@@ -285,7 +285,7 @@ const jsonSR =
   window.location.pathname === '/torobox/'
     ? {
         // storage_sub: 'Mi imamo ono što svima nedostaje - prostor.',
-        storage_tit_mobile: 'Iznajmljivanje skladišnih jedinica za vaše stvari.',
+        // storage_tit_mobile: 'Iznajmljivanje skladišnih jedinica za vaše stvari.',
         // storage_tit_desktop_1: ' Iznajmljivanje skladišnih',
         // storage_tit_desktop_2: 'jedinica za vaše stvari.',
         storage_lang: 'Skaldište',
@@ -304,15 +304,15 @@ const jsonSR =
         contact_lang_burger: 'Kontakt',
         // login_lang_burger: 'Login',
         // register_lang_burger: 'Registracija',
-        desc_lang_title: 'Jednostavno, bezbedno i sigurno skladištenje.',
+        // desc_lang_title: 'Jednostavno, bezbedno i sigurno skladištenje.',
         description_lang:
           'Naša skladišta su izrađena prema najvišim standardima kvaliteta kako bi besprekorno čuvali vaše dragocene stvari, u skladu sa Savezom evropskih udruženja za samo-skladištenje (FEDESSA).',
         // storage_lang_small: 'Skaldište',
-        storage_lang_small_mobile: 'Skaldište',
-        h2_lang_large: 'Veliki kontejner',
-        h2_lang_medium: 'Srednje skladište',
-        h2_lang_small: 'Mala jedinica',
-        h2_lang_mini: 'Mini sef',
+        // storage_lang_small_mobile: 'Skaldište',
+        // h2_lang_large: 'Veliki kontejner',
+        // h2_lang_medium: 'Srednje skladište',
+        // h2_lang_small: 'Mala jedinica',
+        // h2_lang_mini: 'Mini sef',
         acc_description_large_one:
           'Ovaj kontejner za skladištenje je pogodan za sve koji trebaju puno skladišnog prostora, bilo za stvari iz stana preko 70 m\u00B2 ili za vašu kompaniju.',
         acc_description_large_two:
@@ -333,7 +333,7 @@ const jsonSR =
         acc_description_mini_two:
           'Širina: 1m | Visina: 2.5m | Dužina: 1m Površina: 1m\u00B2 | Zapremina: 2.5m\u00B3',
         rent_mini_btn: 'Iznajmi za 50€ / mesečno',
-        company_storage_title: 'Skladištimo i selimo vaše stvari.',
+        // company_storage_title: 'Skladištimo i selimo vaše stvari.',
         span_1:
           'Torobox pruža širok spektar rešenja za skladištenje vama i/ili vašem poslovanju. Naše skladišne jedinice su',
         span_2: 'opciono',
@@ -346,28 +346,28 @@ const jsonSR =
         strong_3: 'alarmnim',
         strong_4: 'video nadzora',
         strong_5: 'i obezbeđene i čuvane 24/7.',
-        adv_title_1: 'Jednostavan pristup',
-        adv_title_2: 'Video nadzor',
-        adv_title_3: 'Klimatizavano',
-        adv_title_4: 'Pakovanje i selidba',
-        adv_title_5: 'Pokretni kontejner',
-        adv_title_6: 'Onlajn plaćanje',
+        // adv_title_1: 'Jednostavan pristup',
+        // adv_title_2: 'Video nadzor',
+        // adv_title_3: 'Klimatizavano',
+        // adv_title_4: 'Pakovanje i selidba',
+        // adv_title_5: 'Pokretni kontejner',
+        // adv_title_6: 'Onlajn plaćanje',
         adv_decription_1: 'Naš prostor nudi jednostavan pristup, širok prolaz i parking.',
         adv_decription_2: 'Bezbedan prostor pod nadzorom CCTV kamera i patrola 24/7.',
         adv_decription_3: 'Opciona klimatizacija za odabrane skladišne jedinice.',
         adv_decription_4: 'Pakovanje, selidbu i čuvanje vaših stvari možemo obaviti umesto vas.',
         adv_decription_5: 'Portabl kontejner na vašoj lokaciji za transport spakovanih stvari.',
         adv_decription_6: 'Opcije za onlajn plaćanje dostupne 24/7, sa ili bez mesečne pretplate.',
-        testimonial_1:'Opis 1',
-        testimonial_name_1:'Ime',
-        testimonial_date_1:'22.22.2222',
-        testimonial_2:'Opis 2',
-        testimonial_name_2:'Ime 2',
-        testimonial_date_2:'22.22.2222',
-        company_small: 'Kompanija',
-        company_small_mobile: 'Kompanija',
-        company_head: 'Mi imamo ono što svima nedostaje - prostor.',
-        company_head_mobile: 'Mi imamo ono što svima nedostaje - prostor.',
+        testimonial_1: 'Opis 1',
+        testimonial_name_1: 'Ime',
+        testimonial_date_1: '22.22.2222',
+        testimonial_2: 'Opis 2',
+        testimonial_name_2: 'Ime 2',
+        testimonial_date_2: '22.22.2222',
+        // company_small: 'Kompanija',
+        // company_small_mobile: 'Kompanija',
+        // company_head: 'Mi imamo ono što svima nedostaje - prostor.',
+        // company_head_mobile: 'Mi imamo ono što svima nedostaje - prostor.',
         company_description:
           'Mi smo korisnički orijentisan poslovni subjekt i jedina firma u Srbiji koja profesionalno upravlja ovim segmentom tržišta. Naše dugogodišnje iskustvo i stručnost u iznajmljivanju velikih komercijalnih prostora omogućavaju nam da izađemo u susret, kako našim starim klijentima: Eurobanka, Sky Music, Dom Perignon, Emotion, Sorbon, tako i vama.',
         blog_small: 'Blog',
@@ -586,7 +586,7 @@ $(document).ready(function () {
     $('.blog_3_en').addClass('active');
     $('.blog_4_en').addClass('active');
     $('.blog_5_en').addClass('active');
-    $('.english').addClass('active')
+    $('.english').addClass('active');
 
     $('.sr').addClass('active');
 
@@ -598,7 +598,7 @@ $(document).ready(function () {
       $('.blog_3_sr').addClass('active');
       $('.blog_4_sr').addClass('active');
       $('.blog_5_sr').addClass('active');
-      $('.serbian').addClass('active')
+      $('.serbian').addClass('active');
 
       $('.en').addClass('active');
       if (isMobileTablet) {
@@ -618,7 +618,7 @@ $(document).ready(function () {
       $('.blog_3_en').addClass('active');
       $('.blog_4_en').addClass('active');
       $('.blog_5_en').addClass('active');
-      $('.english').addClass('active')
+      $('.english').addClass('active');
 
       $('.sr').addClass('active');
       if (isMobileTablet) {
