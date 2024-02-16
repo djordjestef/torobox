@@ -185,11 +185,18 @@ input {
 }
 
 .animated-heading-line:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.animated-heading-line:nth-child(3) {
     animation-delay: 0.5s;
 }
 
-.animated-heading-line:nth-child(3) {
-    animation-delay: 1.6s;
+.animated-heading-line:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.animated-heading-line:nth-child(5) {
+    animation-delay: 1.5s;
 }
 
 //end of fliping animation
