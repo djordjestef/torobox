@@ -587,6 +587,9 @@ $(document).ready(function () {
     $('.blog_4_en').addClass('active');
     $('.blog_5_en').addClass('active');
     $('.english').addClass('active');
+  //   const element = document.getElementById("serbian");
+  // element.remove();
+  // document.querySelectorAll(".serbian").forEach(el => el.remove());
 
     $('.sr').addClass('active');
 
@@ -601,6 +604,8 @@ $(document).ready(function () {
       $('.serbian').addClass('active');
 
       $('.en').addClass('active');
+      // const element = document.getElementById("english");
+      // document.querySelectorAll(".english").forEach(el => el.remove());
       if (isMobileTablet) {
         $('.get_space_mobile_sr').addClass('active');
         $('.get_space_sr').removeClass('active');
@@ -621,6 +626,9 @@ $(document).ready(function () {
       $('.english').addClass('active');
 
       $('.sr').addClass('active');
+      // const element = document.getElementById("english");
+      // element.remove();
+      // document.querySelectorAll(".english").forEach(el => el.remove());
       if (isMobileTablet) {
         $('.get_space_mobile_en').addClass('active');
         $('.get_space_en').removeClass('active');

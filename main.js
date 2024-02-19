@@ -1,5 +1,6 @@
 window.onload = function () {
   const isMobile = window.innerWidth <= 576;
+  const isMobileTablet = window.innerWidth <= 991;
 
   var viewport_width = window.innerWidth;
   if (isMobile) {
@@ -981,3 +982,9 @@ $('.login').on('click', function () {
 $('.register').on('click', function () {
   checkbox.checked = false;
 });
+
+if (isMobileTablet) {
+  document.querySelectorAll('.only_desktop').forEach((el) => el.remove());
+} else {
+  document.querySelectorAll('.only_mobile').forEach((el) => el.remove());
+}
